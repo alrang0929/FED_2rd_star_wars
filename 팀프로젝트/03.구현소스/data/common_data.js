@@ -19,7 +19,7 @@ const socialLinks = [
 const searchBox = ['Search','Login'];
 
 const navMenu = [
-    { menu:'bad batch', link: "#" },
+    { menu:'bad batch', link: "sub_badbatch.html" },
     { menu:'the-mandalorian', link: "sub_themandalorian.html" },
     { menu:'Ahsoka', link: "#" },
   ];
