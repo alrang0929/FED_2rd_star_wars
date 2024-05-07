@@ -1,10 +1,12 @@
 //메인sub badbatch js - sub_badbatch.js
 import mFn from "./my_function.js";
+import common from "./common.js";
 import * as listMap from "./sub_badbatch_mapping.js";
 import * as listData from "../data/sub_badbatch_list_data.js";
 ///////불러오기 영역//////////////////////
 
 // console.log(slideFn.carouselSlider);
+
 
 // scrollFn.setScrollPos();
 // scrollFn.startSS();

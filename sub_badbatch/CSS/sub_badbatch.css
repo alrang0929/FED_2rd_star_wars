@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 불러오기 영역 */
-@import url(./core.css);
+@import url(./sub_badbatch_core.css);
 @import url(./grid_12_flex.css);
 @import url(./reset.css);
 
@@ -117,7 +117,7 @@ body {
   /* padding-bottom: 15rem; */
   backdrop-filter: blur(70px);
   background-image: linear-gradient(to top, #000000, #00000000, #00000000),
-    url(../img/poster_1.jpg);
+    url(../sub_badbatch_img/poster_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -228,7 +228,7 @@ body {
       #00000000,
       #00000000
     ),
-    url(../img/sub_postitle.jpg);
+    url(../sub_badbatch_img/sub_postitle.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% 90%;
