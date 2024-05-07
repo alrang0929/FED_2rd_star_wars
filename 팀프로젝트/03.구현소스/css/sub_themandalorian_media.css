@@ -90,7 +90,10 @@
     display: none;
   }
   .list-box h3 {
-  font-size: 1.4rem;
-  white-space: nowrap;
-}
+    font-size: 1.4rem;
+    white-space: nowrap;
+  }
+  .section-top{
+    padding-top: 10rem;
+  }
 } /* 650px */
