@@ -33,11 +33,15 @@ html {
   display: grid;
 }
 
+.cont-box{
+  max-width: 1500px;
+  margin: 0 auto;
+}
 
 /*************  박스 공통 설정 *************/
 /* 섹션 상단 여백 */
 .section-top{    
-  /* margin-top: 15rem; */
+  margin-top: 15rem;
 }
 
 /* ### 부모요소에 보더레디우스 주는게 좋을듯!! */
@@ -93,6 +97,7 @@ html {
   .desc{
     text-align: justify;
     line-height: 1.5;
+    font-size: 1.6rem;
   }
 
 

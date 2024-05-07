@@ -11,23 +11,28 @@ body {
   background-color: #000;
   color: #fff;
 
+  /* 공사중 */
+  border: 2px dotted red;
   /* 베이스 폰트 */
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   font-weight: 200;
 }
 
 /************* 상단배너 설정 *************/
 
 #top-area {
-  margin-top: -1%;
+  margin-top: -0.1%;
 }
 
 .top-banner {
-  padding-top: 18%;
+  padding-top: 8%;
+  height: 80vh;
 }
+
 .top-banner img {
-  width: 35%;
+  width: 47%;
 }
+
 .top-banner .desc {
   width: 30%;
   text-align: center;
@@ -111,7 +116,7 @@ body {
   width: 100%;
 }
 #info-area .imgbox {
-  margin-right: 7rem;
+  margin: 0 7rem;
   width: 40%;
 }
 #info-area {
@@ -129,6 +134,11 @@ body {
 }
 
 /*************  2. episode area *************/
+
+#episode-area {
+  width: 70%;
+  margin: 6% auto;
+}
 
 #episode-area .tit-box a {
   margin: 0 2rem;
@@ -154,10 +164,14 @@ body {
 }
 
 .epSlide ul {
-  overflow: hidden;
+  position: relative;
+  /* overflow: hidden; */
   flex-wrap: wrap;
-  height: 75%;
+  /* height: 75%; */
+  translate: -45%;
+  left: 50%;
 }
+
 .epSlide li {
   overflow: hidden;
   border-radius: 2rem;
@@ -211,40 +225,42 @@ body {
   text-align: center;
   font-size: 5rem;
 }
+
 #pos-area .tit-wrap .tit-box {
   position: relative;
   width: 30%;
   top: 50%;
-  left: 50%;
+  left: 53%;
   translate: -50% -50%;
 }
 
 #pos-area .tit-wrap {
   position: relative;
-  left: 50%;
-  translate: -50%;
-  width: 100vw;
+  /* left: 50%; */
+  translate: -20%;
+  width: 110vw;
   height: 60vh;
-
   background-image: linear-gradient(to top, #000000, #00000000),
-    linear-gradient(
-      to bottom,
-      #000000,
-      #00000000,
-      #00000000,
-      #00000000,
-      #00000000
-    ),
-    url(../images/sub_badbatch_img/sub_postitle.jpg);
+     linear-gradient(
+       to bottom,
+       #000000,
+       #00000000,
+       #00000000,
+       #00000000,
+       #00000000
+     ),
+     url(../images/sub_badbatch_img/sub_postitle.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% 90%;
-}
-
+ }
+ 
 #pos-area .slider-wrap {
   margin-top: 2rem;
 }
+
 #pos-area .slider-wrap {
+  translate: -21%;
   margin-top: 10rem;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
@@ -358,7 +374,7 @@ body {
   width: 40%;
 }
 
-/*************  5. footer banner *************/
+/************* 서브 하단 배너 *************/
 #bt-banner-area {
   position: relative;
   margin-top: 22rem;
@@ -368,12 +384,15 @@ body {
 }
 
 .sub-ban-wrap {
+  margin-bottom: 16%;
+  left: -10%;
+  /* top: 0%; */
   position: relative;
   height: 50rem;
-
   overflow: hidden;
   border-radius: 4rem;
 }
+
 
 .sub-ban-wrap .desc-wrap {
   position: absolute;
@@ -502,6 +521,8 @@ div > ul figure {
 
   transition: stroke-dashoffset 0.4s ease-out, opacity 0.1s ease-out;
 }
+
 #footer-area {
+  left: -10%;
   bottom: -10%;
 }

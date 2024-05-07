@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/************* 서브 하단 배너 *************/
+#bt-banner-area {
+    position: relative;
+    margin-top: 22rem;
+    margin-bottom: -24rem;
+    left: 50%;
+    translate: -50%;
+  }
+  
+  .sub-ban-wrap {
+    margin-bottom: 16%;
+    left: -10%;
+    /* top: 0%; */
+    position: relative;
+    height: 50rem;
+    overflow: hidden;
+    border-radius: 4rem;
+  }
+  
+  
+  .sub-ban-wrap .desc-wrap {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    translate: 14% -50%;
+  }
+  
+  .sub-ban-wrap .sub-ban-img {
+    overflow: hidden;
+    height: 50rem;
+  }
+  
+  /* 기본셋팅 */
+  .sub-ban-wrap .sub-ban-box {
+    position: relative;
+    top: 0;
+    /* translate: 0 -50%; */
+  }
+  
+  .sub-ban-wrap .sub-ban-img img {
+    aspect-ratio: 1500 / 643;
+  }

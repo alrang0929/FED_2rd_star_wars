@@ -156,5 +156,10 @@ const posData = [
         text:"At Mount Tantiss on Wayland, Hemlock promotes Emerie Karr to lead scientist of Project Necromancer. Granted access to &quot;the vault,&quot; she is introduced to the program's specimens children of the Force taken from their families.",
     },
 ];
+
+const subBanData = {
+
+}
+
 /* 내보내기 */
-export { epData, snsData,posData };
+export { epData, snsData,posData,subBanData};

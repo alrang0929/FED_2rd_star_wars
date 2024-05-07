@@ -19,7 +19,7 @@ listMap.snsItems();
 listMap.posItems();
 // listMap.subbanItems();
 
-//하단배너
+///////////서브하단배너////////////////////
 (() => {
   //슬라이더 박스
   const slider = mFn.qs(".sub-ban-wrap");
