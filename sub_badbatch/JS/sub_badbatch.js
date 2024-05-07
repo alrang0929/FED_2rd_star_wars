@@ -76,7 +76,7 @@ function posOnFn() {
     //포스터 레이어 생성
     let posCode = `
                 <div class="pos-data-imgbox">
-                <img src="./sub_badbatch_img/poster_${posdata[idx].idx}.jpg" alt="${posdata[idx].title}" />
+                <img src="./images/sub_badbatch_img/poster_${posdata[idx].idx}.jpg" alt="${posdata[idx].title}" />
               </div>
               <div class="pos-data-text">
                 <div class="bullet"></div>
@@ -87,7 +87,7 @@ function posOnFn() {
                 <!-- 이동링크 (관련 에피 페이지) -->
                 <button class="btn-link">
                 <a href="https://www.disneyplus.com/ko-kr/brand/star-wars?cid=DTCI-Synergy-StarWars-Site-Acquisition-Library-US-StarWars-NA-EN-NavPipe-StarWars_NavPipe_StarWarsStreamingAnytimeonDisneyPlus_Evergreen-NA">
-                  <img src="./sub_badbatch_img/icon_link.png" alt="링크 아이콘">
+                  <img src="./images/sub_badbatch_img/icon_link.png" alt="링크 아이콘">
                   <span class="link-txt">more view</span>
                   <!-- svg 부모박스 -->
                   <div class="svg-arrow">

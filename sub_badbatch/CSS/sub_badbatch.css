@@ -117,7 +117,7 @@ body {
   /* padding-bottom: 15rem; */
   backdrop-filter: blur(70px);
   background-image: linear-gradient(to top, #000000, #00000000, #00000000),
-    url(../sub_badbatch_img/poster_1.jpg);
+    url(../images/sub_badbatch_img/poster_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -228,7 +228,7 @@ body {
       #00000000,
       #00000000
     ),
-    url(../sub_badbatch_img/sub_postitle.jpg);
+    url(../images/sub_badbatch_img/sub_postitle.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% 90%;
