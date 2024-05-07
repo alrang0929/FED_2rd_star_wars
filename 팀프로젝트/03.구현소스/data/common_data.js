@@ -20,7 +20,7 @@ const searchBox = ['Search','Login'];
 
 const navMenu = [
     { menu:'bad batch', link: "#" },
-    { menu:'the-mandalorian', link: "#" },
+    { menu:'the-mandalorian', link: "sub_themandalorian.html" },
     { menu:'Ahsoka', link: "#" },
   ];
 
