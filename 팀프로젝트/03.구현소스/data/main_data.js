@@ -160,19 +160,19 @@ const visualData = [
     title: 'The Bad Batch',
     series: 'Star Wars series',
     desc: 'The Bad Batch follows the elite clones as they navigate a changing galaxy after the Clone War. Each member possesses a unique skill, making them an exceptional and formidable crew.',
-    href: '###'
+    href: 'sub_badbatch.html'
   },
   {
     title: 'The Mandalorian',
     series: 'Star Wars series',
     desc: 'After the fall of the Empire, a lone Mandalorian makes his way through the lawless galaxy with his foundling, Grogu.',
-    href: '###'
+    href: 'sub_themandalorian.html'
   },
   {
     title: 'Ahsoka',
     series: 'Star Wars series',
     desc: 'Set after the fall of the Empire, "Ahsoka" follows the former Jedi knight Ahsoka Tano as she investigates an emerging threat to a vulnerable galaxy.',
-    href: '###'
+    href: 'sub_ahsoka.html'
   }
 ];
 /* **************************************** */
@@ -244,7 +244,7 @@ const visualData = [
          <p>${v.series}</p>
          <p class="desc">${v.desc}
          </p>
-         <a class="btn" href="###">MORE VIEW</a></span
+         <a class="btn" href="${v.href}">MORE VIEW</a></span
        >
      </div>`).join('')}
     </div>
