@@ -515,6 +515,10 @@ button {
   right: 1vw;
 }
 
+.gallery-img-txt p{
+  z-index: 9999;
+}
+
 .gallery-img-txt p:nth-child(1) {
   position: absolute;
   left: 2%;
