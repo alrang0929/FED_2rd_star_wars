@@ -18,8 +18,12 @@ body {
 
 /************* 상단배너 설정 *************/
 
+#top-area {
+  margin-top: -1%;
+}
+
 .top-banner {
-  padding-top: 6%;
+  padding-top: 18%;
 }
 .top-banner img {
   width: 35%;
@@ -111,6 +115,7 @@ body {
   width: 40%;
 }
 #info-area {
+  padding-top: 13rem;
   overflow: hidden;
 
   /* height: 80vh; */
@@ -149,8 +154,9 @@ body {
 }
 
 .epSlide ul {
-  /* overflow: hidden; */
+  overflow: hidden;
   flex-wrap: wrap;
+  height: 75%;
 }
 .epSlide li {
   overflow: hidden;
@@ -163,6 +169,7 @@ body {
 
 #sns-area {
   position: relative;
+  background-color: #000;
 }
 .sns-slider-wrap {
   position: relative;
@@ -354,7 +361,10 @@ body {
 /*************  5. footer banner *************/
 #bt-banner-area {
   position: relative;
-  margin-bottom: 40rem;
+  margin-top: 22rem;
+  margin-bottom: -24rem;
+  left: 50%;
+  translate: -50%;
 }
 
 .sub-ban-wrap {
@@ -491,4 +501,7 @@ div > ul figure {
   stroke-dasharray: calc(50% * 3);
 
   transition: stroke-dashoffset 0.4s ease-out, opacity 0.1s ease-out;
+}
+#footer-area {
+  bottom: -10%;
 }
