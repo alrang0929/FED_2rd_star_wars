@@ -412,6 +412,9 @@ button {
   aspect-ratio: 1248/702;
   border: none;
 }
+#gallery-area{
+  text-align: center;
+}
 .gallery-box {
   margin: 40px 15px;
   cursor: pointer;
