@@ -5,6 +5,7 @@
 @import url(./core.css);
 @import url(./grid_12_flex.css);
 @import url(./reset.css);
+@import url(./common.css);
 
 body {
   background: url(../images/sub_themandalorian_images/background-img.jpeg) repeat-y center;
