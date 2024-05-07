@@ -390,7 +390,7 @@ button {
   width: 100%;
   height: 100%;
   background-color: #111111f1;
-  z-index: 99;
+  z-index: 9999;
 }
 
 .video-cont-box.on .video-tab {
@@ -460,7 +460,7 @@ button {
   width: 100%;
   height: 100%;
   background-color: #111111f1;
-  z-index: 99;
+  z-index: 9999999;
 }
 
 .gallery-cont-box.on > .gallery-tab {
@@ -528,5 +528,4 @@ button {
   bottom: 3%;
   font-size: 1.5rem;
 }
-
 
