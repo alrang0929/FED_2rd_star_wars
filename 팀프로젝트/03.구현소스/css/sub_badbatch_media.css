@@ -120,7 +120,12 @@
     }
 
     /* 포스터 데이터 페이지 */
+    #pos-area .tit-box > h3 {
+        width: 60%;
+      }
+
     #pos-area .tit-wrap .tit-box {
+        left: 38%;
         width: 40%;
     }
 
