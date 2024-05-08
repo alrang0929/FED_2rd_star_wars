@@ -2,6 +2,7 @@
 
 /* 불러오기 영역 */
 @import url(./sub_badbatch_core.css);
+@import url(./core.css);
 @import url(./grid_12_flex.css);
 @import url(./reset.css);
 
@@ -387,13 +388,13 @@ body {
   position: relative;
   margin-top: 22rem;
   margin-bottom: -24rem;
-  left: 50%;
-  translate: -50%;
+  /* left: 50%; */
+  /* translate: -50%; */
 }
 
 .sub-ban-wrap {
   margin-bottom: 16%;
-  left: -10%;
+  left: -3.9%;
   /* top: 0%; */
   position: relative;
   height: 50rem;

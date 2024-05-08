@@ -630,3 +630,10 @@ nav ul.fx-box ,#footer-area .fx-box {
 /********* 최대사이즈 500px 이하 끝 *********/
 
 
+.inbox{
+  /* 최대가로크기 */
+  max-width: 100vw;
+  padding: 0 20px;
+  /* 블록박스 중앙정렬 -> 마.영.오! */
+  margin: 0 auto;    
+}
