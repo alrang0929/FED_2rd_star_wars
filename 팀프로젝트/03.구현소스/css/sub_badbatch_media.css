@@ -278,6 +278,10 @@
         margin: 2rem 0;
     }
 
+    .top-banner {
+        padding-top: 24%;
+      }
+
     /* 상단 배너영역 */
     .top-banner img {
         width: 58%;
@@ -285,6 +289,20 @@
     .top-banner .top-banner .desc {
         width: 60%;
     }
+
+    .btn-box button {
+        padding: 2.4rem;
+        width: 430px;
+        margin: 1rem auto;
+    }
+    .btn-box.fx-box {
+        flex-direction: column;
+    }
+
+/* 인트로 */
+    #info-area .btn-link {
+        margin-left: -18%;
+           }
 
     .slider-wrap ul {
         gap: 0 auto;
@@ -311,6 +329,11 @@
     #pos-area .slider-wrap {
         grid-template-columns: repeat(2, 1fr);
       }
+}
+@media screen and (max-width: 670px) {
+    .snsSlide li {
+        width: calc(100% / 2.3);
+    }
 }
 @media screen and (max-width: 526px) {
     #bt-banner-area video {
