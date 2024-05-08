@@ -34,7 +34,7 @@ html {
 /*************  박스 공통 설정 *************/
 /* 섹션 상단 여백 */
 .section-top{
-    padding-top: 15rem;
+    padding-top: 5rem;
 }
 
 img{

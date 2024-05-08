@@ -391,13 +391,16 @@ body {
 /************* 서브 하단 배너 *************/
 #bt-banner-area {
   position: relative;
-  margin-top: 22rem;
-  margin-bottom: -24rem;
+  /* margin-top: 4rem; */
+  margin-top: 0rem;
+  /* margin-bottom: -24rem; */
   /* left: 50%; */
   /* translate: -50%; */
+  margin-bottom: 7%;
 }
 
 .sub-ban-wrap {
+  width: 82%;
   translate: -50%;
   left: 50%;
   /* margin: 0 auto; */
@@ -539,6 +542,6 @@ div > ul figure {
 }
 
 #footer-area {
-  left: -10%;
+  /* left: -10%; */
   bottom: -10%;
 }
