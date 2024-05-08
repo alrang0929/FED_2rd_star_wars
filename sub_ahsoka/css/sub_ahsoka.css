@@ -92,7 +92,7 @@ body {
   padding-bottom: 15rem;
   margin-bottom: 15rem;
   backdrop-filter: blur(70px);
-  background: url(../images/poster1.jpeg) center/cover no-repeat;
+  background: url(../images/ahsoka/poster1.jpeg) center/cover no-repeat;
 }
 .bulr-box {
   position: absolute;
@@ -167,7 +167,7 @@ body {
   left: 45%;
   width: 5rem;
   height: 5rem;
-  background: url(../images/icon/icon-play.png) no-repeat center/cover;
+  background: url(../images/ahsoka/icon/icon-play.png) no-repeat center/cover;
   z-index: 1;
 }
 
@@ -196,27 +196,38 @@ body {
 .cbox h3 {
   font-size: 1.8rem;
 }
-.character-page{
-  position: relative;
-  background-color: #00000076;
-  padding: 20rem;
-  margin: 0 auto;
-  z-index: 1;
+#character-page{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000d2;
+  z-index: 999;
 }
-.character-page .img-box{
-  width: 50rem;
+#character-page .cont-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+}
+#character-page .img-box{
+  width: 50vw;
   margin-right: 10rem;
 }
-.character-page .img-box img{
+#character-page .img-box img{
   width: 100%;
   height: auto;
 }
-.character-page .close-btn{
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  top: 0;
-  left: 100%;
+/* 닫기 버튼 */
+.close-btn{
+  width: 3rem;
+  height: 3rem;
+  background: url(../images/ahsoka/icon/icon_close.svg) no-repeat center/cover;
+  cursor: pointer;
 }
 
 /*********************** 에피소드 가이드 영역 ***********************/
