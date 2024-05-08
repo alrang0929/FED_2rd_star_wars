@@ -545,3 +545,12 @@ button {
 .sub-ban-wrap {
   left: 0;
 }
+
+.sub-ban-wrap .sub-ban-box {
+  position: relative;
+  top: -100%;
+  /* translate: 0 -50%; */
+}
+#bt-banner-area{
+  max-width: 1600px;
+}

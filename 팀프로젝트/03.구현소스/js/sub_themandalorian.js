@@ -426,6 +426,8 @@ function galleryGoSlide() {
         e.preventDefault();
         inner.style.top = -100 * idx + "%";
         inner.style.transition = ".4s";
+        /* let link = "sub_badbatch.html";
+        location.href = link; */
       };
     }); //forEach////////////////////////
   })(); ////////하단배너 클릭 이벤트
