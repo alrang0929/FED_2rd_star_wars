@@ -1,5 +1,9 @@
 // 스타워즈 서브페이지 : Ahsoka 메인 JS - main.js
 
+/* 상하단 공통 JS 불러오기 */
+import comFn from "./common.js";
+comFn();
+
 // 나의 함수
 import mFn from "./my_function.js";
 
