@@ -6,22 +6,21 @@
     }
 
     /* 인포 */
+    #info-area .cont-box.fx-box{
+        margin: 0 auto;
+        flex-wrap: nowrap;
+    }
     #info-area .desc {
         width: 80%;
     }
     #info-area .btn-link {
-        margin-left: -43rem;
+        margin-left: -42rem;
     }
 
     /* 에피 */
     #episode-area {
         width: 90%;
 
-    /* 포스터 */
-    pos-area .slider-wrap {
-        translate: -9%;
-      }
-    }
     }
 @media screen and (max-width: 1200px) {
     /* 레이아웃구성 */

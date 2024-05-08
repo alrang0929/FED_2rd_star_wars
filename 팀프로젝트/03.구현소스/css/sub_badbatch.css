@@ -21,6 +21,7 @@ body {
 /************* 상단배너 설정 *************/
 
 #top-area {
+  margin: 0 auto;
   margin-top: -0.1%;
 }
 
@@ -92,6 +93,9 @@ body {
 }
 
 /*************  1. info area *************/
+#info-area .cont-box.fx-box {
+  margin: 0 auto;
+}
 
 #info-area .btn-link {
   text-align-last: left;
@@ -168,8 +172,8 @@ body {
   /* overflow: hidden; */
   flex-wrap: wrap;
   /* height: 75%; */
-  translate: -45%;
-  left: 50%;
+  /* translate: -45%; */
+  /* left: 50%; */
 }
 
 .epSlide li {
@@ -182,6 +186,7 @@ body {
 /*************  3. sns area *************/
 
 #sns-area {
+  margin: 0 auto;
   position: relative;
   background-color: #000;
 }
@@ -221,6 +226,9 @@ body {
 
 /*************  4. pos area *************/
 
+#pos-area{
+  margin: 0 auto;
+}
 #pos-area .tit-box > h3 {
   text-align: center;
   font-size: 5rem;
@@ -237,8 +245,8 @@ body {
 #pos-area .tit-wrap {
   position: relative;
   /* left: 50%; */
-  translate: -20%;
-  width: 110vw;
+  /* translate: -20%; */
+  /* width: 110vw; */
   height: 60vh;
   background-image: linear-gradient(to top, #000000, #00000000),
      linear-gradient(
@@ -256,15 +264,15 @@ body {
  }
  
 #pos-area .slider-wrap {
-  margin-top: 2rem;
-}
+  /* margin-top: 2rem; */
+  margin: 2rem auto;
 
-#pos-area .slider-wrap {
-  translate: -21%;
-  margin-top: 10rem;
+  /* translate: -21%; */
+  /* margin-top: 10rem; */
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
+
 
 #pos-area .slider-wrap li {
   border: 0px dashed #85e2ff;

@@ -218,13 +218,22 @@
   }
 }
 
-@media screen and (max-width: 945px) {
-    .pos-data-text .close-btn {
-        translate: -4.9% -20%;
-      }
-      .pos-data-text .btn-link {
-        margin-left: -60%;
-      }
+@media screen and (max-width: 960px) {
+
+  .desc-box.col-6 {
+    margin-top: 6rem;
+    margin-top: 2rem;
+    margin-left: 0;
+}
+  #info-area .cont-box.fx-box {
+    justify-content: center;
+  }
+  .pos-data-text .close-btn {
+    translate: -4.9% -20%;
+  }
+  .pos-data-text .btn-link {
+    margin-left: -60%;
+  }
 }
 
 @media screen and (max-width: 930px) {

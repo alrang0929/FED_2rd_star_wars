@@ -205,17 +205,17 @@ body {
   font-size: 5rem;
 }
 #pos-area .tit-wrap .tit-box {
-  position: relative;
-  width: 30%;
-  top: 50%;
+  /* position: relative; */
+  /* width: 30%; */
+  /* top: 50%; */
   left: 50%;
-  translate: -50% -50%;
+  /* translate: -50% -50%; */
 }
 
 #pos-area .tit-wrap {
   position: relative;
-  left: 50%;
-  translate: -50%;
+  /* left: 50%; */
+  /* translate: -50%; */
   width: 100vw;
   height: 60vh;
 
