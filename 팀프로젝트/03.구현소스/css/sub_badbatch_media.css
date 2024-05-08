@@ -22,6 +22,14 @@
         width: 90%;
 
     }
+@media screen and (max-width: 1540px) {
+    #bt-banner-area .sub-ban-wrap {
+        width: 97%;
+      }
+    #bt-banner-area video {
+        translate: -11%;
+    }
+}
 @media screen and (max-width: 1200px) {
     /* 레이아웃구성 */
     .col-2nd-1 {
@@ -252,6 +260,13 @@
     }
     .pos-data-text .btn-link {
         margin-left: -60%;
+    }
+
+    #bt-banner-area .fx-box {
+        flex-direction: column;
+    }
+    #bt-banner-area video {
+        translate: -30%;
     }
 }
 
