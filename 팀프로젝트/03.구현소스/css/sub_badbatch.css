@@ -432,8 +432,8 @@ body {
   /* translate: 0 -50%; */
 }
 
-.sub-ban-wrap .sub-ban-img img {
-  aspect-ratio: 1500 / 643;
+.sub-ban-box li video {
+  width: 100%;
 }
 
 /*********** abtn svg 공통설정 ***********/
