@@ -6,7 +6,7 @@
     }
 
     /* 인포 */
-    #info-area .cont-box.fx-box{
+    #info-area .cont-box.fx-box {
         margin: 0 auto;
         flex-wrap: nowrap;
     }
@@ -20,16 +20,18 @@
     /* 에피 */
     #episode-area {
         width: 90%;
-
     }
+}
+
 @media screen and (max-width: 1540px) {
     #bt-banner-area .sub-ban-wrap {
         width: 97%;
-      }
+    }
     #bt-banner-area video {
         translate: -11%;
     }
 }
+
 @media screen and (max-width: 1200px) {
     /* 레이아웃구성 */
     .col-2nd-1 {
@@ -130,10 +132,10 @@
     /* 포스터 데이터 페이지 */
     #pos-area .tit-box > h3 {
         width: 60%;
-      }
+    }
 
     #pos-area .tit-wrap .tit-box {
-        left: 38%;
+        /* left: 38%; */
         width: 40%;
     }
 
@@ -272,57 +274,6 @@
 
 @media screen and (max-width: 930px) {
     /* 레이아웃구성 */
-    .col-4nd-1 {
-        flex-basis: 8.33%;
-    }
-    .col-4nd-2 {
-        flex-basis: 16.66%;
-    }
-    .col-4nd-3 {
-        flex-basis: 25%;
-    }
-    .col-4nd-4 {
-        flex-basis: 33.33%;
-    }
-    .col-4nd-5 {
-        flex-basis: 41.66%;
-    }
-    .col-4nd-6 {
-        flex-basis: 50%;
-    }
-    .col-4nd-7 {
-        flex-basis: 58.33%;
-    }
-    .col-4nd-8 {
-        flex-basis: 66.66%;
-    }
-    .col-4nd-9 {
-        flex-basis: 75%;
-    }
-    .col-4nd-10 {
-        flex-basis: 83.33%;
-    }
-    .col-4nd-11 {
-        flex-basis: 91.66%;
-    }
-    .col-4nd-12 {
-        flex-basis: 100%;
-    }
-
-    /* 숨길 박스 */
-    .col-4nd-none {
-        display: none;
-    }
-
-    /* 보일 박스 */
-    .col-4nd-block {
-        display: block;
-    }
-
-    .cont-box {
-        max-width: 800px;
-    }
-
     .under-line {
         margin: 2rem 0;
     }
@@ -350,5 +301,22 @@
     /* sns 영역 */
     .snsSlide li {
         width: calc(100% / 2.2);
+    }
+    #bt-banner-area video {
+        translate: -39%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #pos-area .slider-wrap {
+        grid-template-columns: repeat(2, 1fr);
+      }
+}
+@media screen and (max-width: 526px) {
+    #bt-banner-area video {
+        translate: -49%;
+    }
+    .snsSlide li {
+        width: calc(100% / 2.3);
     }
 }

@@ -45,7 +45,7 @@ img{
 
   .slider-wrap figcaption{
     text-align: justify;
-    margin-top: 4rem;
+    margin-top: -1rem;
     line-height: 2;
   }
   .slider-wrap ul{
@@ -88,11 +88,11 @@ img{
   }
 
   figcaption>.title-topic{
-    margin-top: 2rem;
+    margin-top: 20px;
   }
   
   figcaption>h4{
-    margin-top: 2rem;
+    /* margin-top: 20px; */
   }
   /* 링크설정 */
   .main-area > button a{
