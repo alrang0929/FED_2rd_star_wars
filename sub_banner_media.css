@@ -21,4 +21,14 @@
   #bt-banner-area .Kategorie{
     line-height: 2.5;
   }
+
+  /* 추가 */
+  #bt-banner-area .title{
+    font-size: 3rem;
+  }
+
+  #bt-banner-area .title-sub {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
 }
