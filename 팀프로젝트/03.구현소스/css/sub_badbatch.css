@@ -20,6 +20,9 @@ body {
 }
 
 /************* 상단배너 설정 *************/
+.tac{
+  text-align: center;
+}
 
 #top-area {
   margin: 0 auto;
@@ -482,7 +485,7 @@ ul li figcaption {
   translate: -50% -50%;
 }
 div > ul li {
-  line-height: 0;
+  /* line-height: 0; */
   cursor: pointer;
 }
 
@@ -506,6 +509,52 @@ div > ul figure {
   width: 100%;
   height: 100%;
   color: #fff;
+}
+
+
+
+
+/*버튼설정*/
+/*************  텍스트 공통 설정 *************/
+
+/* 텍스트 설정 */
+
+.title-sub {
+  text-align: justify;
+  font-weight: 700;  
+  font-size: 3.5rem; 
+   line-height: 1.3;
+}
+
+.title-sub2 {
+  /* text-transform: none; */
+  text-align: justify;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+.btn-main:hover {
+  background-color: #fff075;
+}
+
+
+.btn-sub a{
+  color: #ffe400;
+}
+.btn-sub {
+  height: 7vh;
+  border: 1px solid #ffe400;
+  border-radius: 4.5vw;
+  box-sizing: border-box;
+  /* color: #FFE400; */
+  background-color: transparent;
+  padding: 1vw;
+  transition: 0.4s;
+}
+.btn-sub:hover {
+  color: #000;
+  background-color: #ffe40020;
 }
 
 /* 링크버튼 애니 */
