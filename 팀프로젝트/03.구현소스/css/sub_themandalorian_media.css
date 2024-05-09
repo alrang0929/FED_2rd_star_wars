@@ -81,6 +81,10 @@
 
 /* 650px */
 @media screen and (max-width: 650px) {
+  .sub-img-box > div > img {
+    
+    border-radius: 0;
+}
   .gallery-tab .imagea {
     height: auto;
     width: 90vw;
