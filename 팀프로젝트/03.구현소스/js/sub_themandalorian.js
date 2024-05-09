@@ -368,7 +368,7 @@ function galleryGoSlide() {
 
   if (isgalleryRbtn) {
     galSlide.style.left = "-100%";
-    galSlide.style.transition = ".6s ease-in-out";
+    galSlide.style.transition = ".4s ease-in-out";
     galSlide.style.opacity = "1";
 
     galPgNum == galPgTotal ? (galPgNum = 1) : galPgNum++;
@@ -397,7 +397,7 @@ function galleryGoSlide() {
 
     setTimeout(() => {
       galSlide.style.left = "0%";
-      galSlide.style.transition = ".6s ease-in-out";
+      galSlide.style.transition = ".4s ease-in-out";
     }, 0);
 
     galTxtcode = `
