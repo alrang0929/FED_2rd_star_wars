@@ -22,29 +22,17 @@ body {
 
 /********************************  */
 
-.info-area{
+/* .info-area{
   padding-top: 125px;
-}
+} */
 
 .main-img-box {
   position: relative;
 }
 .main-img-box > img {
   width: 100%;
-  /* overflow: hidden; */
-  background: linear-gradient(
-    180deg,
-    #00000000 0%,
-    #0000000a 16%,
-    #00000021 29%,
-    #00000042 41%,
-    #0000006b 51%,
-    #00000094 61%,
-    #000000bd 70%,
-    #000000de 79%,
-    #000000f5 89%,
-    #000000ff 100%
-  );
+  height: 100vh;
+
 }
 
 .main-img-title {
@@ -543,15 +531,12 @@ button {
   margin: 0 auto;
 }
 
-.sub-ban-wrap {
-  left: 0;
-}
 
 .sub-ban-wrap .sub-ban-box {
   position: relative;
   top: -100%;
-  /* translate: 0 -50%; */
 }
 #bt-banner-area{
-  max-width: 1600px;
+  padding: 0 55px;
+  margin: 0 auto;
 }

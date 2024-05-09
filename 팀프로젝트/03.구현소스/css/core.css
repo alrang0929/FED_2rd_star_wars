@@ -273,5 +273,5 @@ img{
 .scbar::-webkit-scrollbar-track{
   /* 스크롤바 트랙 */
   background: linear-gradient( to bottom, black , rgb(16, 15, 72)50% );
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
