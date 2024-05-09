@@ -341,7 +341,10 @@
 
 @media screen and (max-width: 670px) {
   /* 상단 타이틀 */
-  
+  .top-banner{
+    overflow-x: hidden;
+  }
+
   #ifr {
     width: 470%;
     left: -60%;
