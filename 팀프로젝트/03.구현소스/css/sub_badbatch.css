@@ -25,6 +25,7 @@ body {
 
 .desc{
   font-size: 1.6rem;
+  font-weight: 200;
 }
 /************* 상단배너 설정 *************/
 
@@ -543,6 +544,11 @@ div > ul figure {
   font-weight: 500;
   font-size: 2.5rem;
   line-height: 1.3;
+}
+
+.title-topic{
+  color: #CBCBCB;
+  font-size: 1.5rem;
 }
 
 .btn-main:hover {
