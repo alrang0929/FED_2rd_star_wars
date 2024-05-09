@@ -4,9 +4,6 @@
 
 /********* 최대사이즈 1204px 이하 시작 *********/
 @media screen and (max-width: 1204px) {
-  body > * {
-    overflow-x: hidden;
-  }
   .top-banner .btn-box {
     margin-top: 2rem;
   }
