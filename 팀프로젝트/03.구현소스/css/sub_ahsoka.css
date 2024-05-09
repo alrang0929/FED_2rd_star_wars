@@ -6,7 +6,6 @@
 @import url(./reset.css);
 @import url(./sub_ahsoka_core.css);
 @import url(./common.css);
-/* @import url(./main_core.css); */
 @import url(./sub_banner.css);
 @import url(./sub_ahsoka_media.css);
 
@@ -15,6 +14,8 @@
 
 body {
   background-color: #000;
+  background: url(../images/sub_ahsoka_images/background.jpg)
+  no-repeat fixed left / cover;
 }
 
 /* 타이틀, 설명글 공통 */
@@ -110,13 +111,19 @@ body {
   height: 50vh;
   background-image: linear-gradient(0deg, #000000, #00000000);
 }
+#info-area .img-box{
+  max-width: 600px;
+  margin-right: 3rem;
+}
 #info-area .img-box img {
-  width: 60rem;
+  width: 100%;
+}
+#info-area .desc-box{
+  padding: 3rem;
 }
 #info-area .desc-box > div {
   margin-top: 4rem;
 }
-
 .btn-link {
   margin-left: -1rem;
   margin-top: 2rem;
