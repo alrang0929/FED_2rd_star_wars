@@ -22,9 +22,9 @@ body {
 
 /********************************  */
 
-/* .main-area > div + div {
-  padding-top: 60px;
-} */
+.info-area{
+  padding-top: 125px;
+}
 
 .main-img-box {
   position: relative;
