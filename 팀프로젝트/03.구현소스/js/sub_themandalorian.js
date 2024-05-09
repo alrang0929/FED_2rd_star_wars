@@ -368,14 +368,14 @@ function galleryGoSlide() {
 
   if (isgalleryRbtn) {
     galSlide.style.left = "-100%";
-    galSlide.style.transition = ".6s ease-in-out";
+    galSlide.style.transition = ".4s ease-in-out";
     galSlide.style.opacity = "1";
 
     galPgNum == galPgTotal ? (galPgNum = 1) : galPgNum++;
 
     setTimeout(() => {
       galSlide.appendChild(galSlide.querySelectorAll("li")[0]);
-      galSlide.style.left = "0";
+      galSlide.style.left = "0%";
       galSlide.style.transition = "none";
     }, 500);
 
@@ -396,8 +396,8 @@ function galleryGoSlide() {
     galPgNum == 1 ? (galPgNum = galPgTotal) : galPgNum--;
 
     setTimeout(() => {
-      galSlide.style.left = "0";
-      galSlide.style.transition = ".6s ease-in-out";
+      galSlide.style.left = "0%";
+      galSlide.style.transition = ".4s ease-in-out";
     }, 0);
 
     galTxtcode = `
@@ -421,7 +421,7 @@ function galleryGoSlide() {
     //btn에 ele, idx 요소를 가지고 forEach 돈다. idx < 버튼 순서 때문
     btn.forEach((ele, idx) => {
       //ele에 클릭 이벤트가 발생하면 이벤트 할당
-      ele.onclick = (e) => {
+      ele.onmouseenter = (e) => {
         //preventDefault: 윈도우 기본값 설정 끔, 기본값 변경해야할 경우 사용
         e.preventDefault();
         inner.style.top = -100 * idx + "%";
