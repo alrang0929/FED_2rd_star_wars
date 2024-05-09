@@ -213,8 +213,8 @@ const visualData = [
       </div>
         `).join('')}
         <div class="btnbox">
-          <a class="btn" href="###">VIEW ALL</a>
-          <a class="btn yellow" href="###">MORE INFO</a>
+          <a class="btn" href="https://www.starwars.com/news" target="_blank">VIEW ALL</a>
+          <a class="btn yellow" href="https://www.starwars.com/news/star-wars-japanese-posters" target="_blank">MORE INFO</a>
         </div>
       </div>
     </div>
@@ -229,8 +229,8 @@ const visualData = [
           >${v.info}</span></div>
       `).join('')}
       <div class="btnbox">
-        <a class="btn" href="###">VIEW ALL</a>
-        <a class="btn yellow" href="###">WATCH TRAILER▶</a>
+        <a class="btn" href="https://www.starwars.com/series" target="_blank">VIEW ALL</a>
+        <a class="btn yellow" href="https://www.starwars.com/search?q=TRAILER" target="_blank">WATCH TRAILER▶</a>
       </div>
     </div>
       `,

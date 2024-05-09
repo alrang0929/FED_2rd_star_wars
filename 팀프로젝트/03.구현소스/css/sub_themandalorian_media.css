@@ -31,7 +31,7 @@
 @media screen and (max-width: 930px) {
   #bt-banner-area ul.fx-box {
     flex-direction: column;
-}
+  }
 }
 
 /* 860px */
@@ -74,17 +74,24 @@
   #bt-banner-area ul.fx-box {
     flex-direction: column;
   }
-  #bt-banner-area .Kategorie{
+  #bt-banner-area .Kategorie {
     line-height: 2.5;
+  }
+  #bt-banner-area .title {
+    font-size: 3rem;
+  }
+
+  #bt-banner-area .title-sub {
+    font-size: 2.5rem;
+    line-height: 1.6;
   }
 }
 
 /* 650px */
 @media screen and (max-width: 650px) {
   .sub-img-box > div > img {
-    
     border-radius: 0;
-}
+  }
   .gallery-tab .imagea {
     height: auto;
     width: 90vw;
@@ -119,7 +126,7 @@
     font-size: 1.4rem;
     white-space: nowrap;
   }
-  .section-top{
+  .section-top {
     padding-top: 10rem;
   }
 } /* 650px */
