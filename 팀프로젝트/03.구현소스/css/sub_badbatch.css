@@ -15,12 +15,14 @@ body {
   /* 공사중 */
   /* border: 2px dotted red; */
   /* 베이스 폰트 */
-  /* font-size: 1.6rem; */
+  font-size: 1.6rem;
   font-weight: 200;
 }
 
 /************* 상단배너 설정 *************/
-.tac{
+.center-obj{
+  
+  /* font-size: 1.6rem; */
   text-align: center;
 }
 
@@ -30,12 +32,12 @@ body {
 }
 
 .top-banner {
-  padding-top: 8%;
-  height: 80vh;
+  padding-top: 10%;
+  height: 100vh;
 }
 
 .top-banner img {
-  width: 47%;
+  width: 31%;
 }
 
 .top-banner .desc {
