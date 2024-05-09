@@ -109,14 +109,6 @@ function subbanItems(){
 
 
 
-
-
-
-
-
-
-
-
 ///////내보내기 영역//////////////////////
 export {epItems,snsItems,posItems,subbanItems,layerSet, }
 

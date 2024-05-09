@@ -157,9 +157,5 @@ const posData = [
     },
 ];
 
-const subBanData = {
-
-}
-
 /* 내보내기 */
-export { epData, snsData,posData,subBanData};
+export { epData, snsData,posData};
