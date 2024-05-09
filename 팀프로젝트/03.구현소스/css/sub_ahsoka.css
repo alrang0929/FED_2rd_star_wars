@@ -6,7 +6,6 @@
 @import url(./reset.css);
 @import url(./common.css);
 @import url(./core.css);
-@import url(./sub_ahsoka_core.css);
 @import url(./sub_banner.css);
 @import url(./sub_ahsoka_media.css);
 
@@ -32,6 +31,22 @@ body {
   text-align: justify;
   font-size: 1.8rem;
   line-height: 1.5;
+}
+
+/*************  박스 공통 설정 *************/
+/* 섹션 상단 여백 */
+.section-top {
+  padding-top: 15rem;
+}
+
+/* 슬라이드 내 박스 설정 */
+.slider-wrap figcaption {
+  margin-top: 4rem;
+
+}
+
+figcaption > h4 {
+  margin-top: 2rem;
 }
 
 /*********************** 탑배너 영역 ***********************/
