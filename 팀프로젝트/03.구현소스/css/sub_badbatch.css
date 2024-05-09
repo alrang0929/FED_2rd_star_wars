@@ -387,12 +387,12 @@ body {
 .pos-data-text .btn-link {
   height: 4rem;
   margin-top: 4rem;
-  margin-left: -31%;
+  margin-left: -25%;
 }
 
 .pos-data-text {
   margin-top: 27%;
-  margin-left: -26%;
+  margin-left: 4rem;
   width: 40%;
 }
 
