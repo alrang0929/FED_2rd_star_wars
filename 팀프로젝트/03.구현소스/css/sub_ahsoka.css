@@ -37,13 +37,10 @@ body {
 .section-top {
   padding-top: 15rem;
 }
-
 /* 슬라이드 내 박스 설정 */
 .slider-wrap figcaption {
   margin-top: 4rem;
-
 }
-
 figcaption > h4 {
   margin-top: 2rem;
 }
@@ -53,7 +50,6 @@ figcaption > h4 {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  height: 100vh;
 }
 .top-banner img {
   width: 100%;
@@ -113,7 +109,11 @@ figcaption > h4 {
   padding-bottom: 15rem;
   margin-bottom: 15rem;
   backdrop-filter: blur(70px);
-  background: url(../images/sub_ahsoka_images/poster1.jpeg) center/cover no-repeat;
+  background-image: linear-gradient(to top, #000000, #00000000),
+  url(../images/sub_ahsoka_images/poster1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .bulr-box {
   position: absolute;
