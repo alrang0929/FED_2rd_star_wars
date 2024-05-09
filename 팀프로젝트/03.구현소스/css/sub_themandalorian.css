@@ -537,6 +537,11 @@ button {
   top: -100%;
 }
 #bt-banner-area{
+  max-width: 1600px;
   padding: 0 55px;
   margin: 0 auto;
+}
+
+.sub-ban-wrap {
+  width: 100%;
 }
