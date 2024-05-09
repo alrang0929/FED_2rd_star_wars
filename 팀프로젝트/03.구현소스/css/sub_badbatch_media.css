@@ -120,13 +120,7 @@
     width: calc(100% / 3.3);
   }
 
-  /* 포스터 데이터 페이지 */
-  #pos-area .tit-box > h3 {
-    /* width: 60%; */
-  }
-
   #pos-area .tit-wrap .tit-box {
-    /* left: 38%; */
     width: 40%;
   }
 
@@ -262,7 +256,6 @@
 
 @media screen and (max-width: 930px) {
 
-
   .cont-box {
     max-width: 800px;
   }
@@ -325,20 +318,15 @@
     margin: 0 auto;
     width: 78%;
   }
+  #pos-area .slider-wrap {
+    grid-template-columns: repeat(2, 1fr);
+   }
 
   /* 하단 배너영역 */
   #bt-banner-area ul.fx-box {
     flex-direction: column;
   }
-
-  #pos-area .slider-wrap {
-    grid-template-columns: repeat(2, 1fr);
-   }
-
-   #pos-area .Kategorie{
+  #bt-banner-area .Kategorie{
     line-height: 2.5;
   }
-  #pos-area .tit-wrap .tit-box {
-    /* left: 10%; */
-   }
 }
