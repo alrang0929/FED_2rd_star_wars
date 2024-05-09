@@ -9,11 +9,11 @@
 ********************************/
 // 1-1. 소셜박스 데이터
 const socialLinks = [
-    { class: "fa-brands fa-instagram", text: "인스타그램" , href: "https://www.instagram.com"},
-    { class: "fa-brands fa-facebook", text: "페이스북" , href: "https://www.facebook.com"},
-    { class: "fa-brands fa-twitter", text: "트위터" , href: "https://www.twitter.com"},
-    { class: "fa-brands fa-youtube", text: "유튜브" , href: "https://www.youtube.com"},
-    { class: "fa-solid fa-play", text: "네이버 TV" , href: "test-sub.html"},
+    { class: "fa-brands fa-instagram", text: "인스타그램" , href: "https://www.instagram.com/starwarskorea/"},
+    { class: "fa-brands fa-facebook", text: "페이스북" , href: "https://www.facebook.com/StarWars/?locale=ko_KR"},
+    { class: "fa-brands fa-twitter", text: "트위터" , href: "https://twitter.com/starwars"},
+    { class: "fa-brands fa-youtube", text: "유튜브" , href: "https://www.youtube.com/@starwars"},
+    { class: "fa-solid fa-play", text: "네이버 TV" , href: "https://tv.naver.com/search?query=%EC%8A%A4%ED%83%80%EC%9B%8C%EC%A6%88"},
 ];
 // 1-2. 검색박스 데이터
 const searchBox = ['Search','Login'];
