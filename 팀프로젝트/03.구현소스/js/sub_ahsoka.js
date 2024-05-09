@@ -51,7 +51,7 @@ const movieId = {
   Trailer: "J_1EXWNETiI",
   "Masters and Apprentices": "UTqPkjk0GLU",
   Phenomenon: "dp-9AoWxchE",
-  "Sabine’s Loth-Cat": "uSqsyC780OY&t=2s",
+  cat: "Qc-CM89yemQ",
 };
 
 slidePeek.forEach((ele, idx) => {
@@ -107,7 +107,6 @@ const cPageImg = mFn.qs("#character-page img");
 console.log("캐릭터 페이지:", cPage);
 
 const showBox = mFn.qsa(".cbox li");
-console.log("왜 안나와", showBox);
 
 showBox.forEach((x) => {
   x.onclick = () => {
@@ -136,7 +135,7 @@ mFn.qs(".close-btn").onclick = () => {
   const epBox = mFn.qs(".episode-box");
   // console.log("에피소드 박스:", epBox);
 
-  let hcode = `<div class="slider-wrap col-8"><ul>`;
+  let hcode = `<div class="slider-wrap"><ul>`;
 
   ahsokaData.epiData.forEach((v) => {
     hcode += `

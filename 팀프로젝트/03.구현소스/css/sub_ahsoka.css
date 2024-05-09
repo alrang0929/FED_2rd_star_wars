@@ -7,7 +7,6 @@
 @import url(./common.css);
 @import url(./core.css);
 @import url(./sub_banner.css);
-@import url(./sub_ahsoka_media.css);
 
 /* 그리드 12  */
 @import url(./sub_ahsoka_grid_12_flex.css);
@@ -54,6 +53,7 @@ figcaption > h4 {
   position: relative;
   margin: 0 auto;
   padding: 0;
+  height: 100vh;
 }
 .top-banner img {
   width: 100%;
@@ -159,6 +159,16 @@ figcaption > h4 {
   padding: 0;
   overflow: hidden;
 }
+.video-box {
+  /* width: 125rem;
+  height: 73rem; */
+  aspect-ratio: 1250 / 703;
+}
+.video-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 .slide-peek-box {
   margin-top: 3rem;
 }
@@ -167,6 +177,7 @@ figcaption > h4 {
 }
 .slide-peek-box li {
   cursor: pointer;
+  flex: 1;
 }
 .slide-peek-box h3 {
   font-size: 1.8rem;
@@ -174,8 +185,7 @@ figcaption > h4 {
 }
 .slide-peek-box .img-box {
   position: relative;
-  width: 350px;
-  height: 200px;
+  aspect-ratio: 16/9;
 }
 .slide-peek-box .img-box img {
   width: 100%;
