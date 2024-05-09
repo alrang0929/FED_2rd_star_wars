@@ -342,6 +342,7 @@
 @media screen and (max-width: 670px) {
   /* 상단 타이틀 */
   .top-banner{
+    width: 100vw;
     overflow-x: hidden;
   }
 
