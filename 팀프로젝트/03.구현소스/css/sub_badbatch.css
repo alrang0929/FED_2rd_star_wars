@@ -108,7 +108,7 @@ body {
 
 #info-area .btn-link {
   text-align-last: left;
-  margin-left: -43rem;
+  margin-left: -1rem;
   margin-top: 2rem;
 }
 
@@ -195,6 +195,7 @@ body {
 /*************  3. sns area *************/
 
 #sns-area {
+  width: 70vw;
   margin: 0 auto;
   position: relative;
   background-color: #000;
