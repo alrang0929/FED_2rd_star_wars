@@ -55,6 +55,9 @@
   .tiktoc-box ul {
     grid-template-columns: repeat(3, 1fr);
   }
+  .btn-box {
+    display: none;
+  }
 }
 /********* 최대사이즈 923px 이하 끝 *********/
 
