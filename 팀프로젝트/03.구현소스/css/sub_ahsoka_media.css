@@ -109,3 +109,18 @@
   }
 }
 /********* 최대사이즈 700px 이하 끝 *********/
+
+/********* 최대사이즈 450px 이하 시작 *********/
+@media screen and (max-width: 450px) {
+  .ban-logo {
+    position: fixed;
+    left: 30%;
+    width: 60vw;
+  }
+  .ban-desc-box .desc {
+    margin-top: 10rem;
+    width: 100%;
+  }
+}
+
+/********* 최대사이즈 450px 이하 끝 *********/
