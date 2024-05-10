@@ -51,7 +51,7 @@ const movieId = {
   Trailer: "J_1EXWNETiI",
   "Masters and Apprentices": "UTqPkjk0GLU",
   Phenomenon: "dp-9AoWxchE",
-  cat: "Qc-CM89yemQ",
+  "cat": "uSqsyC780OY",
 };
 
 slidePeek.forEach((ele, idx) => {
