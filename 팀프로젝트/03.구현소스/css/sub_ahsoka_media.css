@@ -82,6 +82,9 @@
     width: 3rem;
     height: 3rem;
   }
+  .title-box h3 {
+    font-size: 1.5rem;
+  }
 }
 /********* 최대사이즈 780px 이하 끝 *********/
 
