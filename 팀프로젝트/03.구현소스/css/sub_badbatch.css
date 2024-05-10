@@ -18,6 +18,10 @@ body {
 
 }
 
+.cont-box{
+  max-width: 1500px;
+}
+
 .center-obj{
   /* font-size: 1.6rem; */
   text-align: center;

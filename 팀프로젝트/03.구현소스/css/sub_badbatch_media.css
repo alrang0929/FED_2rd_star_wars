@@ -342,12 +342,13 @@
 @media screen and (max-width: 670px) {
   /* 상단 타이틀 */
   .top-banner{
-    overflow-x: hidden;
+    /* width: 100vw; */
+    /* overflow-x: hidden; */
   }
 
   #ifr {
-    width: 470%;
-    left: -60%;
+    width: 100vw;
+    height: 140vh;
   }
 
   .top-banner img {
