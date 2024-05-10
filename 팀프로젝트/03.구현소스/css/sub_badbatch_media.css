@@ -343,12 +343,12 @@
   /* 상단 타이틀 */
   .top-banner{
     /* width: 100vw; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
   #ifr {
     width: 100vw;
-    left: -60%;
+    height: 140vh;
   }
 
   .top-banner img {
