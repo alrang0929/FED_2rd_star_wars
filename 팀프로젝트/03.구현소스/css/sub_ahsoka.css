@@ -139,8 +139,11 @@ figcaption > h4 {
 #info-area .img-box img {
   width: 100%;
 }
-#info-area .desc-box{
+#info-area .desc-box {
   padding: 3rem;
+}
+.ban-desc-box {
+  top: 20%;
 }
 #info-area .desc-box > div {
   margin-top: 4rem;
