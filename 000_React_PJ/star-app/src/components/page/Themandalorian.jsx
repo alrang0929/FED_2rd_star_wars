@@ -8,4 +8,4 @@ function Themandalorian(props) {
     );
 }
 
-export default Themandalorian;ddd
+export default Themandalorian;
