@@ -10,6 +10,6 @@ import "../../css/common/top_area.scss";
 export const TopArea = () => {
   //// 코드 리턴구역 //////////////
   return <header className="">
-    
+    <h2>top</h2>
   </header>;
 }; ///////////TopArea/////////////////////
