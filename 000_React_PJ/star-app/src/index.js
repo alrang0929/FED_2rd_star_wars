@@ -5,6 +5,7 @@ import Layout from "./components/layout/Layout";
 
 // 전체 공통 CSS 불러오기
 import "../src/css/index.scss";
+import Main from "./components/page/Main";
 
 export default function MainComponent() {
   return (

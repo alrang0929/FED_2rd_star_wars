@@ -10,6 +10,6 @@ import "../../css/common/footer_area.scss";
 export const FooterArea = () => {
   //// 코드 리턴구역 //////////////
   return <footer className="">
-
+    <h2>footer</h2>
   </footer>;
 }; /////////// FooterArea /////////////////////
