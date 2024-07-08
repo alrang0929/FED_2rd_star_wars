@@ -1,6 +1,15 @@
 // 스타워즈PJ 공통요소 데이터 객체 - common_data.js
 
 
+// import {
+//   faInstagram,
+//   faFacebook,
+//   faTwitter,
+//   faYoutube,
+// } from "@fortawesome/free-brands-svg-icons";
+// import {
+//   faPlay,
+// } from "@fortawesome/free-solid-svg-icons";
 
 // ***************  1 . 공통영역 데이타 구성 코드 ***************
 
@@ -9,19 +18,19 @@
 ********************************/
 // 1-1. 소셜박스 데이터
 const socialLinks = [
-    { class: "fa-brands fa-instagram", text: "인스타그램" , href: "https://www.instagram.com/starwarskorea/"},
-    { class: "fa-brands fa-facebook", text: "페이스북" , href: "https://www.facebook.com/StarWars/?locale=ko_KR"},
-    { class: "fa-brands fa-twitter", text: "트위터" , href: "https://twitter.com/starwars"},
-    { class: "fa-brands fa-youtube", text: "유튜브" , href: "https://www.youtube.com/@starwars"},
-    { class: "fa-solid fa-play", text: "네이버 TV" , href: "https://tv.naver.com/search?query=%EC%8A%A4%ED%83%80%EC%9B%8C%EC%A6%88"},
+    // {icon: faInstagram, text: "인스타그램" , href: "https://www.instagram.com/starwarskorea/"},
+    // { icon: faFacebook, text: "페이스북" , href: "https://www.facebook.com/StarWars/?locale=ko_KR"},
+    // {  icon: faTwitter, text: "트위터" , href: "https://twitter.com/starwars"},
+    // { icon: faYoutube, text: "유튜브" , href: "https://www.youtube.com/@starwars"},
+    // { icon: faPlay, text: "네이버 TV" , href: "https://tv.naver.com/search?query=%EC%8A%A4%ED%83%80%EC%9B%8C%EC%A6%88"},
 ];
 // 1-2. 검색박스 데이터
 const searchBox = ['Search','Login'];
 
 const navMenu = [
-    { menu:'bad batch', link: "sub_badbatch.html" },
-    { menu:'the-mandalorian', link: "sub_themandalorian.html" },
-    { menu:'Ahsoka', link: "sub_ahsoka.html" },
+    { menu:'bad batch', link: "/Badbatch" },
+    { menu:'the-mandalorian', link: "/Themandalorian" },
+    { menu:'Ahsoka', link: "/Ahsoka" },
   ];
 
 /********************************
@@ -122,4 +131,4 @@ const footerinfo = [
 
 // 데이터 공개하기 ///
 export { htmlData ,
-     socialLinks , searchBox , footerMenu};
+     socialLinks , searchBox , footerMenu , navMenu};
