@@ -1,15 +1,15 @@
 // 스타워즈PJ 공통요소 데이터 객체 - common_data.js
 
 
-// import {
-//   faInstagram,
-//   faFacebook,
-//   faTwitter,
-//   faYoutube,
-// } from "@fortawesome/free-brands-svg-icons";
-// import {
-//   faPlay,
-// } from "@fortawesome/free-solid-svg-icons";
+import {
+  faInstagram,
+  faFacebook,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faPlay,
+} from "@fortawesome/free-solid-svg-icons";
 
 // ***************  1 . 공통영역 데이타 구성 코드 ***************
 
@@ -18,11 +18,11 @@
 ********************************/
 // 1-1. 소셜박스 데이터
 const socialLinks = [
-    // {icon: faInstagram, text: "인스타그램" , href: "https://www.instagram.com/starwarskorea/"},
-    // { icon: faFacebook, text: "페이스북" , href: "https://www.facebook.com/StarWars/?locale=ko_KR"},
-    // {  icon: faTwitter, text: "트위터" , href: "https://twitter.com/starwars"},
-    // { icon: faYoutube, text: "유튜브" , href: "https://www.youtube.com/@starwars"},
-    // { icon: faPlay, text: "네이버 TV" , href: "https://tv.naver.com/search?query=%EC%8A%A4%ED%83%80%EC%9B%8C%EC%A6%88"},
+    {icon: faInstagram, text: "인스타그램" , href: "https://www.instagram.com/starwarskorea/"},
+    { icon: faFacebook, text: "페이스북" , href: "https://www.facebook.com/StarWars/?locale=ko_KR"},
+    {  icon: faTwitter, text: "트위터" , href: "https://twitter.com/starwars"},
+    { icon: faYoutube, text: "유튜브" , href: "https://www.youtube.com/@starwars"},
+    { icon: faPlay, text: "네이버 TV" , href: "https://tv.naver.com/search?query=%EC%8A%A4%ED%83%80%EC%9B%8C%EC%A6%88"},
 ];
 // 1-2. 검색박스 데이터
 const searchBox = ['Search','Login'];
@@ -98,7 +98,7 @@ const footerinfo = [
     <div class="footer_cont fx-box">
       <h2>
         <a href="#top">
-          <img src="./images/main_images/logo_w.png" alt="스타워즈로고" />
+          <img src=${process.env.PUBLIC_URL+"/images/main_images/logo_w.png"} alt="스타워즈로고" />
         </a>
       </h2>
 

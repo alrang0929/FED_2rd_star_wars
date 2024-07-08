@@ -1,18 +1,24 @@
 // 상단영역 컴포넌트 ///
 import { Link } from 'react-router-dom';
 // FontAwesome 아이콘 불러오기
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // 상단메뉴 데이터 불러오기
 import { searchBox, socialLinks , navMenu} from '../../data/common_data';
 // 살단영역 CSS 불러오기
 import "../../css/common/top_area.scss";
+import { useEffect } from 'react';
 
-// 제이슨에 추가해야 함 
-// "@fortawesome/free-brands-svg-icons": "^6.5.2",   
-// "@fortawesome/free-solid-svg-icons": "^6.5.2", 
-// "@fortawesome/react-fontawesome": "^0.2.2", 
+// TopArea 기능함수 불러오기
+import { topFn } from '../../js/top_area_fn';
+
+
 
 export const TopArea = () => {
+
+  useEffect(() => {
+    topFn();
+  }, []);
+
   return (
     // 코드 리턴구역
     <header id="top-area">
@@ -23,8 +29,8 @@ export const TopArea = () => {
           <ul className="fx-box">
             {socialLinks.map((v,i) => (
               <li key={i}>
-                <a href={v.href} target="_blank" className={`fa ${v.icon}`} title={v.text}>
-                {/* <FontAwesomeIcon icon={v.icon} /> */}
+                <a href={v.href} target="_blank" className={`fa ${v.icon}`} title={v.text} rel="noreferrer">
+                <FontAwesomeIcon icon={v.icon} />
                   <span className="ir">{v.text}</span>
                 </a>
               </li>
@@ -34,7 +40,7 @@ export const TopArea = () => {
         {/* 로고 */}
         <h2 className="col-4">
           <Link to="/">
-            <img src={process.env.PUBLIC_URL+"./images/main_images/logo_w.png"} alt="스타워즈로고" />
+            <img src={process.env.PUBLIC_URL+"/images/main_images/logo_w.png"} alt="스타워즈로고" />
           </Link>
         </h2>
         {/* 로그인 & 검색 박스 */}

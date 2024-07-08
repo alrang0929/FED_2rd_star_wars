@@ -1,0 +1,56 @@
+// 2. 메인 배너영역 컴포넌트 - BannerArea.jsx
+import React from "react";
+
+// CSS 불러오기
+import "../../css/banner_main.scss";
+
+function BannerArea(props) {
+  return (
+    <div id="ban-area">
+      <div className="ban-area col-12">
+        <div className="ban_wrap">
+          <video
+            className="video"
+            preload="auto"
+            muted="muted"
+            autoplay="1"
+            loop
+            playsinline=""
+            src={
+              process.env.PUBLIC_URL + "/images/main_images/starwars_mv1.mp4"
+            }
+          ></video>
+          <div className="blur-wrap">
+            <div className="blur-box"></div>
+            <img
+              src={process.env.PUBLIC_URL + "/images/main_images/news04.jpg"}
+              alt="메인배너이미지"
+            />
+          </div>
+        </div>
+        <div className="ban-btn">
+          <div className="banbtn L">&lt;</div>
+          <span className="pageInfo">01 / 02</span>
+          <div className="banbtn R">&gt;</div>
+        </div>
+        <div className="scroll_induce"></div>
+        <div className="video_control">
+          <img
+            className="play"
+            src={process.env.PUBLIC_URL + "/images/main_images/ic_play.png"}
+            alt="플레이버튼"
+          />
+          <img
+            className="pause"
+            src={process.env.PUBLIC_URL + "/images/main_images/ic_pause.png"}
+            alt="멈춤버튼"
+          />
+          <span className="pause">STOP Video</span>
+          <span className="play">PLAY Video</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default BannerArea;

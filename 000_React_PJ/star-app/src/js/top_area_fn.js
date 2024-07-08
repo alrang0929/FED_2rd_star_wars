@@ -1,32 +1,9 @@
-// 스타워즈PJ 공통처리 JS - common.js
+
+
 import dFn from "./my_function.js";
-console.log('1. common js호출확인');
-
-/* 공통html 데이터 가져오기 */
-//호출필요x  comData 객체 호출시 모듈의 모든 값과 함수가 포함되어 있기 때문
-import * as comData from "../data/common_data.js";
-
-//////////////////////////////////////////////////////////
-export default function setElement () {
-
-  /* 공통html 넣기 */
-  // 1. 상단영역 코드
-  dFn.qs('#top-area').innerHTML = comData.htmlData.topArea;
-
-  // 2. 하단영역 코드
-  dFn.qs('#footer-area').innerHTML = comData.htmlData.footerArea;
-  
-
-  
-  // 공통 기능처리 함수 호출하기 - onload: 페이지와 모든 자원이 로드된 후 해당 함수가 실행
-  window.onload = comFn()
-  
-  }  ///////////// 공통 setElement 함수 ////////////////////
-  
 
 
-
-function comFn() {
+export function topFn() {
 
   /****************************************
   [ 마우스 커서 따라다니기 ]
@@ -103,11 +80,11 @@ function comFn() {
       tg.style.setProperty("--filter", "drop-shadow(0px 0px 0px aqua)");
       isClicked = false;
       ele.classList.remove("on");
-      clickEventAdded = false;
+      // clickEventAdded = false;
       window.removeEventListener("click", hiddenMenu);
     }
   }
 
   })(); ///////// 코드랩핑 끝
 
-} ////// comFn 공통기능 함수 /////////
+} ////// topFn 상단 기능 함수 /////////
