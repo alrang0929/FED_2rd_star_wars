@@ -110,6 +110,26 @@
 }
 /********* 최대사이즈 700px 이하 끝 *********/
 
+@media screen and (max-width: 670px) {
+  /* 하단 배너영역 */
+  #bt-banner-area ul.fx-box {
+    flex-direction: column;
+  }
+  #bt-banner-area .Kategorie{
+    line-height: 2.5;
+  }
+
+  /* 추가 */
+  #bt-banner-area .title{
+    font-size: 3rem;
+  }
+
+  #bt-banner-area .title-sub {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+}
+
 /********* 최대사이즈 450px 이하 시작 *********/
 @media screen and (max-width: 450px) {
   .ban-desc-box{
