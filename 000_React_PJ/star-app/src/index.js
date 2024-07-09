@@ -21,8 +21,8 @@ export default function MainComponent() {
         출력된다!*/}
           <Route index element={<Main />} />
           <Route path="themandalorian" element={<Themandalorian />} />
-          <Route path="" element={<Ahsoka />} />
-          <Route path="/badbatch" element={<Badbatch />} />
+          <Route path="ashoka" element={<Ahsoka />} />
+          <Route path="badbatch" element={<Badbatch />} />
         </Route>
         {/* Layout 루트 Route로 하위 Route를 감싼다! */}
       </Routes>
