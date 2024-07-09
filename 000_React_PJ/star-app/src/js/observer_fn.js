@@ -8,7 +8,7 @@ import mFn from "../js/my_function";
 
 export default function observerFn () {
    ///////// 코드랩핑 시작
-   const visualBox = mFn.qs(".visualView.fx-box");
+   const visualBox = mFn.qs(".visualView");
    const txtBox = mFn.qsa(".txt-content");
    const newsLbox = mFn.qs(".left-wrap");
    const newsRbox = mFn.qs(".right-wrap");
