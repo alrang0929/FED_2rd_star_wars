@@ -1,8 +1,9 @@
 /* ***************배너영역*************** */
-#ban-area {
+
+#ban-area-index {
   background-color: rgb(0, 0, 0);
   height: 100vh;
-}
+
 
 /* 배너플랙스박스 */
 .ban_wrap {
@@ -70,7 +71,7 @@
 }
 
 /* 비디오부모박스 */
-.ban-area.col-12 {
+.ban-area-index.col-12 {
   
   /* 배너랩박스숨기기 */
   overflow: hidden;
@@ -112,7 +113,7 @@ video.video {
   line-height: 1.1;
 }
 /* 마우스드래그 표시  */
-.ban-area .scroll_induce {
+.ban-area-index .scroll_induce {
   border: 2px solid rgb(255, 255, 255);
   bottom: 40px;
   left: 50%;
@@ -123,7 +124,7 @@ video.video {
   width: 20px;
   height: 30px;
 }
-.ban-area .scroll_induce::before {
+.ban-area-index .scroll_induce::before {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -134,7 +135,6 @@ video.video {
   background-color: rgb(255, 255, 255);
   animation: scrollMove 2s infinite;
 }
-
 @keyframes scrollMove {
   0% {
     -webkit-transform: translate(-50%, 0);
@@ -177,3 +177,6 @@ video.video {
 .on.video_control .play{
   display: inline-block;
 }
+  
+}
+

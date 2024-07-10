@@ -3,8 +3,7 @@
     bottom: -100%;
     z-index: 100;
       position: relative;
-  }
-  
+     
   .footer-area {
     color: #fff;
     background: linear-gradient(45deg, rgb(0 35 128 / 49%), transparent), black;
@@ -70,9 +69,11 @@
     text-align: center;
   }
   
-  /* 상하단 공통 CSS  */
-  nav ul.fx-box ,#footer-area .fx-box {
+.fx-box {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  }
+  
   

@@ -177,7 +177,7 @@ const visualData = [
 ];
 /* **************************************** */
     const htmlData = {
-      secContentArea: `
+      IdContentArea: `
       <div>
         <h2 class="main_tit">
            <small>epic journey through</small> <br />
@@ -194,7 +194,7 @@ const visualData = [
     </div>
       `).join('')}
     `,
-      newsArea:`
+      IdNewsArea:`
       <div class="news-area box fx-box">
       <div class="left-wrap">
         <div class="left-box news-box">
@@ -234,7 +234,7 @@ const visualData = [
       </div>
     </div>
       `,
-      visualViewArea:`
+      IdVisualArea:`
       
       <div class="visualView fx-box">
        ${visualData.map(v=>`

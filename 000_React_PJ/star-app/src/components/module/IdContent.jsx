@@ -1,11 +1,11 @@
 import React from "react";
-import { contentData } from "../../data/main_data";
+import { contentData } from "../../data/id_main_data";
 
 // CSS 불러오기
-import "../../css/sec_content.scss";
+import "../../css/id_content.scss";
 
 
-function SecContent(props) {
+function IdContent(props) {
   return (
     <>
       <section className="content-area">
@@ -28,4 +28,4 @@ function SecContent(props) {
   );
 }
 
-export default SecContent;
+export default IdContent;

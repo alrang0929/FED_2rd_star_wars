@@ -1,4 +1,4 @@
-// 스타워즈PJ 공통요소 데이터 객체 - top_fot_data.js
+// 스타워즈PJ 공통요소 데이터 객체 - id_com_data.js
 
 
 import {
