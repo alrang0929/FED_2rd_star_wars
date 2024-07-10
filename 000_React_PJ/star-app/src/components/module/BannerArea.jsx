@@ -25,9 +25,9 @@ function BannerArea(props) {
             className="video"
             preload="auto"
             muted="muted"
-            autoplay="1"
+            autoPlay="1"
             loop
-            playsinline=""
+            playslnline=""
             src={
               process.env.PUBLIC_URL + "/images/main_images/starwars_mv1.mp4"
             }

@@ -21,8 +21,8 @@ function NewsArea(props) {
           {newsItemData
             .slice(1)
             .map(
-              (v) => 
-        <div className="item-box news-box">
+              (v,i) => 
+        <div key={i} className="item-box news-box">
         <div className="series-img hover-img"></div>
         <p className="info">
          {v.tit}
@@ -51,8 +51,8 @@ function NewsArea(props) {
         <h4 className="title-sub2">ALL series</h4>
         {seriesData
           .map(
-            (v) => 
-      <div className="item-box">
+            (v,i) => 
+      <div key={i} className="item-box">
         <div className={v.imgClass}></div>
         <p className="info"><strong className="title-topic">{v.title}</strong></p>
         <span className="info"

@@ -8,11 +8,11 @@ import "../../css/visual_view.scss";
 
 function VisualViewArea(props) {
   return (
-    <section class="visualView-ban inbox">
+    <section className="visualView-ban inbox">
     <div className="visualView">
-      {visualData.map((v) => {
+      {visualData.map((v,i) => {
         return (
-          <div className="visualimg">
+          <div key={i} className="visualimg">
             <span>
               {v.title}
               <p>{v.series}</p>
