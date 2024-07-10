@@ -1,13 +1,18 @@
-import mFn from "../js/my_function.js";
-  
+// 스타워즈 PJ 메인배너 Fn - main_ban_fn.js //////////////
 
-let banFn
+// 내함수 js 가져오기 (새이름지음)
+import mFn from "./my_function.js";
+
   /********************************************
  [ 메인배너 버튼 클릭시 left값 이동하기 ]
  이벤트대상: .banbtn
  변경대상: .ban_wrap 
 *******************************************/
-(() => {
+
+export function banFn () {
+
+
+  (() => {
     ///////// 코드랩핑 시작
     let goLeft = false;
 
@@ -122,3 +127,4 @@ let banFn
       }
     });
   })(); ///////// 코드랩핑 끝
+};

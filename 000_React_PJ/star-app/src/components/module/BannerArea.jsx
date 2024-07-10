@@ -3,8 +3,20 @@ import React from "react";
 
 // CSS 불러오기
 import "../../css/banner_main.scss";
+// 기능함수 불러오기
+
+
+import { useEffect } from "react";
+import { banFn } from "../../js/main_ban_fn";
+
 
 function BannerArea(props) {
+  useEffect(()=>{
+  banFn();
+
+  },[])
+  
+
   return (
     <div id="ban-area">
       <div className="ban-area col-12">

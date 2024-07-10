@@ -79,6 +79,7 @@
   }
   /* 버튼박스 */
   .btnbox {
+    flex-basis: 50%;
     margin: 50px auto;
     display: flex;
     justify-content: space-evenly;

@@ -7,8 +7,19 @@ import VisualViewArea from "../module/VisualViewArea";
 
 // css 불러오기
 import "../../css/main.scss";
+import { useEffect } from "react";
+import observerFn from "../../js/observer_fn.js";
+import showPosterFn from "../../js/show_poster_fn";
+
+
 
 export default function Main() {
+
+  useEffect(()=>{
+    observerFn();
+    showPosterFn();
+  },[]);
+  
   // 코드 리턴구역
   return (
     <>

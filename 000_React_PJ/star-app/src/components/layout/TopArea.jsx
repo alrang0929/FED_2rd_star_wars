@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // FontAwesome 아이콘 불러오기
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // 상단메뉴 데이터 불러오기
-import { searchBox, socialLinks , navMenu} from '../../data/common_data';
+import { searchBox, socialLinks , navMenu} from '../../data/top_fot_data';
 // 살단영역 CSS 불러오기
 import "../../css/common/top_area.scss";
 import { useEffect } from 'react';
