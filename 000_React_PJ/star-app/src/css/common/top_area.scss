@@ -148,8 +148,13 @@
     no-repeat center center/contain;
 }
 /* 로그인버튼 */
-.search-box.col-4 > ul > li:last-of-type > a::before {
+.search-box.col-4 > ul > li:nth-of-type(2) > a::before {
   background: url(https://static-mh.content.disney.io/matterhorn/assets/starwars/navigation/SW_Oneid_User-85043c6786ab.svg)
+    no-repeat center center/contain;
+}
+/* 로그아웃버튼 */
+.search-box.col-4 > ul > li:last-of-type > a::before {
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" /><polyline points="16 17 21 12 16 7" /><line x1="21" y1="12" x2="9" y2="12" /></svg>')
     no-repeat center center/contain;
 }
 .social-box.col-3 > ul::after {

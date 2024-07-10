@@ -1,5 +1,5 @@
 // 3-3.메인 하단배너박스 영역 컴포넌트 - IdVisualArea.jsx
-
+import { Link } from 'react-router-dom';
 import React from "react";
 import { visualData } from "../../data/id_main_data";
 
@@ -17,9 +17,9 @@ function IdVisualArea(props) {
               {v.title}
               <p>{v.series}</p>
               <p className="desc">{v.desc}</p>
-              <a className="btn" href={v.href}>
+              <Link to={v.href} className="btn" >
                 MORE VIEW
-              </a>
+              </Link>
             </span>
           </div>
         );

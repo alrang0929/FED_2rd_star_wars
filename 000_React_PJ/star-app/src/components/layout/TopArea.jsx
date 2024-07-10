@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // FontAwesome 아이콘 불러오기
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // 상단메뉴 데이터 불러오기
-import { searchBox, socialLinks , navMenu} from '../../data/id_com_data';
+import { sideMenuBox, socialLinks , navMenu} from '../../data/id_com_data';
 // 살단영역 CSS 불러오기
 import "../../css/common/top_area.scss";
 import { useEffect } from 'react';
@@ -43,12 +43,12 @@ export const TopArea = () => {
             <img src={process.env.PUBLIC_URL+"/images/main_images/logo_w.png"} alt="스타워즈로고" />
           </Link>
         </h2>
-        {/* 로그인 & 검색 박스 */}
+        {/* 사이드메뉴박스*/}
         <div className="search-box col-4">
           <ul className="fx-box">
-            {searchBox.map(v => (
+            {sideMenuBox.map(v => (
               <li key={v}>
-                <a href="#">{v}</a>
+                <Link to={v.link}>{v.menu}</Link>
               </li>
             ))}
           </ul>
