@@ -1,16 +1,16 @@
-// 2. 메인 배너영역 컴포넌트 - BannerArea.jsx
+// 2. 메인 배너영역 컴포넌트 - IdBannerArea.jsx
 import React from "react";
 
 // CSS 불러오기
-import "../../css/banner_main.scss";
+import "../../css/id_banner_main.scss";
 // 기능함수 불러오기
 
 
 import { useEffect } from "react";
-import { banFn } from "../../js/main_ban_fn";
+import { banFn } from "../../js/id_main_ban_fn";
 
 
-function BannerArea(props) {
+function IdBannerArea(props) {
   useEffect(()=>{
   banFn();
 
@@ -18,16 +18,16 @@ function BannerArea(props) {
   
 
   return (
-    <div id="ban-area">
-      <div className="ban-area col-12">
+    <div id="ban-area-index">
+      <div className="ban-area-index col-12">
         <div className="ban_wrap">
           <video
             className="video"
             preload="auto"
             muted="muted"
-            autoplay="1"
+            autoPlay="1"
             loop
-            playsinline=""
+            playslnline=""
             src={
               process.env.PUBLIC_URL + "/images/main_images/starwars_mv1.mp4"
             }
@@ -65,4 +65,4 @@ function BannerArea(props) {
   );
 }
 
-export default BannerArea;
+export default IdBannerArea;

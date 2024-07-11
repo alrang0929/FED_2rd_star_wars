@@ -1,15 +1,16 @@
 // 메인페이지 컴포넌트 //
 
-import BannerArea from "../module/BannerArea";
-import NewsArea from "../module/NewsArea";
-import SecContent from "../module/SecContent";
-import VisualViewArea from "../module/VisualViewArea";
+import IdBannerArea from "../module/IdBannerArea.jsx";
+import IdNewsArea from "../module/IdNewsArea";
+import IdContent from "../module/IdContent";
+import IdVisualArea from "../module/IdVisualArea";
 
 // css 불러오기
-import "../../css/main.scss";
+import "../../css/id_main.scss";
 import { useEffect } from "react";
-import observerFn from "../../js/observer_fn.js";
-import showPosterFn from "../../js/show_poster_fn";
+import observerFn from "../../js/id_observer_fn.js";
+import showPosterFn from "../../js/id_show_poster_fn";
+
 
 
 
@@ -24,16 +25,16 @@ export default function Main() {
   return (
     <>
       {/* 2. 메인배너영역   */}
-      <BannerArea />
+      <IdBannerArea />
       {/* 3. 메인 영역  */}
-      <main id="main-area">
+      <main id="main-index">
         <div className="content-area inbox">
           {/* 3-1. 컨텐츠영역(세계관)  */}
-          <SecContent />
+          <IdContent />
           {/* 3-2. 뉴스영역(뉴스,시리즈)  */}
-          <NewsArea />
+          <IdNewsArea />
           {/* 3-3.메인 하단 배너 박스  */}
-          <VisualViewArea />
+          <IdVisualArea />
         </div>
       </main>
     </>

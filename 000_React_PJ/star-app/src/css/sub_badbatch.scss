@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 body {
+  text-align: center;
   position: relative;
   overflow-x: hidden;
   background-color: #000;
@@ -11,6 +12,12 @@ body {
   /* 베이스 폰트 */
 }
 
+.btn-sub {
+  a {
+    color: yellow;
+    font-weight: 200;
+  }
+}
 .cont-box {
   max-width: 1500px;
 }
@@ -36,6 +43,9 @@ body {
   height: 100vh;
 }
 
+.top-cont-bx{
+  margin-top: 13vh;
+}
 .top-banner img {
   width: 31%;
 }
@@ -108,8 +118,14 @@ body {
   text-align-last: left;
   margin-left: -1rem;
   margin-top: 2rem;
+  .link-txt {
+    color: #fff;
+  }
 }
 
+#info-area .desc-box {
+  width: 40%;
+}
 #info-area .desc-box > div {
   margin-top: 4rem;
 }
@@ -138,18 +154,13 @@ body {
   /* padding-bottom: 15rem; */
   backdrop-filter: blur(70px);
   background-image: linear-gradient(to top, #000000, #00000000, #00000000),
-    url(../images/sub_badbatch_img/poster_1.jpg);
+  url(../../public/images/sub_badbatch_img/poster_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 /*************  2. episode area *************/
-
-#episode-area {
-  width: 70%;
-  margin: 6% auto;
-}
 
 #episode-area .tit-box a {
   margin: 0 2rem;
@@ -175,14 +186,9 @@ body {
 }
 
 .epSlide ul {
-  position: relative;
   /* overflow: hidden; */
   flex-wrap: wrap;
-  /* height: 75%; */
-  /* translate: -45%; */
-  /* left: 50%; */
 }
-
 .epSlide li {
   overflow: hidden;
   border-radius: 2rem;
@@ -193,10 +199,7 @@ body {
 /*************  3. sns area *************/
 
 #sns-area {
-  width: 70vw;
-  margin: 0 auto;
   position: relative;
-  background-color: #000;
 }
 .sns-slider-wrap {
   position: relative;
@@ -232,35 +235,28 @@ body {
   aspect-ratio: 340/415;
 }
 
+
 /*************  4. pos area *************/
-
-#pos-area {
-  margin: 0 auto;
-}
-
-.pos-wrap.cont-box {
-  margin: 0 auto;
-}
 
 #pos-area .tit-box > h3 {
   text-align: center;
   font-size: 5rem;
 }
-
 #pos-area .tit-wrap .tit-box {
-  position: relative;
-  width: 30%;
-  top: 50%;
-  left: 53%;
-  translate: -50% -50%;
+  /* position: relative; */
+  /* width: 30%; */
+  /* top: 50%; */
+  left: 50%;
+  /* translate: -50% -50%; */
 }
 
 #pos-area .tit-wrap {
   position: relative;
   /* left: 50%; */
-  /* translate: -20%; */
-  /* width: 110vw; */
+  /* translate: -50%; */
+  width: 100vw;
   height: 60vh;
+
   background-image: linear-gradient(to top, #000000, #00000000),
     linear-gradient(
       to bottom,
@@ -270,18 +266,17 @@ body {
       #00000000,
       #00000000
     ),
-    url(../images/sub_badbatch_img/sub_postitle.jpg);
+    url(../../public/images/sub_badbatch_img/poster_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% 90%;
 }
 
 #pos-area .slider-wrap {
-  /* margin-top: 2rem; */
-  margin: 2rem auto;
-
-  /* translate: -21%; */
-  /* margin-top: 10rem; */
+  margin-top: 2rem;
+}
+#pos-area .slider-wrap {
+  margin-top: 10rem;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
@@ -385,36 +380,25 @@ body {
 .pos-data-text .btn-link {
   height: 4rem;
   margin-top: 4rem;
-  margin-left: -25%;
+  margin-left: -63%;
 }
 
 .pos-data-text {
-  margin-top: 27%;
+  // margin-top: 40%;
   margin-left: 4rem;
   width: 40%;
 }
 
-/************* 서브 하단 배너 *************/
+/*************  5. footer banner *************/
 #bt-banner-area {
   position: relative;
-  /* margin-top: 4rem; */
-  margin-top: 0rem;
-  /* margin-bottom: -24rem; */
-  /* left: 50%; */
-  /* translate: -50%; */
-  margin-bottom: 7%;
+  margin-bottom: 40rem;
 }
 
 .sub-ban-wrap {
-  width: 82%;
-  translate: -50%;
-  left: 50%;
-  /* margin: 0 auto; */
-  /* margin-bottom: 16%; */
-  /* left: -3.9%; */
-  /* top: 0%; */
   position: relative;
   height: 50rem;
+
   overflow: hidden;
   border-radius: 4rem;
 }
@@ -438,8 +422,8 @@ body {
   /* translate: 0 -50%; */
 }
 
-.sub-ban-box li video {
-  width: 100%;
+.sub-ban-wrap .sub-ban-img img {
+  aspect-ratio: 1500 / 643;
 }
 
 /*********** abtn svg 공통설정 ***********/
@@ -488,7 +472,7 @@ ul li figcaption {
   translate: -50% -50%;
 }
 div > ul li {
-  /* line-height: 0; */
+  line-height: 0;
   cursor: pointer;
 }
 
@@ -512,58 +496,6 @@ div > ul figure {
   width: 100%;
   height: 100%;
   color: #fff;
-}
-
-/*버튼설정*/
-/*************  텍스트 공통 설정 *************/
-
-/* 텍스트 설정 */
-
-.basic-font {
-  font-size: 1.6rem;
-  font-weight: 200;
-}
-
-.title-sub {
-  text-align: left;
-  font-weight: 700;
-  font-size: 3.5rem;
-  line-height: 1.3;
-}
-
-.title-sub2 {
-  /* text-transform: none; */
-  text-align: left;
-  font-weight: 500;
-  font-size: 2.5rem;
-  line-height: 1.3;
-}
-
-.title-topic {
-  color: #cbcbcb;
-  font-size: 1.5rem;
-}
-
-.btn-main:hover {
-  background-color: #fff075;
-}
-
-.btn-sub a {
-  color: #ffe400;
-}
-.btn-sub {
-  height: 7vh;
-  border: 1px solid #ffe400;
-  border-radius: 4.5vw;
-  box-sizing: border-box;
-  /* color: #FFE400; */
-  background-color: transparent;
-  padding: 1vw;
-  transition: 0.4s;
-}
-.btn-sub:hover {
-  color: #000;
-  background-color: #ffe40020;
 }
 
 /* 링크버튼 애니 */
@@ -597,9 +529,4 @@ div > ul figure {
   stroke-dasharray: calc(50% * 3);
 
   transition: stroke-dashoffset 0.4s ease-out, opacity 0.1s ease-out;
-}
-
-#footer-area {
-  /* left: -10%; */
-  bottom: -10%;
 }

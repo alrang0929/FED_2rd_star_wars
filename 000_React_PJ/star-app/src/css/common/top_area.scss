@@ -1,5 +1,17 @@
 /* *****************************상단영역***************************** */
 
+
+#top-area {
+  
+  position: fixed;
+  width: 100%;
+  /* 커서가 상단영역자식이라 
+    푸터보다 z-index높게 */
+  z-index: 101;
+  padding-bottom: 20px;
+  background: linear-gradient(180deg, rgb(0 35 128 / 49%) 30%, transparent);
+
+
 /* 커서 */
 .cursor {
   filter: blur(30px);
@@ -16,17 +28,10 @@
   z-index: 999999;
 }
 
-#top-area {
-  position: fixed;
-  width: 100%;
-  /* 커서가 상단영역자식이라 
-    푸터보다 z-index높게 */
-  z-index: 101;
-  padding-bottom: 20px;
-  background: linear-gradient(180deg, rgb(0 35 128 / 49%) 30%, transparent);
-}
 
-#top-area a {
+
+
+ a {
   text-shadow: 1px 1px 1px black;
   color: #fff;
 }
@@ -104,7 +109,7 @@
   flex-wrap: nowrap;
 }
 /* 소셜박스 이미지 */
-#top-area .social-box a {
+.social-box a {
   filter: contrast(0) brightness(2);
   display: block;
   scale: 2;
@@ -113,7 +118,7 @@
 }
 
 /* js로 toggle */
-header#top-area ul.fx-box.on {
+.social-box.col-4 > ul.fx-box.on {
   height: 220px;
   opacity: 1;
 }
@@ -213,6 +218,10 @@ nav ul > li > a:hover::after {
   transform: scaleX(1);
 }
 
+nav ul.fx-box {
+  flex-wrap: wrap;
+  justify-content: center;
+}
 /* *************************상단 공통 미디어 쿼리************************* */
 @media screen and (max-width: 700px) {
   .social-box.col-4 > ul > li {
@@ -290,3 +299,9 @@ nav ul > li > a:hover::after {
   }
 }
 /********* 최대사이즈 500px 이하 끝 *********/
+
+
+
+
+  
+}/////////// #toparea //////////////

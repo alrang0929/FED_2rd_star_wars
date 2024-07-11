@@ -1,18 +1,18 @@
-// 3-3.메인 하단배너박스 영역 컴포넌트 - VisualViewArea.jsx
+// 3-3.메인 하단배너박스 영역 컴포넌트 - IdVisualArea.jsx
 
 import React from "react";
-import { visualData } from "../../data/main_data";
+import { visualData } from "../../data/id_main_data";
 
 // CSS 불러오기
-import "../../css/visual_view.scss";
+import "../../css/id_visual_area.scss";
 
-function VisualViewArea(props) {
+function IdVisualArea(props) {
   return (
-    <section class="visualView-ban inbox">
+    <section className="visualView-ban inbox">
     <div className="visualView">
-      {visualData.map((v) => {
+      {visualData.map((v,i) => {
         return (
-          <div className="visualimg">
+          <div key={i} className="visualimg">
             <span>
               {v.title}
               <p>{v.series}</p>
@@ -29,4 +29,4 @@ function VisualViewArea(props) {
   );
 }
 
-export default VisualViewArea;
+export default IdVisualArea;

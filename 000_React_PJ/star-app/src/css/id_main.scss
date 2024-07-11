@@ -1,16 +1,14 @@
 html {
   scroll-behavior: smooth;
   /* #아이디명 스크롤 이동시 부드럽게 애니메이션 이동함! */
-  font-size: 10px;
-  /* rem계산시 쉽도록 10px */
 }
 
-body {
+#main-index {
   overflow-x: hidden;
   /* 배경 */
   background: url(../../public/images/main_images/star_night.jpg) no-repeat
     fixed left / cover;
-}
+
 
 .fx-box {
   /* 두개추가 */
@@ -441,3 +439,7 @@ body {
   }
 }
 /********* 최대사이즈 450px 이하 끝 *********/
+
+
+
+} 

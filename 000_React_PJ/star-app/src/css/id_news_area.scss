@@ -1,5 +1,5 @@
 /* *************3-2. 컨텐츠영역(뉴스)************* */
-
+#main-index {
 .news-area {
     margin: 0px auto;
     box-sizing: border-box;
@@ -79,7 +79,7 @@
   }
   /* 버튼박스 */
   .btnbox {
-    flex-basis: 50%;
+    // flex-basis: 50%;
     margin: 50px auto;
     display: flex;
     justify-content: space-evenly;
@@ -245,4 +245,4 @@ section.news-area > .right-wrap > .item-box {
   opacity: var(--opacity);
 }
 
-
+}

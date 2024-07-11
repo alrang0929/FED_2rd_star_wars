@@ -10,9 +10,9 @@
 @import url(./core.css);
 
 /* 공사중 표시 */
-body * {
-  /* outline: rgba(204, 204, 204, 0.082) dashed 1px; */
-}
+/*body * {
+   outline: rgba(204, 204, 204, 0.082) dashed 1px;
+} */
 
 html {
   scroll-behavior: smooth;
@@ -249,9 +249,9 @@ video.video {
   display: inline-block;
 }
 /* ***************메인영역*************** */
-#main-area {
-  /* height: 10vh; */
-}
+ /*#main-area {
+  height: 10vh;
+} */
 
 /* 로딩애니 */
 .intro_section {
@@ -462,6 +462,7 @@ section.news-area > .right-wrap > .item-box > .series-img {
   /* 말줄임표시 */
   text-overflow: ellipsis;
   /* 보여줄 라인수 셋팅속성 */
+  line-clamp:3;
   -webkit-line-clamp: 3;
   /* 라인진행방향 셋팅 */
   -webkit-box-orient: vertical;
@@ -473,6 +474,7 @@ section.news-area > .right-wrap > .item-box > .series-img {
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-clamp:3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
@@ -541,10 +543,10 @@ section.news-area > .right-wrap > .item-box:nth-of-type(8) > .series-img {
     no-repeat;
 }
 /* 버튼부모박스 */
-section.news-area > .right-wrap .btnbox {
-  /* flex-basis: 30%;
-  scale: 1.5; */
-}
+/* section.news-area > .right-wrap .btnbox {
+ flex-basis: 30%;
+  scale: 1.5; 
+} 
 /* 버튼 */
 
 section.news-area > .right-wrap .btn {
@@ -553,8 +555,8 @@ section.news-area > .right-wrap .btn {
 }
 
 /* *************3-4 컨텐츠영역(하단배너)************* */
-.visualView-ban {
-  /* padding-top: 30vh; */
+ /*.visualView-ban {
+  padding-top: 30vh;
 }
 /* 하단배너 */
 .visualView {

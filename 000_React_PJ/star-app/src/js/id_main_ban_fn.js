@@ -1,4 +1,4 @@
-// 스타워즈 PJ 메인배너 Fn - main_ban_fn.js //////////////
+// 스타워즈 PJ 메인배너 Fn - id_main_ban_fn.js //////////////
 
 // 내함수 js 가져오기 (새이름지음)
 import mFn from "./my_function.js";
@@ -14,7 +14,6 @@ export function banFn () {
 
   (() => {
     ///////// 코드랩핑 시작
-    let goLeft = false;
 
     const banner = mFn.qs(".ban_wrap");
     const btns = mFn.qsa(".banbtn");
