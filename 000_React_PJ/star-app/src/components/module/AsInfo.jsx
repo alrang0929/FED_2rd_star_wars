@@ -7,7 +7,7 @@ function SubAsInfo(props) {
         <section id="info-area" className="section-top">
           <div className="cont-box fx-box scAct">
             <div className="img-box col-6">
-              <img src="./images/ahsoka/poster1.jpeg" alt="ahsoka poster" />
+              <img src="/images/ahsoka/poster1.jpeg" alt="ahsoka poster" />
             </div>
             <div className="desc-box col-6">
               <div className="bullet"></div>
