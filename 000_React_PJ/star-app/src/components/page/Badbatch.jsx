@@ -14,7 +14,7 @@ import BbPosterArea from '../module/BbPosterArea';
 function Badbatch() {
     ///////////코드 리턴구역 /////////////////////////////////////
     return (
-        <Fragment className="badbatch">
+        <>
             {/* 1. 상단 타이틀 영역 */}
             <BbTopBanner/>
             {/* 2. 서브 컨텐츠: info area */}
@@ -26,8 +26,8 @@ function Badbatch() {
             {/* 5. 서브 컨텐츠: pos-area */}
             <BbPosterArea/>
             {/* 6. 서브 공통모듈: 하단배너 / bt-banner-area */}
-            {/* <SubBtBanner/> */}
-        </Fragment>
+            <SubBtBanner/>
+        </>
     );
 }
 

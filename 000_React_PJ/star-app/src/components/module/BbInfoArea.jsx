@@ -1,4 +1,5 @@
 import React from "react";
+import "../../css/bb_info_area.scss";
 // import { ReactComponent as arrow } from "../../css/svg/arrow.svg";
 //////////import area////////////////////////////////
 

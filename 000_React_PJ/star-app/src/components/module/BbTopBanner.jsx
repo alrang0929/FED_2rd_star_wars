@@ -1,4 +1,7 @@
 import React from "react";
+import "../../css/bb_top_area.scss";
+
+/////////////import area//////////////////////////////////////
 
 function BbTopBanner() {
   return (

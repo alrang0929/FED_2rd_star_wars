@@ -1,5 +1,6 @@
 import React from "react";
 import { epData } from "../../data/sub_badbatch_list_data";
+import "../../css/bb_ep_area.scss";
 //import
 
 function BbEpArea() {
