@@ -8,7 +8,7 @@
 // 내함수 불러오기
 import mFn from "../js/my_function";
 /* html main영역구조 + 공통데이터 불러오기 */
-import * as mainData from "../data/main_data.js";
+import * as mainData from "../data/id_main_data.js";
 
 export default function showPosterFn () {
     const newBox = mFn.qsa(".news-box");

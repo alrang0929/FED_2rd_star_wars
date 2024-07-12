@@ -160,24 +160,24 @@ const visualData = [
     title: 'The Bad Batch',
     series: 'Star Wars series',
     desc: 'The Bad Batch follows the elite clones as they navigate a changing galaxy after the Clone War. Each member possesses a unique skill, making them an exceptional and formidable crew.',
-    href: 'sub_badbatch.html'
+    href: "/Badbatch"
   },
   {
     title: 'The Mandalorian',
     series: 'Star Wars series',
     desc: 'After the fall of the Empire, a lone Mandalorian makes his way through the lawless galaxy with his foundling, Grogu.',
-    href: 'sub_themandalorian.html'
+    href: "/Themandalorian"
   },
   {
     title: 'Ahsoka',
     series: 'Star Wars series',
     desc: 'Set after the fall of the Empire, "Ahsoka" follows the former Jedi knight Ahsoka Tano as she investigates an emerging threat to a vulnerable galaxy.',
-    href: 'sub_ahsoka.html'
+    href: "/Ahsoka"
   }
 ];
 /* **************************************** */
     const htmlData = {
-      secContentArea: `
+      IdContentArea: `
       <div>
         <h2 class="main_tit">
            <small>epic journey through</small> <br />
@@ -194,7 +194,7 @@ const visualData = [
     </div>
       `).join('')}
     `,
-      newsArea:`
+      IdNewsArea:`
       <div class="news-area box fx-box">
       <div class="left-wrap">
         <div class="left-box news-box">
@@ -234,7 +234,7 @@ const visualData = [
       </div>
     </div>
       `,
-      visualViewArea:`
+      IdVisualArea:`
       
       <div class="visualView fx-box">
        ${visualData.map(v=>`

@@ -1,5 +1,17 @@
 /* *****************************상단영역***************************** */
 
+
+#top-area {
+  
+  position: fixed;
+  width: 100%;
+  /* 커서가 상단영역자식이라 
+    푸터보다 z-index높게 */
+  z-index: 101;
+  padding-bottom: 20px;
+  background: linear-gradient(180deg, rgb(0 35 128 / 49%) 30%, transparent);
+
+
 /* 커서 */
 .cursor {
   filter: blur(30px);
@@ -16,17 +28,10 @@
   z-index: 999999;
 }
 
-#top-area {
-  position: fixed;
-  width: 100%;
-  /* 커서가 상단영역자식이라 
-    푸터보다 z-index높게 */
-  z-index: 101;
-  padding-bottom: 20px;
-  background: linear-gradient(180deg, rgb(0 35 128 / 49%) 30%, transparent);
-}
 
-#top-area a {
+
+
+ a {
   text-shadow: 1px 1px 1px black;
   color: #fff;
 }
@@ -104,7 +109,7 @@
   flex-wrap: nowrap;
 }
 /* 소셜박스 이미지 */
-#top-area .social-box a {
+.social-box a {
   filter: contrast(0) brightness(2);
   display: block;
   scale: 2;
@@ -113,7 +118,7 @@
 }
 
 /* js로 toggle */
-header#top-area ul.fx-box.on {
+.social-box.col-4 > ul.fx-box.on {
   height: 220px;
   opacity: 1;
 }
@@ -143,8 +148,13 @@ header#top-area ul.fx-box.on {
     no-repeat center center/contain;
 }
 /* 로그인버튼 */
-.search-box.col-4 > ul > li:last-of-type > a::before {
+.search-box.col-4 > ul > li:nth-of-type(2) > a::before {
   background: url(https://static-mh.content.disney.io/matterhorn/assets/starwars/navigation/SW_Oneid_User-85043c6786ab.svg)
+    no-repeat center center/contain;
+}
+/* 로그아웃버튼 */
+.search-box.col-4 > ul > li:last-of-type > a::before {
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" /><polyline points="16 17 21 12 16 7" /><line x1="21" y1="12" x2="9" y2="12" /></svg>')
     no-repeat center center/contain;
 }
 .social-box.col-3 > ul::after {
@@ -213,6 +223,10 @@ nav ul > li > a:hover::after {
   transform: scaleX(1);
 }
 
+nav ul.fx-box {
+  flex-wrap: wrap;
+  justify-content: center;
+}
 /* *************************상단 공통 미디어 쿼리************************* */
 @media screen and (max-width: 700px) {
   .social-box.col-4 > ul > li {
@@ -290,3 +304,9 @@ nav ul > li > a:hover::after {
   }
 }
 /********* 최대사이즈 500px 이하 끝 *********/
+
+
+
+
+  
+}/////////// #toparea //////////////

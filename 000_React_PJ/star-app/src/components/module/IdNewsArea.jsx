@@ -1,12 +1,12 @@
-//  3-2. 메인 뉴스(뉴스,시리즈)영역 컴포넌트 - NewsArea.jsx 
+//  3-2. 메인 뉴스(뉴스,시리즈)영역 컴포넌트 - IdNewsArea.jsx 
 
 import React from "react";
-import { newsItemData, seriesData } from "../../data/main_data";
+import { newsItemData, seriesData } from "../../data/id_main_data";
 
 // CSS 불러오기
-import "../../css/news_area.scss";
+import "../../css/id_news_area.scss";
 
-function NewsArea(props) {
+function IdNewsArea(props) {
   return (
     <section className="news-area">
       <div className="news-area box fx-box">
@@ -21,8 +21,8 @@ function NewsArea(props) {
           {newsItemData
             .slice(1)
             .map(
-              (v) => 
-        <div className="item-box news-box">
+              (v,i) => 
+        <div key={i} className="item-box news-box">
         <div className="series-img hover-img"></div>
         <p className="info">
          {v.tit}
@@ -51,8 +51,8 @@ function NewsArea(props) {
         <h4 className="title-sub2">ALL series</h4>
         {seriesData
           .map(
-            (v) => 
-      <div className="item-box">
+            (v,i) => 
+      <div key={i} className="item-box">
         <div className={v.imgClass}></div>
         <p className="info"><strong className="title-topic">{v.title}</strong></p>
         <span className="info"
@@ -79,4 +79,4 @@ function NewsArea(props) {
   );
 }
 
-export default NewsArea;
+export default IdNewsArea;

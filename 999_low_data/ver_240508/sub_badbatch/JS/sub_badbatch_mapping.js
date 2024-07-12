@@ -12,7 +12,7 @@ function epItems(){
   // console.log(epArea);
   epSlide.innerHTML = `
   <ul class="fx-box">
-  ${listData.epData.map(v =>`
+  ${listData.epData.map(v =>
   <li>
   <figure class="imgbox">
   <img src="./images/sub_badbatch_img/thumb_${v.idx}.jpg" alt="E${v.title}" /></figure>
@@ -23,7 +23,7 @@ function epItems(){
   </h4>
   </figcaption>
   </li>
-  `).join('')}
+  ).join('')}
   </ul>
   `
 }//////epItem//////////////////////////////

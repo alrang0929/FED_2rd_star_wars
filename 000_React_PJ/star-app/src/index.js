@@ -34,3 +34,4 @@ export default function MainComponent() {
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 // 출력하기
 root.render(<MainComponent />);
+

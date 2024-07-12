@@ -289,6 +289,7 @@ mFn.addEvt(crtImgBox, "mouseleave", () => {
   moveGallery2();
 });
 
+
 setTimeout(moveGallery);
 setTimeout(moveGallery2);
 

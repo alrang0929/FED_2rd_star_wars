@@ -1,7 +1,7 @@
 // 하단영역 컴포넌트 ///
 
 // 하단메뉴 데이터 불러오기
-import { htmlData } from "../../data/top_fot_data";
+import { htmlData } from "../../data/id_com_data";
 // 하단영역 CSS 불러오기
 import "../../css/common/footer_area.scss";
 

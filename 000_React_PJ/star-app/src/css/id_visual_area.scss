@@ -1,7 +1,5 @@
 /* *************3-4 컨텐츠영역(하단배너)************* */
-// .visualView-ban {
-  /* padding-top: 30vh; */
-// }
+#main-index {
 /* 하단배너 */
 .visualView {
   border-radius: 5% 5% 1% 1%;
@@ -79,4 +77,5 @@ section.visualView-ban .visualView .visualimg:hover {
   text-align: justify;
   font-size: 1.5rem;
   padding: 10px 0px;
+}
 }
