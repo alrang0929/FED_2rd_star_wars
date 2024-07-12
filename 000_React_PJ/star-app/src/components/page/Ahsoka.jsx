@@ -9,7 +9,7 @@ import AsVideo from "../module/AsVideo";
 // import { ReactComponent as close } from "/images/sub_ahsoka_images/icon/icon_close.svg";
 
 // CSS
-import "../../css/ahsoka.scss";
+// import "../../css/ahsoka.scss";
 
 function Ahsoka(props) {
   return (
