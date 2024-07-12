@@ -1,14 +1,20 @@
 import React from "react";
 
-function SubAsBanner(props) {
+function AsBanner(props) {
   return (
     <>
       <section id="top-title" className="section-top">
         <div className="top-banner">
-          <img src="./images/ahsoka/top-banner.jpeg" alt="top banner" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/ahsoka/top-banner.jpeg"}
+            alt="top banner"
+          />
           <div className="ban-desc-box">
             <div className="ban-logo">
-              <img src="/images/ahsoka/ahsoka_logo.png" alt="ahsoka logo" />
+              <img
+                src={process.env.PUBLIC_URL + "/images/ahsoka/ahsoka_logo.png"}
+                alt="ahsoka logo"
+              />
             </div>
             <div className="desc">
               <p>
@@ -32,4 +38,4 @@ function SubAsBanner(props) {
   );
 }
 
-export default SubAsBanner;
+export default AsBanner;

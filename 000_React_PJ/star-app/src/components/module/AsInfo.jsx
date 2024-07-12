@@ -1,13 +1,16 @@
 import React from "react";
 
-function SubAsInfo(props) {
+function AsInfo(props) {
   return (
     <>
       <div className="page">
         <section id="info-area" className="section-top">
           <div className="cont-box fx-box scAct">
             <div className="img-box col-6">
-              <img src="/images/ahsoka/poster1.jpeg" alt="ahsoka poster" />
+              <img
+                src={process.env.PUBLIC_URL + "/images/ahsoka/poster1.jpeg"}
+                alt="ahsoka poster"
+              />
             </div>
             <div className="desc-box col-6">
               <div className="bullet"></div>
@@ -27,7 +30,10 @@ function SubAsInfo(props) {
               <button className="btn-link">
                 <a href="#">
                   <img
-                    src="./images/ahsoka/icon_link_asoka.png"
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/images/ahsoka/icon_link_asoka.png"
+                    }
                     alt="era7 icon"
                   />
                   <span className="link-txt">Era: The New Republic</span>
@@ -44,4 +50,4 @@ function SubAsInfo(props) {
   );
 }
 
-export default SubAsInfo;
+export default AsInfo;
