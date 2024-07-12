@@ -7,7 +7,7 @@ import AsInfo from "../module/AsInfo";
 // import { ReactComponent as close } from "/images/sub_ahsoka_images/icon/icon_close.svg";
 
 // CSS
-import "../../css/sub_ahsoka.css";
+import "../../css/ahsoka.scss";
 
 function Ahsoka(props) {
   return (
