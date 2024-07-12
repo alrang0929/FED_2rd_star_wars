@@ -21,7 +21,7 @@ function mdddvideo() {
     for (let i = 0; i <= 10; i++) {
       vlicode += `
     <li>
-      <div class="video-box">
+      <div class="mdvideo-box">
         <div class="video-img">
           <img src="./images/sub_themandalorian_images/${vdData[i].image}" alt="" />
         </div>
@@ -41,13 +41,13 @@ function mdddvideo() {
     videoli.innerHTML = vlicode;
 
     const vdSlide = domFn.qsaEl(videoWrap, ".video-img-wrap ul li");
-    const video = domFn.qsaEl(videoli, ".video-box");
+    const video = domFn.qsaEl(videoli, ".mdvideo-box");
 
     let vdcode = ``;
     video.forEach((ele, i) => {
       ele.onclick = () => {
         vdcode += `
-    <div class="video-tab-btn fa-solid fa-xmark fa-3x">X</div>
+    <div class="video-tab-btn fa-solid fa-xmark fa-3x"></div>
     <iframe src="https://www.youtube.com/embed/${vdData[i].video}?autoplay=1" allow="autoplay""></iframe>
   `;
         videoTab.innerHTML = vdcode;

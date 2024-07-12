@@ -19,12 +19,12 @@
   transition: 0.5s ease-in-out;
   will-change: left;
 }
-.video-box {
+.mdvideo-box {
   /* padding: 10px; */
   box-sizing: border-box;
   cursor: pointer;
 }
-.video-box img {
+.mdvideo-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -47,7 +47,7 @@
 .video-img {
   position: relative;
 }
-.video-box {
+.mdvideo-box {
   overflow: hidden;
 }
 .video-img {
