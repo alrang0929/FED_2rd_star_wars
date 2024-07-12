@@ -25,6 +25,7 @@ export default function MainComponent() {
           <Route path="badbatch" element={<Badbatch />} />
         </Route>
         {/* Layout 루트 Route로 하위 Route를 감싼다! */}
+        {/* 라우터: 입구 > 출구, 이동 가이드 */}
       </Routes>
     </BrowserRouter>
   );

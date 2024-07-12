@@ -2,6 +2,10 @@
 /*************  2. episode area *************/
 .badbatch{
 
+  #episode-area{
+    margin: 0 auto;
+    width: 1600px;
+  }
 
 #episode-area .tit-box a {
     margin: 0 2rem;
@@ -29,6 +33,7 @@
   .epSlide ul {
     /* overflow: hidden; */
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .epSlide li {
     overflow: hidden;

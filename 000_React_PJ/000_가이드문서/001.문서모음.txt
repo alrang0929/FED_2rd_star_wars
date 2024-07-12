@@ -3,3 +3,6 @@
 
 문서 드라이브:
     https://drive.google.com/drive/folders/1JbCxGu_Hcj3gVakOpbDreXCqVDNnLJ2d?usp=drive_link
+
+과제:
+로딩효과.. or 공통함수기능 추가
