@@ -28,7 +28,7 @@ function AsBanner(props) {
                 <a href="#">STREAM NOW</a>
               </span>
               <span className="btn2">
-                <a href="#">▶WATCH TRAILER</a>
+                <a href="#">▶ WATCH TRAILER</a>
               </span>
             </div>
           </div>
