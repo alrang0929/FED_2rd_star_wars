@@ -5,8 +5,10 @@ import AsBanner from "../module/AsBanner";
 import AsInfo from "../module/AsInfo";
 import AsVideo from "../module/AsVideo";
 import AsCharacter from "../module/AsCharacter";
+import AsEpisode from "../module/AsEpisode";
+import AsTictok from "../module/AsTictok";
 
-function Ahsoka(props) {
+function Ahsoka() {
   return (
     <>
       {/* 상단 타이틀 배너 */}
@@ -17,6 +19,10 @@ function Ahsoka(props) {
       <AsVideo />
       {/* 캐릭터 소개 영역 */}
       <AsCharacter />
+      {/* 에피소드 가이드 영역 */}
+      <AsEpisode />
+      {/* 틱톡 영역 */}
+      <AsTictok />
     </>
   );
 }

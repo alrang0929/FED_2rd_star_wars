@@ -3,7 +3,7 @@ import React from "react";
 // CSS
 import "../../css/as_video.scss";
 
-function AsVideo(props) {
+function AsVideo() {
   return (
     <>
       <div className="page">
