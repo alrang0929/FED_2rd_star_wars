@@ -97,19 +97,19 @@ ${v.text}
 
 
 
-function subbanItems(){
-  mFn.qs('.sub-ban-wrap').innerHTML = `
-  <ul>
-  ${listData.subBanner.map(v=>`
-    <li class="sub-ban-${v.idx}">${v.data}</li>
-    `).join('')}
-    </ul>
-  `
-}
+// function subbanItems(){
+//   mFn.qs('.sub-ban-wrap').innerHTML = `
+//   <ul>
+//   ${listData.subBanner.map(v=>`
+//     <li class="sub-ban-${v.idx}">${v.data}</li>
+//     `).join('')}
+//     </ul>
+//   `
+// }
 
 
 
 ///////내보내기 영역//////////////////////
-export {epItems,snsItems,posItems,subbanItems,layerSet, }
+export {epItems,snsItems,posItems,layerSet, }
 
 

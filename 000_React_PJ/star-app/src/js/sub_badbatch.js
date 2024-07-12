@@ -82,7 +82,7 @@ export default function aaa() {
                 <!-- 이동링크 (관련 에피 페이지) -->
                 <button class="btn-link">
                 <a href="https://www.disneyplus.com/ko-kr/brand/star-wars?cid=DTCI-Synergy-StarWars-Site-Acquisition-Library-US-StarWars-NA-EN-NavPipe-StarWars_NavPipe_StarWarsStreamingAnytimeonDisneyPlus_Evergreen-NA">
-                  <img src="./images/sub_badbatch_img/icon_link.png" alt="링크 아이콘">
+                  <img src="/images/sub_badbatch_img/icon_link.png" alt="링크 아이콘">
                   <span class="link-txt">more view</span>
                   <!-- svg 부모박스 -->
                   <div class="svg-arrow">
@@ -93,7 +93,9 @@ export default function aaa() {
                   </div>
               </button>
               <button class="close-btn">
-                <div class="close-i fa-solid fa-xmark fa-3x"></div>
+                <div class="">
+                <img src="/images/sub_badbatch_img/close.png" alt="">
+                </div>
               </button>
             </div>
                 `;
