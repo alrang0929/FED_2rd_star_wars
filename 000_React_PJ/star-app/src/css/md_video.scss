@@ -84,8 +84,13 @@
   background-color: #111111f1;
   z-index: 9999;
 }
+// .video-tab{
+//   display: none;
+// }
 
-.video-cont-box.on .video-tab {
+
+.video-cont-box.on .video-tab{
+  display: block;
   position: fixed;
   left: 50%;
   top: 50%;

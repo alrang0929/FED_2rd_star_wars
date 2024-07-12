@@ -7,6 +7,7 @@ import MdVideo from "../module/MdVideo";
 import MdCharacter from "../module/MdCharacter";
 import MdGallery from "../module/MdGallery";
 
+
 function Themandalorian(props) {
   return (
     <main className="main-area">
