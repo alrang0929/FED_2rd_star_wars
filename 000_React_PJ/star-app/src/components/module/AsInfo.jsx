@@ -1,5 +1,8 @@
 import React from "react";
 
+// CSS
+import "../../css/as_info.scss";
+
 function AsInfo(props) {
   return (
     <>
