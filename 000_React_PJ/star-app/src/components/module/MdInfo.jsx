@@ -4,8 +4,8 @@ import "../../css/md_info.scss";
 
 function MdInfo(props) {
     return (
-      <div className="" id="info-area">
-        <section className="info-area">
+      <div className="" id="bdinfo-area">
+        <section className="bdinfo-area">
           <div className="main-img-box">
             <img
               src="/images/sub_themandalorian_images/main_poster.jpeg"
