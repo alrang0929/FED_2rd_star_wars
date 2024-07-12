@@ -18,8 +18,8 @@ function MdVideo(props) {
           <div class="video-img-wrap fx-box inboxmanman">
             <div class="video-list"></div>
             <div class="slbtn-box">
-              <button class="abtn ab1 fa-solid fa-angle-left vdbtn1 vdbtn"></button>
-              <button class="abtn ab2 fa-solid fa-angle-right vdbtn2 vdbtn"></button>
+              <button class="mdabtn ab1 fa-solid fa-angle-left vdbtn1 vdbtn"></button>
+              <button class="mdabtn ab2 fa-solid fa-angle-right vdbtn2 vdbtn"></button>
             </div>
             <div class="video-cont-box">
               <div class="video-tab"></div>

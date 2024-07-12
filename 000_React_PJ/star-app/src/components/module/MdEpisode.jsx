@@ -93,8 +93,8 @@ function GoEpSlide() {
               </ul>
             </div>
             <div className="slbtn-box">
-              <button className="abtn ab1 fa-solid fa-angle-left epbtn1 epbtn"></button>
-              <button className="abtn ab2 fa-solid fa-angle-right epbtn2 epbtn"></button>
+              <button className="mdabtn ab1 fa-solid fa-angle-left epbtn1 epbtn"></button>
+              <button className="mdabtn ab2 fa-solid fa-angle-right epbtn2 epbtn"></button>
             </div>
           </div>
         </div>
