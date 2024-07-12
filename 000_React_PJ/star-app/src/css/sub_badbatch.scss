@@ -4,7 +4,7 @@
 
 body {
 
-  text-align: center;
+  // text-align: center;
   position: relative;
   overflow-x: hidden;
   background-color: #000;
@@ -310,10 +310,10 @@ ul li figcaption {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-}
-div > ul li {
-  line-height: 0;
-  cursor: pointer;
+   ul li {
+    line-height: 0;
+    cursor: pointer;
+  }
 }
 
 div > ul figure {

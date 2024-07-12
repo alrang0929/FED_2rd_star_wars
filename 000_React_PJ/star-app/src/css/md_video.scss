@@ -19,12 +19,12 @@
   transition: 0.5s ease-in-out;
   will-change: left;
 }
-.video-box {
+.mdvideo-box {
   /* padding: 10px; */
   box-sizing: border-box;
   cursor: pointer;
 }
-.video-box img {
+.mdvideo-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -47,7 +47,7 @@
 .video-img {
   position: relative;
 }
-.video-box {
+.mdvideo-box {
   overflow: hidden;
 }
 .video-img {
@@ -84,8 +84,13 @@
   background-color: #111111f1;
   z-index: 9999;
 }
+// .video-tab{
+//   display: none;
+// }
 
-.video-cont-box.on .video-tab {
+
+.video-cont-box.on .video-tab{
+  display: block;
   position: fixed;
   left: 50%;
   top: 50%;
