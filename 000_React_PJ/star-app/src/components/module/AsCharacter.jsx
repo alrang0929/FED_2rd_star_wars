@@ -23,7 +23,7 @@ function AsCharacter(props) {
       <aside id="character-page" class="show">
         <div class="cont-box fx-box">
           <div class="img-box col-6">
-            <img src="./images/ahsoka/characters/c01.jpeg" alt="character" />
+            <img src="/images/sub_ahsoka_images/characters/c01.jpeg" alt="character" />
           </div>
           <div class="desc-box col-6">
             <h2 class="title">Name</h2>

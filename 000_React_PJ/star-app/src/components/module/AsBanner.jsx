@@ -9,13 +9,13 @@ function AsBanner(props) {
       <section id="top-title" className="section-top">
         <div className="top-banner">
           <img
-            src={process.env.PUBLIC_URL + "/images/ahsoka/top-banner.jpeg"}
+            src="/images/sub_ahsoka_images/top-banner.jpeg"
             alt="top banner"
           />
           <div className="ban-desc-box">
             <div className="ban-logo">
               <img
-                src={process.env.PUBLIC_URL + "/images/ahsoka/ahsoka_logo.png"}
+                src="/images/sub_ahsoka_images/ahsoka_logo.png"
                 alt="ahsoka logo"
               />
             </div>

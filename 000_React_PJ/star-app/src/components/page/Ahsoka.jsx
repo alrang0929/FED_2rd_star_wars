@@ -4,12 +4,7 @@ import React from "react";
 import AsBanner from "../module/AsBanner";
 import AsInfo from "../module/AsInfo";
 import AsVideo from "../module/AsVideo";
-
-//svg
-// import { ReactComponent as close } from "/images/sub_ahsoka_images/icon/icon_close.svg";
-
-// CSS
-// import "../../css/ahsoka.scss";
+import AsCharacter from "../module/AsCharacter";
 
 function Ahsoka(props) {
   return (
@@ -21,6 +16,7 @@ function Ahsoka(props) {
       {/* 비디오 영역 */}
       <AsVideo />
       {/* 캐릭터 소개 영역 */}
+      <AsCharacter />
     </>
   );
 }

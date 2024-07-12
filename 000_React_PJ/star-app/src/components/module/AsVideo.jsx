@@ -28,12 +28,7 @@ function AsVideo(props) {
                 <ul>
                   <li>
                     <div className="img-box">
-                      <img
-                        src={
-                          process.env.PUBLIC_URL + "/images/ahsoka/mv01.jpeg"
-                        }
-                        alt="Trailer"
-                      />
+                      <img src="/images/sub_ahsoka_images/mv01.jpeg" alt="Trailer" />
                     </div>
                     <div className="title-box">
                       <h3>Ahsoka | Teaser Trailer | Disney+</h3>
@@ -42,9 +37,7 @@ function AsVideo(props) {
                   <li>
                     <div className="img-box">
                       <img
-                        src={
-                          process.env.PUBLIC_URL + "/images/ahsoka/mv02.jpeg"
-                        }
+                        src="/images/sub_ahsoka_images/mv02.jpeg"
                         alt="Masters and Apprentices"
                       />
                     </div>
@@ -54,12 +47,7 @@ function AsVideo(props) {
                   </li>
                   <li>
                     <div className="img-box">
-                      <img
-                        src={
-                          process.env.PUBLIC_URL + "/images/ahsoka/mv03.avif"
-                        }
-                        alt="Phenomenon"
-                      />
+                      <img src="/images/sub_ahsoka_images/mv03.avif" alt="Phenomenon" />
                     </div>
                     <div className="title-box">
                       <h3>Phenomenon | Ahsoka | Disney+</h3>
@@ -68,9 +56,7 @@ function AsVideo(props) {
                   <li>
                     <div className="img-box">
                       <img
-                        src={
-                          process.env.PUBLIC_URL + "/images/ahsoka/mv04.jpeg"
-                        }
+                        src="/images/sub_ahsoka_images/mv04.jpeg"
                         alt="Sabine’s Loth-Cat"
                       />
                     </div>
