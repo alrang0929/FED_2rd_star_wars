@@ -19,7 +19,6 @@ function MdVideo(props) {
       x.onclick = GoVdSlide;
     }
 
-    let vdcode = ``;
     video.forEach((ele, i) => {
       ele.onclick = () => {
         videoBox.classList.add("on");
