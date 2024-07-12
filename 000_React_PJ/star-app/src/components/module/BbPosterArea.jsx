@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import { posData } from "../../data/sub_badbatch_list_data";
 import aaa from "../../js/sub_badbatch";
 import "../../css/bb_poster_area.scss";
-// import * as listData from "../../data/sub_badbatch_list_data";
+
+import { posData } from "../../data/sub_badbatch_list_data";
 ////////importArea/////////////////////////////
 
 function BbPosterArea() {

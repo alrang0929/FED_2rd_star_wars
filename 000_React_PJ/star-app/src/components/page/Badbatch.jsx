@@ -26,7 +26,7 @@ function Badbatch() {
             {/* 5. 서브 컨텐츠: pos-area */}
             <BbPosterArea/>
             {/* 6. 서브 공통모듈: 하단배너 / bt-banner-area */}
-            {/* <SubBtBanner/> */}
+            <SubBtBanner/>
         </>
     );
 }

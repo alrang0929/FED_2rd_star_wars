@@ -1,7 +1,7 @@
 //메인sub badbatch js - sub_badbatch.js
 import mFn from "./my_function.js";
 import * as listMap from "./sub_badbatch_mapping.js";
-import * as listData from "../data/sub_badbatch_list_data.js";
+import {epData, snsData,posData} from "../data/sub_badbatch_list_data.js";
 // import common from "./common.js"
 ///////불러오기 영역//////////////////////
 
@@ -42,7 +42,7 @@ export default function aaa() {
   function posOnFn() {
     const item = mFn.qsa(".pos-wrap li");
     const layer = mFn.qs(".pos-data-wrap");
-    const posdata = listData.posData;
+    const posdata = posData;
 
     //마우스 호버시 li 커짐
     item.forEach((ele, idx) => {
