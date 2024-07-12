@@ -7,22 +7,22 @@ function AsInfo(props) {
   return (
     <>
       <div className="page">
-        <section id="info-area" className="section-top">
-          <div className="cont-box fx-box scAct">
+        <section id="info-area" className="as-section-top">
+          <div className="content-box fx-box scAct">
             <div className="img-box col-6">
               <img src="/images/sub_ahsoka_images/poster1.jpeg" alt="ahsoka poster" />
             </div>
             <div className="desc-box col-6">
               <div className="bullet"></div>
-              <h2 className="title">
+              <h2 className="as-title">
                 Star Wars :<br />
                 Ahsoka
               </h2>
-              <div className="desc">
+              <div className="as-title">
                 Rating: TV-14 Release Date: August 22, 2023 Genre: Action,
                 Adventure, Science Fiction
               </div>
-              <div className="desc">
+              <div className="as-title">
                 Set after the fall of the Empire, "Ahsoka" follows the former
                 Jedi knight Ahsoka Tano as she investigates an emerging threat
                 to a vulnerable galaxy.

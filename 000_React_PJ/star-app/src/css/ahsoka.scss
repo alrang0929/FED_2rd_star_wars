@@ -6,21 +6,21 @@ body {
   background: url(../../public/images/sub_ahsoka_images/background.jpg)
   no-repeat fixed left / cover;
 }
-.cont-box{
+.content-box {
   max-width: 1500px;
   margin: 0 auto;
   text-align-last: left;
 }
 
 /* 타이틀, 설명글 공통 */
-.title {
+.as-title {
   color: #fff;
   text-align: justify;
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.2;
 }
-.desc {
+.as-desc {
   color: #fff;
   text-align: justify;
   font-size: 1.8rem;
@@ -29,7 +29,7 @@ body {
 
 /*************  박스 공통 설정 *************/
 /* 섹션 상단 여백 */
-.section-top {
+.as-section-top {
   padding-top: 15rem;
 }
 /* 슬라이드 내 박스 설정 */

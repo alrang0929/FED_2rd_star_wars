@@ -7,8 +7,8 @@ function AsEpisode() {
   return (
     <>
       <div className="page">
-        <section id="episode-area" className="section-top">
-          <div className="cont-box">
+        <section id="episode-area" className="as-section-top">
+          <div className="content-box">
             <div className="tit-box fx-box">
               <h3 className="title-sub">Episode Guides</h3>
             </div>

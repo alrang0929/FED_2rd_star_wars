@@ -7,8 +7,8 @@ function AsCharacter(props) {
   return (
     <>
       <section className="page">
-        <div id="charater-area" className="section-top">
-          <div className="cont-box">
+        <div id="charater-area" className="as-section-top">
+          <div className="content-box">
             <div className="tit-box fx-box">
               <h3 className="title-sub">Charater</h3>
             </div>
@@ -21,7 +21,7 @@ function AsCharacter(props) {
       </section>
       {/* <!-- 캐릭터 설명 박스 --> */}
       <aside id="character-page" class="show">
-        <div class="cont-box fx-box">
+        <div class="content-box fx-box">
           <div class="img-box col-6">
             <img src="/images/sub_ahsoka_images/characters/c01.jpeg" alt="character" />
           </div>

@@ -7,7 +7,7 @@ function AsVideo() {
   return (
     <>
       <div className="page">
-        <section id="video-area" className="section-top">
+        <section id="video-area" className="as-section-top">
           <div className="tit-box fx-box">
             <h3 className="title-sub">Video</h3>
           </div>

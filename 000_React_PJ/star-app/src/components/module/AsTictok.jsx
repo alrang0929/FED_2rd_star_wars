@@ -7,8 +7,8 @@ function AsTictok(props) {
   return (
     <>
       <div className="page">
-        <section id="tiktoc-area" className="section-top">
-          <div className="cont-box">
+        <section id="tiktoc-area" className="as-section-top">
+          <div className="content-box">
             <div className="tit-box fx-box">
               <h3 className="title-sub">#Asoka</h3>
             </div>

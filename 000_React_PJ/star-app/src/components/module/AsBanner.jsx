@@ -6,7 +6,7 @@ import "../../css/as_banner.scss";
 function AsBanner(props) {
   return (
     <>
-      <section id="top-title" className="section-top">
+      <section id="top-title" className="as-section-top">
         <div className="top-banner">
           <img
             src="/images/sub_ahsoka_images/top-banner.jpeg"
@@ -19,7 +19,7 @@ function AsBanner(props) {
                 alt="ahsoka logo"
               />
             </div>
-            <div className="desc">
+            <div className="as-title">
               <p>
                 Former Jedi Knight Ahsoka Tano investigates an
                 <br />
