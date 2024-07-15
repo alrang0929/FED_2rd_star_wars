@@ -9,6 +9,7 @@ import Main from "./components/page/Main";
 import Themandalorian from "./components/page/Themandalorian";
 import Ahsoka from "./components/page/Ahsoka";
 import Badbatch from "./components/page/Badbatch";
+import Member from "./components/page/Member";
 import Login from "./components/page/Login";
 import Member from "./components/page/Member";
 
