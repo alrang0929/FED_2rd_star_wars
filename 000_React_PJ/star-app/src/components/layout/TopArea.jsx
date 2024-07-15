@@ -46,8 +46,8 @@ export const TopArea = () => {
         {/* 사이드메뉴박스*/}
         <div className="search-box col-4">
           <ul className="fx-box">
-            {sideMenuBox.map(v => (
-              <li key={v}>
+            {sideMenuBox.map((v,i) => (
+              <li key={i}>
                 <Link to={v.link}>{v.menu}</Link>
               </li>
             ))}
