@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import MdInfo from "../module/MdInfo";
 
 import "../../css/themandalorian.scss";
@@ -10,7 +10,7 @@ import MdGallery from "../module/MdGallery";
 
 function Themandalorian(props) {
   return (
-    <main className="main-area themandalorian">
+    <Fragment className="main-area themandalorian">
       {/* <!-- 인포영역 --> */}
       <MdInfo />
       {/* <!-- 에피소드 / 뉴스  영역 --> */}
@@ -21,7 +21,7 @@ function Themandalorian(props) {
       <MdCharacter />
       {/* <!-- 갤러리 영역 --> */}
       <MdGallery />
-    </main>
+    </Fragment>
   );
 }
 
