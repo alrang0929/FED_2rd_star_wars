@@ -3,10 +3,42 @@ import React from "react";
 // 나의 함수
 import mFn from "../../js/my_function";
 
+// 데이터
+import {cData} from "../../data/sub_ahsoka_data";
+
 // CSS
 import "../../css/as_character.scss";
 
 function AsCharacter(props) {
+  const cPage = mFn.qs("#character-page");
+  const cPageTitle = mFn.qs("#character-page .title");
+  const cPageDesc = mFn.qs("#character-page .desc");
+  const cPageImg = mFn.qs("#character-page img");
+  // console.log("캐릭터 페이지:", cPage);
+
+  const showBox = mFn.qsa(".cbox li");
+
+  showBox.forEach((x) => {
+    x.onclick = () => {
+      let key = x.getAttribute("data-key");
+      let selRec = cData.some((z) => {
+        if (z.idx === key) {
+          // 클릭된 idx와 일치하는 배열값을 찾음!
+          cPageTitle.innerText = z.name;
+          cPageDesc.innerText = z.desc;
+          cPageImg.src = `./images/sub_ahsoka_images/characters/${z.idx}.jpeg`;
+          return;
+        }
+      });
+      console.log(key, ":", selRec);
+
+      cPage.style.display = "block";
+    }; /// onclick ///
+  }); ////// forEach //////
+
+  mFn.qs(".close-btn").onclick = () => {
+    cPage.style.display = "none";
+  };
 
   return (
     <>
