@@ -21,9 +21,7 @@ function AsVideo() {
             <div className="video-box col-12">
               {/* <!-- 유튜브 아이프레임 --> */}
               <iframe
-                id="ifr"
-                width="1250"
-                height="703"
+                id="as-ifr"
                 src="https://www.youtube.com/embed/J7-zia4oHuk"
               ></iframe>
             </div>
