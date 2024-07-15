@@ -1,8 +1,5 @@
 import React from "react";
 
-// 나의 함수
-import mFn from "../../js/my_function";
-
 // CSS
 import "../../css/as_video.scss";
 
