@@ -1,21 +1,17 @@
-import React, { useState } from "react";
-
-import Modal from "./Modal";
+import React from "react";
 
 // CSS
 import "../../css/as_banner.scss";
 
-function AsBanner() {
-  const [showModal, setShowModal] = useState(false);
-  const toggleModal = () => {
-    setShowModal(!showModal);
-  };
-
+function AsBanner(props) {
   return (
     <>
-      <section id="top-title" className="section-top">
-        <div className="top-banner">
-          <img src="/images/ahsoka/top-banner.jpeg" alt="top banner" />
+      <section id="top-title" className="as-section-top">
+        <div className="as-top-banner">
+          <img
+            src="/images/sub_ahsoka_images/top-banner.jpeg"
+            alt="top banner"
+          />
           <div className="ban-desc-box">
             <div className="ban-logo">
               <img
@@ -32,18 +28,7 @@ function AsBanner() {
             </div>
             <div className="btn-box">
               <span className="btn1">
-                <a href="#"
-                onClick={(e)=>{
-                  e.preventDefault();
-                  toggleModal();
-                }}
-                >STREAM NOW</a>
-                <Modal 
-                show={showModal}
-                onClose={toggleModal}
-                >
-                  <h1>안녕, 나는 모달창!</h1>
-                </Modal>
+                <a href="#">STREAM NOW</a>
               </span>
               <span className="btn2">
                 <a href="#">▶ WATCH TRAILER</a>

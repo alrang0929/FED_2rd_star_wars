@@ -14,8 +14,11 @@
 #login-area {
     height: 90vh;
     position: relative;
+    background-color: #797979;
     background: url(../../public/images/main_images/star_night.jpg);
-    background-color: $MainColor2;
+
+    //버튼 프리셋
+    
 
     section {
         position: absolute;
@@ -41,12 +44,8 @@
             }
         }
         .input-wrap {
-<<<<<<< HEAD
-            
-=======
             text-align: center;
-            width: 60vw;
->>>>>>> parent of 5180d5d (asd)
+            width: 40vw;
             .saveId {
                 margin-top: -20px;
                 text-align: right;
@@ -82,7 +81,7 @@
                     color: $FontColor3;
 
                     &:hover{
-                        color: $PointColor3;
+                        color: yellow;
                     }
                 }
             }

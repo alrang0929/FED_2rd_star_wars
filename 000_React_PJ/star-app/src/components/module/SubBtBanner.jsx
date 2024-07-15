@@ -39,7 +39,7 @@ function SubBtBanner() {
           <ul className="sub-ban-box">
             <li className="sub-ban-1 sub-ban-img">
               <video
-                src={process.env.PUBLIC_URL+`/images/sub_badbatch_img/title_BG.mp4`}
+                src="/images/sub_badbatch_img/title_BG.mp4"
                 autoPlay
                 muted
                 playsInline
@@ -48,7 +48,7 @@ function SubBtBanner() {
             </li>
             <li className="sub-ban-2 sub-ban-img">
               <video
-                src={process.env.PUBLIC_URL+`/images/sub_badbatch_img/sub_ban_mando.mp4`}
+                src="/images/sub_badbatch_img/sub_ban_mando.mp4"
                 autoPlay
                 muted
                 playsInline
@@ -57,7 +57,7 @@ function SubBtBanner() {
             </li>
             <li className="sub-ban-3 sub-ban-img">
               <video
-                src={process.env.PUBLIC_URL+`/images/sub_badbatch_img/sub_ban_ahsoka.mp4`}
+                src="/images/sub_badbatch_img/sub_ban_ahsoka.mp4"
                 autoPlay
                 muted
                 playsInline
