@@ -18,7 +18,7 @@ function BbTopBanner() {
             The Bad Batch is back for one last fight. The final season is now
             streaming. only on Disney&#43;
           </div>
-          <div className="btn-box fx-box">
+          <div className="btn-box-bb fx-box">
             <button className="btn-main col-4nd-4 col-2">
               <a href="#">stream on disney&#43;</a>
             </button>
