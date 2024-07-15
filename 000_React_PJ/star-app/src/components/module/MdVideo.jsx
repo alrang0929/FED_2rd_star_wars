@@ -3,26 +3,26 @@ import { videoData } from "../../data/sub_themandalorian_data";
 import domFn from "../../js/my_function";
 
 import "../../css/md_video.scss";
-import { mdddvideo } from "../../data/sub_themandalorian";
+import { mandalvideo } from "../../data/sub_themandalorian";
 function MdVideo(props) {
   useLayoutEffect(() => {
-    mdddvideo();
+    mandalvideo();
   });
   return (
     <div id="video-area">
-      <section class="video-area cont-box section-top">
-        <div class="video-wrap inboxman">
+      <section className="video-area cont-box section-top">
+        <div className="video-wrap inboxman">
           <h2>
             <span>Video</span>
           </h2>
-          <div class="video-img-wrap fx-box inboxmanman">
-            <div class="video-list"></div>
-            <div class="slbtn-box">
-              <button class="mdabtn ab1 fa-solid fa-angle-left vdbtn1 vdbtn"></button>
-              <button class="mdabtn ab2 fa-solid fa-angle-right vdbtn2 vdbtn"></button>
+          <div className="video-img-wrap fx-box inboxmanman">
+            <div className="video-list"></div>
+            <div className="slbtn-box">
+              <button className="mdabtn ab1 fa-solid fa-angle-left vdbtn1 vdbtn"></button>
+              <button className="mdabtn ab2 fa-solid fa-angle-right vdbtn2 vdbtn"></button>
             </div>
-            <div class="video-cont-box">
-              <div class="video-tab"></div>
+            <div className="video-cont-box">
+              <div className="video-tab"></div>
             </div>
           </div>
         </div>

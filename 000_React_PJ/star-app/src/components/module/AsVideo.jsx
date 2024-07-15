@@ -1,7 +1,12 @@
 import React from "react";
 
-// CSS
+// 나의 함수
+import mFn from "../../js/my_function";
+
+// 비디오 영역 CSS
 import "../../css/as_video.scss";
+
+
 
 function AsVideo() {
   return (
@@ -28,7 +33,10 @@ function AsVideo() {
                 <ul>
                   <li>
                     <div className="img-box">
-                      <img src="/images/sub_ahsoka_images/mv01.jpeg" alt="Trailer" />
+                      <img
+                        src="/images/sub_ahsoka_images/mv01.jpeg"
+                        alt="Trailer"
+                      />
                     </div>
                     <div className="title-box">
                       <h3>Ahsoka | Teaser Trailer | Disney+</h3>
@@ -37,7 +45,7 @@ function AsVideo() {
                   <li>
                     <div className="img-box">
                       <img
-                        src="/images/sub_ahsoka_images/mv02.jpeg"
+                        src="images/sub_ahsoka_images/mv02.jpeg"
                         alt="Masters and Apprentices"
                       />
                     </div>
@@ -47,7 +55,10 @@ function AsVideo() {
                   </li>
                   <li>
                     <div className="img-box">
-                      <img src="/images/sub_ahsoka_images/mv03.avif" alt="Phenomenon" />
+                      <img
+                        src="/images/sub_ahsoka_images/mv03.avif"
+                        alt="Phenomenon"
+                      />
                     </div>
                     <div className="title-box">
                       <h3>Phenomenon | Ahsoka | Disney+</h3>
