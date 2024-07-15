@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // 나의 함수
 import mFn from "../../js/my_function";
@@ -15,37 +15,40 @@ import "../../css/as_character.scss";
 console.log("캐릭터 데이터", cData);
 
 function AsCharacter() {
-  const cPage = mFn.qs("#character-page");
-  const cPageTitle = mFn.qs("#character-page .as-title");
-  const cPageDesc = mFn.qs("#character-page .as-desc");
-  const cPageImg = mFn.qs("#character-page img");
-
-  console.log("캐릭터 페이지:", cPage);
-
-  const showBox = mFn.qsa(".cbox li");
-
-  // showBox.forEach((x) => {
-  //   x.onclick = () => {
-  //     let key = x.getAttribute("data-key");
-
-  //     let selRec = cData.some((z) => {
-  //       if (z.idx === key) {
-  //         // 클릭된 idx와 일치하는 배열값을 찾음!
-  //         cPageTitle.innerText = z.name;
-  //         cPageDesc.innerText = z.desc;
-  //         cPageImg.src = `/images/sub_ahsoka_images/characters/${z.idx}.jpeg`;
-  //         return;
-  //       }
-  //     });
-  //     console.log(key, ":", selRec);
-
-  //     cPage.style.display = "block";
-  //   }; /// onclick ///
-  // }); ////// forEach //////
-
-  // mFn.qs(".close-btn").onclick = () => {
-  //   cPage.style.display = "none";
-  // };
+  
+  useEffect(()=>{
+      const cPage = mFn.qs("#character-page");
+      const cPageTitle = mFn.qs("#character-page .as-title");
+      const cPageDesc = mFn.qs("#character-page .as-desc");
+      const cPageImg = mFn.qs("#character-page .img-box");
+    
+      console.log("캐릭터 페이지:", cPage);
+    
+      const showBox = mFn.qsa(".cbox li");
+    
+      showBox.forEach((x) => {
+        x.onclick = () => {
+          let key = x.getAttribute("data-key");
+          let selRec = cData.some((z) => {
+            // console.log(z.idx);
+            if (z.idx === key) {
+              // 클릭된 idx와 일치하는 배열값을 찾음!
+              cPageTitle.innerText = z.name;
+              cPageDesc.innerText = z.desc;
+              cPageImg.innerHTML = `<img src="/images/sub_ahsoka_images/characters/${z.idx}.jpeg" alt="images"/>`;
+              return;
+            }
+          });
+          console.log(key, ":", selRec);
+    
+          cPage.style.display = "block";
+        }; /// onclick ///
+      }); ////// forEach //////
+    
+      mFn.qs(".close-btn").onclick = () => {
+        cPage.style.display = "none";
+      };
+  },[]);
 
   // 코드 리턴 /////////////////////
   return (
@@ -62,7 +65,8 @@ function AsCharacter() {
               <ul>
                 {cData.map((v, i) => (
                   <li key={i}
-                  onClick={showBox}
+                  data-key={v.idx}
+                  // onClick={showBox}
                   >
                     <img
                       src={
