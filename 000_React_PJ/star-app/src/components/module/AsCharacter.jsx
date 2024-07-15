@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 // 나의 함수
 import mFn from "../../js/my_function";
@@ -22,32 +22,30 @@ function AsCharacter() {
 
   console.log("캐릭터 페이지:", cPage);
 
-  useEffect(() => {
-    const showBox = mFn.qsa(".cbox li");
+  const showBox = mFn.qsa(".cbox li");
 
-    showBox.forEach((x) => {
-      x.onclick = () => {
-        let key = x.getAttribute("data-key");
+  showBox.forEach((x) => {
+    x.onclick = () => {
+      let key = x.getAttribute("data-key");
 
-        let selRec = cData.some((z) => {
-          if (z.idx === key) {
-            // 클릭된 idx와 일치하는 배열값을 찾음!
-            cPageTitle.innerText = z.name;
-            cPageDesc.innerText = z.desc;
-            cPageImg.src = `/images/sub_ahsoka_images/characters/${z.idx}.jpeg`;
-            return;
-          }
-        });
-        console.log(key, ":", selRec);
+      let selRec = cData.some((z) => {
+        if (z.idx === key) {
+          // 클릭된 idx와 일치하는 배열값을 찾음!
+          cPageTitle.innerText = z.name;
+          cPageDesc.innerText = z.desc;
+          cPageImg.src = `/images/sub_ahsoka_images/characters/${z.idx}.jpeg`;
+          return;
+        }
+      });
+      console.log(key, ":", selRec);
 
-        cPage.style.display = "block";
-      }; /// onclick ///
-    }); ////// forEach //////
+      cPage.style.display = "block";
+    }; /// onclick ///
+  }); ////// forEach //////
 
-    mFn.qs(".close-btn").onclick = () => {
-      cPage.style.display = "none";
-    };
-  });
+  mFn.qs(".close-btn").onclick = () => {
+    cPage.style.display = "none";
+  };
 
   // 코드 리턴 /////////////////////
   return (
@@ -63,7 +61,9 @@ function AsCharacter() {
               {/* 캐릭터 리스트 */}
               <ul>
                 {cData.map((v, i) => (
-                  <li key={i}>
+                  <li key={i}
+                  onClick={showBox}
+                  >
                     <img
                       src={
                         process.env.PUBLIC_URL +
