@@ -10,7 +10,7 @@ function MdGallery(props) {
     mandalgallery();
   })
     return (
-      <div id="gallery-area">
+      <div id="mdgallery-area">
         <section className="gallery-area cont-box section-top">
           <div className="gallery-wrap inboxman">
             <h2>
