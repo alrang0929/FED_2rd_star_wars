@@ -11,6 +11,7 @@ import Ahsoka from "./components/page/Ahsoka";
 import Badbatch from "./components/page/Badbatch";
 import Member from "./components/page/Member";
 import Login from "./components/page/Login";
+import Member from "./components/page/Member";
 
 export default function MainComponent() {
   return (
