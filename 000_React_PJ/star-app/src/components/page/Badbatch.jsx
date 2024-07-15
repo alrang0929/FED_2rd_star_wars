@@ -2,6 +2,7 @@
 import React, { Fragment } from 'react';
 //css
 import "../../css/sub_badbatch.scss";
+import "../../css/sub_badbatch_media.scss";
 
 //module
 import BbTopBanner from '../module/BbTopBanner';
@@ -17,7 +18,7 @@ function Badbatch() {
         <>
             {/* 1. 상단 타이틀 영역 */}
             <BbTopBanner/>
-            {/* <main className='badbatch'> */}
+            <main className='badbatch'>
 
             {/* 2. 서브 컨텐츠: info area */}
             <BbInfoArea/>
@@ -29,7 +30,7 @@ function Badbatch() {
             <BbPosterArea/>
             {/* 6. 서브 공통모듈: 하단배너 / bt-banner-area */}
             <SubBtBanner/>
-            {/* </main> */}
+            </main>
         </>
     );
 }

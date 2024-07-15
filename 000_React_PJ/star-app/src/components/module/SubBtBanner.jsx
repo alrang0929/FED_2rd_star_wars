@@ -42,7 +42,7 @@ function SubBtBanner() {
                 src="/images/sub_badbatch_img/title_BG.mp4"
                 autoPlay
                 muted
-                playsinline
+                playsInline
                 loop
               ></video>
             </li>
@@ -51,7 +51,7 @@ function SubBtBanner() {
                 src="/images/sub_badbatch_img/sub_ban_mando.mp4"
                 autoPlay
                 muted
-                playsinline
+                playsInline
                 loop
               ></video>
             </li>
@@ -60,7 +60,7 @@ function SubBtBanner() {
                 src="/images/sub_badbatch_img/sub_ban_ahsoka.mp4"
                 autoPlay
                 muted
-                playsinline
+                playsInline
                 loop
               ></video>
             </li>
