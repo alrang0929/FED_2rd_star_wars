@@ -558,7 +558,7 @@ function Member() {
                 Submit
               </button>
             </li>
-            <li>
+            <li className="already">
               Are you already a Member?
               <Link to="/login">Log In</Link>
             </li>
