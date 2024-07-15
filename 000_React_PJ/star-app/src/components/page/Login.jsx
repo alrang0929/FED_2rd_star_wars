@@ -7,7 +7,7 @@ import $ from "jquery";
 import "../../css/login.scss";
 //로컬 스토리지 셋팅 함수 호출!
 import { initData } from "../func/memFn";
-import { sCon } from "./sCon";
+import { sCon } from "./sCon.jsx";
 
 /////import area///////////////////////////////////////////////
 
@@ -36,8 +36,8 @@ export default function Login() {
     //[메세지 프리셋]/////////////
     //아이디
     const msgId = [
-        "아이디를 입력해주세요", //필수입력
-        "잘못된 아이디 입니다",
+        "Please enter your ID", //필수입력
+        "This is an incorrect ID.",
     ];
     //비밀번호
     const msgPwd = [

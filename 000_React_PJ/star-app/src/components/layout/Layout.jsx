@@ -5,12 +5,16 @@ import MainArea from "./MainArea";
 import { TopArea } from "./TopArea";
 
 // 컨텍스트 API 불러오기
-import { sCon } from "../page/sCon,jsx";
+import { sCon } from "../page/sCon.jsx";
 import { useNavigate } from "react-router-dom";
 
 ////////////////////////import area///////////////////////////////////
 
 export default function Layout() {
+  let loginTemp = null;
+  if(sessionStorage.getItem("login-sts")) 
+  loginTemp = sessionStorage.getItem("login-sts");
+
   //[상태관리변수 구역]///////////////////////////////////
 
   //1. 로그인 상태관리변수
@@ -48,7 +52,7 @@ export default function Layout() {
       setLoginSts(sessionSts);
       //로그인 메시지 업데이트
       //ㄴ> 세션스의 unm(이름값)을 보내준다
-      makeMsg(JSON.parse(sessionSts).unm);
+      // makeMsg(JSON.parse(sessionSts).unm);
     } ////if/////////////
   }, []);
 
@@ -68,7 +72,6 @@ export default function Layout() {
       <TopArea 
       loginSts={loginSts} 
       logoutFn={logoutFn} 
-      goPage={goPage} 
       />
       {/* 2.메인영역 */}
       <MainArea />
