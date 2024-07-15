@@ -47,7 +47,7 @@ export const TopArea = () => {
         <div className="search-box col-4">
           <ul className="fx-box">
             {sideMenuBox.map((v,i) => (
-              <li key={i}>
+              <li key={i} className={(v.menu.replace(' ','')).toLowerCase()}>
                 <Link to={v.link}>{v.menu}</Link>
               </li>
             ))}
