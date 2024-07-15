@@ -31,7 +31,7 @@ function AsInfo(props) {
               <button className="btn-link">
                 <a href="#">
                   <img
-                    src="/images/sub_ahsoka_images/icon_link_asoka.png"
+                    src="/images/ahsoka/icon_link_asoka.png"
                     alt="era7 icon"
                   />
                   <span className="link-txt">Era: The New Republic</span>
