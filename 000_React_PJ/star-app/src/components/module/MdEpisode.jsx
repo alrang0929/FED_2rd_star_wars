@@ -64,7 +64,7 @@ function GoEpSlide() {
 }
   })
   return (
-    <div id="episode-area">
+    <div id="mdepisode-area">
       <section className="episode-area cont-box section-top">
         <div className="ep-wrap inboxman">
           <h2>

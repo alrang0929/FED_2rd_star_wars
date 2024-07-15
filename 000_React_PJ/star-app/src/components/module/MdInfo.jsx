@@ -22,10 +22,14 @@ function MdInfo(props) {
               </p>
               <div className="btn-box fx-boxm">
                 <button className="btn-main col-6">
-                  <a href="#">stream on disney&#43;</a>
+                  <a href="https://www.disneyplus.com/ko-kr/series/the-mandalorian/3jLIGMDYINqD?cid=DTCI-Synergy-StarWars-Site-Acquisition-Originals-US-StarWars-Mandalorian-EN-SingleHero-StarWars_Mandalorian_SingleHero-NA" target='_blank'>
+                    stream on disney&#43;
+                  </a>
                 </button>
                 <button className="btn-sub col-6">
-                  <a href="#">S3 trailer ▶</a>
+                  <a href="https://youtu.be/aOC8E8z_ifw" target="_blank">
+                    S3 trailer ▶
+                  </a>
                 </button>
               </div>
             </div>

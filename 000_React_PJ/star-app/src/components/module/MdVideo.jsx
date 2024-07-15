@@ -9,7 +9,7 @@ function MdVideo(props) {
     mandalvideo();
   });
   return (
-    <div id="video-area">
+    <div id="mdvideo-area">
       <section className="video-area cont-box section-top">
         <div className="video-wrap inboxman">
           <h2>
