@@ -16,10 +16,15 @@ const AddressInput = ({ changeAddr }) => {
    // [1] 다음주소창 테마 디자인 객체  (속성은 다음 API)
    // https://postcode.map.daum.net/guide#themeWizard
    const themeObj = {
-      bgColor: "#FFFFFF",
-      pageBgColor: "#FFFFFF",
-      postcodeTextColor: "#C05850",
-      emphTextColor: "#222222",
+      bgColor: "#01023D", //바탕 배경색
+      searchBgColor: "#FFE400", //검색창 배경색
+      contentBgColor: "#FAFAFA", //본문 배경색(검색결과,결과없음,첫화면,검색서제스트)
+      pageBgColor: "#FAFAFA", //페이지 배경색
+      //textColor: "", //기본 글자색
+      //queryTextColor: "", //검색창 글자색
+      postcodeTextColor: "#050FCC", //우편번호 글자색
+      //emphTextColor: "", //강조 글자색
+      outlineColor: "#E7E7E7" //테두리
    };
 
    // [2] 검색창 크기설정 객체

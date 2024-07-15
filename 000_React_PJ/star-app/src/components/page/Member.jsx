@@ -1,5 +1,5 @@
 // 회원가입 페이지 컴포넌트 - Member.jsx
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 // 로컬스토리지 생성 JS
@@ -11,7 +11,13 @@ import "../../css/member.scss";
 import { initData } from "../../js/mem_fn";
 import AddressInput from "../module/AddressInput";
 
+
+
 function Member() {
+  useEffect(()=>{
+//주소박스
+ let addressBox = $('.address').children('div').addClass('address-box');
+});
   // 라우터 이동 네비게이트
   const goNav = useNavigate();
   // goNav(라이터주소,state변수)
@@ -372,7 +378,7 @@ function Member() {
   return (
     <div className="outbx">
       <section className="membx">
-        <h2>Join Us</h2>
+        <h2>'WELCOME TO OUR WORLD!'</h2>
         <form action="process.php" method="post">
           <ul>
             <li>
@@ -503,7 +509,7 @@ function Member() {
                 )
               }
             </li>
-            <li>
+            <li className="address">
               <label>Address</label>
               {/* 다음우편번호 모듈
               - 보내줄값은 내가 정해야함!
@@ -554,8 +560,8 @@ function Member() {
               }
             </li>
             <li style={{ overflow: "hidden" }}>
-              <button className="sbtn" onClick={onSubmit}>
-                Submit
+              <button className="btn-main" onClick={onSubmit}>
+                SUBMIT
               </button>
             </li>
             <li className="already">
