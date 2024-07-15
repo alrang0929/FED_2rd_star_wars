@@ -35,8 +35,6 @@ function scrollFn() {
     // 대상의 BCR값 알아오기
     let pos = mFn.getBCR(ele);
 
-    // console.log('스크롤~',pos);
-
     // 기준값보다 작아지면 on 넣기
     if (pos < CRITERIA) {
       scAct[idx].classList.add("on");
