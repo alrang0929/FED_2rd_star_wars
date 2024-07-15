@@ -66,7 +66,7 @@ function MdCharacter(props) {
     setTimeout(moveGallery2);
   }, []);
   return (
-    <div id="character-area">
+    <div id="mdcharacter-area">
       <section className="character-area section-top">
         <div className="inboxman character-wrap">
           <h2>

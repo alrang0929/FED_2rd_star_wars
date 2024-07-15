@@ -20,18 +20,18 @@ function AsCharacter(props) {
         </div>
       </section>
       {/* <!-- 캐릭터 설명 박스 --> */}
-      <aside id="character-page" class="show">
-        <div class="content-box fx-box">
-          <div class="img-box col-6">
+      <aside id="character-page" className="show">
+        <div className="content-box fx-box">
+          <div className="img-box col-6">
             <img src="/images/sub_ahsoka_images/characters/c01.jpeg" alt="character" />
           </div>
-          <div class="desc-box col-6">
-            <h2 class="title">Name</h2>
-            <div class="desc">
+          <div className="desc-box col-6">
+            <h2 className="title">Name</h2>
+            <div className="desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </div>
           </div>
-          <span class="close-btn"></span>
+          <span className="close-btn"></span>
         </div>
       </aside>
     </>
