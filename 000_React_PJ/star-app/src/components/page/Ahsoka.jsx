@@ -9,7 +9,7 @@ import AsEpisode from "../module/AsEpisode";
 import AsTictok from "../module/AsTictok";
 
 // CSS
-import "../../css/ahsoka.scss";
+// import "../../css/ahsoka.scss";
 
 function Ahsoka() {
   return (
