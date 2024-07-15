@@ -40,7 +40,6 @@ const socialLinks = [
 // 1-2. 사이드메뉴박스
 const sideMenuBox = [
   // { menu: "Search", link: "/Search" },
-  { menu: "JoinUs", link: "/Member" },
   { menu: "Login", link: "/Login" },
   { menu: "Logout", link: "/" },
 ];

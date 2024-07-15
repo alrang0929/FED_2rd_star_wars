@@ -9,7 +9,6 @@ import Main from "./components/page/Main";
 import Themandalorian from "./components/page/Themandalorian";
 import Ahsoka from "./components/page/Ahsoka";
 import Badbatch from "./components/page/Badbatch";
-import Member from "./components/page/Member";
 import Login from "./components/page/Login";
 
 export default function MainComponent() {
@@ -26,7 +25,6 @@ export default function MainComponent() {
           <Route path="ahsoka" element={<Ahsoka />} />
           <Route path="badbatch" element={<Badbatch />} />
           <Route path="login" element={<Login />} />
-          <Route path="member" element={<Member />} />
         </Route>
         {/* Layout 루트 Route로 하위 Route를 감싼다! */}
         {/* 라우터: 입구 > 출구, 이동 가이드 */}
