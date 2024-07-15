@@ -10,7 +10,7 @@ function BbInfoArea() {
         <div className="cont-box fx-box ">
           <div className="imgbox ">
             <img
-              src={process.env.PUBLIC_URL+`/images/sub_badbatch_img/poster_1.jpg`}
+              src="./images/sub_badbatch_img/poster_1.jpg"
               alt="포스터 이미지"
             />
           </div>

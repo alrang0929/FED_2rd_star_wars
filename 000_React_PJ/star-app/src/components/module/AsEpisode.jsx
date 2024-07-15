@@ -19,7 +19,7 @@ function AsEpisode() {
             {/* <!-- 에피소드 박스 --> */}
             <div className="episode-box scAct">
               {/* <!-- 에피소드 데이터 들어갈 곳 --> */}
-              <div className="slider-wrap">
+              <div class="slider-wrap">
                 <ul>
                   {epiData.map((v, i) => (
                     <li key={i}>
@@ -31,8 +31,8 @@ function AsEpisode() {
                           />
                         </a>
                       </figure>
-                      <div className="desc-box">
-                        <div className="title-box">
+                      <div class="desc-box">
+                        <div class="title-box">
                           <h3>{v.title}</h3>
                           <p>{v.desc}</p>
                         </div>

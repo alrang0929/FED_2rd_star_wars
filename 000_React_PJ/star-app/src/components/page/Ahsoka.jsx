@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 // 나의 함수
 import mFn from "../../js/my_function";
@@ -14,44 +14,38 @@ import AsTictok from "../module/AsTictok";
 // 공통 CSS
 import "../../css/ahsoka.scss";
 
+
+// 스크롤 페이드인/아웃 ///////////////////////////
+const stage = mFn.qsa(".page");
+const scAct = mFn.qsa(".scAct");
+// console.log("페이지:", stage, "\n scAct박스:", scAct);
+
+const pagePos = [];
+stage.forEach((ele, idx) => {
+  pagePos[idx] = ele.offsetTop;
+});
+// console.log("페이지 높이값:", pagePos);
+
+mFn.addEvt(window, "scroll", scrollFn);
+
+const CRITERIA = (window.innerHeight / 3) * 2;
+
+function scrollFn() {
+  stage.forEach((ele, idx) => {
+    // 대상의 BCR값 알아오기
+    let pos = mFn.getBCR(ele);
+
+    // 기준값보다 작아지면 on 넣기
+    if (pos < CRITERIA) {
+      scAct[idx].classList.add("on");
+    } else {
+      scAct[idx].classList.remove("on");
+    }
+  });
+} ///////////// scrollFn /////////////
+
 function Ahsoka() {
 
-  
-
-  const CRITERIA = (window.innerHeight / 3) * 2;
-  function scrollFn(stage,scAct) {
-
-    stage.forEach((ele, idx) => {
-      // 대상의 BCR값 알아오기
-      let pos = mFn.getBCR(ele);
-
-      // 기준값보다 작아지면 on 넣기
-      if (pos < CRITERIA) {
-        scAct[idx].classList.add("on");
-      } else {
-        scAct[idx].classList.remove("on");
-      }
-    });
-  } ///////////// scrollFn /////////////
-
-
-
-  useEffect(() => {
-    // 스크롤 페이드인/아웃 ///////////////////////////
-    const stage = mFn.qsa(".page");
-    const scAct = mFn.qsa(".scAct");
-    // console.log("페이지:", stage, "\n scAct박스:", scAct);
-
-    const pagePos = [];
-    stage.forEach((ele, idx) => {
-      pagePos[idx] = ele.offsetTop;
-    });
-    // console.log("페이지 높이값:", pagePos);
-
-    mFn.addEvt(window, "scroll", ()=>scrollFn(stage,scAct));
-  }, []);
-
-  //  코드리턴구역 /////////
   return (
     <>
       {/* 상단 타이틀 배너 */}
