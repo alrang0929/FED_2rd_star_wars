@@ -1,5 +1,5 @@
 // 슬밋pj -  로그인 페이지///
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import $ from "jquery";
 
@@ -14,6 +14,7 @@ import { sCon } from "./sCon.jsx";
 export default function Login() {
   //컨텍스트 사용 셋팅
   const myCon = useContext(sCon);
+  const goNav = useNavigate();
 
   //[상태관리변수]/////////////////////////////////////
   // [1] 입력요소 상태변수
@@ -148,7 +149,7 @@ export default function Login() {
         //2) 비밀번호 검사 : 입력값 == 결과값
         if (pwd === result.pwd) {
           //같을 경우 로그인 성공!
-          alert("슬밋에 오신것을 환영합니다");
+          alert("Welcome to Star Wars");
 
           // ****** [ 로그인 후 셋팅작업 ] ****** //
           // 1. 로그인한 회원정보를 세션스에 셋팅!
@@ -168,7 +169,7 @@ export default function Login() {
           //5. 라우팅 페이지로 이동
           //1초 후 메인 페이지로 이동
           setTimeout(() => {
-            myCon.goPage("/");
+            goNav("/");
           }, 1000);
         } //if
         //로그인 실패시
@@ -230,7 +231,7 @@ export default function Login() {
                 name="mid"
                 type="text"
                 maxLength="16"
-                placeholder="Please enter your ID (email)"
+                placeholder="Please enter your ID"
                 value={userId}
                 onChange={changeUserId}
               ></input>
