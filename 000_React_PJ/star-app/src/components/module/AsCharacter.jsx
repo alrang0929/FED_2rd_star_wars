@@ -3,25 +3,32 @@ import React, { useEffect } from "react";
 // 나의 함수
 import mFn from "../../js/my_function";
 
+// 제이쿼리
+import $ from "jquery";
+
 // 데이터
 import { cData } from "../../data/sub_ahsoka_data";
 
 // CSS
 import "../../css/as_character.scss";
 
-function AsCharacter(props) {
-  useEffect(() => {
-    const cPage = mFn.qs("#character-page");
-    const cPageTitle = mFn.qs("#character-page .title");
-    const cPageDesc = mFn.qs("#character-page .desc");
-    const cPageImg = mFn.qs("#character-page img");
-    // console.log("캐릭터 페이지:", cPage);
+console.log("캐릭터 데이터", cData);
 
+function AsCharacter() {
+  const cPage = mFn.qs("#character-page");
+  const cPageTitle = mFn.qs("#character-page .title");
+  const cPageDesc = mFn.qs("#character-page .desc");
+  const cPageImg = mFn.qs("#character-page img");
+
+  console.log("캐릭터 페이지:", cPage);
+
+  useEffect(() => {
     const showBox = mFn.qsa(".cbox li");
 
     showBox.forEach((x) => {
       x.onclick = () => {
         let key = x.getAttribute("data-key");
+
         let selRec = cData.some((z) => {
           if (z.idx === key) {
             // 클릭된 idx와 일치하는 배열값을 찾음!
@@ -53,7 +60,21 @@ function AsCharacter(props) {
             </div>
             <span className="under-line"></span>
             <div className="cbox scAct">
-              {/* <!-- 캐릭터 데이터 들어갈 곳 --> */}
+              {/* 캐릭터 리스트 */}
+              <ul>
+                {cData.map((v, i) => (
+                  <li key={i}>
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        `/images/sub_ahsoka_images/characters/${v.idx}.jpeg`
+                      }
+                      alt="character"
+                    />
+                    <h3>{v.name}</h3>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
@@ -61,12 +82,7 @@ function AsCharacter(props) {
       {/* <!-- 캐릭터 설명 박스 --> */}
       <aside id="character-page" className="show">
         <div className="content-box fx-box">
-          <div className="img-box col-6">
-            <img
-              src="/images/sub_ahsoka_images/characters/c01.jpeg"
-              alt="character"
-            />
-          </div>
+          <div className="img-box col-6"></div>
           <div className="desc-box col-6">
             <h2 className="title">Name</h2>
             <div className="desc">
