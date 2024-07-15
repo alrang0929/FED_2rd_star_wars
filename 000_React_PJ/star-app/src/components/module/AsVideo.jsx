@@ -6,9 +6,40 @@ import mFn from "../../js/my_function";
 // 비디오 영역 CSS
 import "../../css/as_video.scss";
 
-
-
 function AsVideo() {
+  // 비디오 영역 아이프레임 src 변경 ///////////////////////////
+  const slidePeek = mFn.qsa(".slide-peek-box li");
+  const ifr = mFn.qs("#ifr");
+
+  console.log("슬라이드 픽:", slidePeek, "\n 동영상:", ifr);
+
+  const movieId = {
+    Trailer: "J_1EXWNETiI",
+    "Masters and Apprentices": "UTqPkjk0GLU",
+    Phenomenon: "dp-9AoWxchE",
+    cat: "uSqsyC780OY",
+  };
+
+  slidePeek.forEach((ele, idx) => {
+    ele.onclick = () => {
+      let txt = ele.querySelector("img").getAttribute("alt");
+
+      ifr.setAttribute(
+        "src",
+        `https://www.youtube.com/embed/${movieId[txt]}?autoplay=1`
+      );
+
+      slidePeek.forEach((x, i) => {
+        if (i === idx) {
+          x.parentElement.classList.add("on");
+        } /// if ///
+        else {
+          x.parentElement.classList.remove("on");
+        } /// else ///
+      }); /// forEach ///
+    }; /// onclick ///
+  }); ////// forEach //////
+
   return (
     <>
       <div className="page">
@@ -21,7 +52,7 @@ function AsVideo() {
             <div className="video-box col-12">
               {/* <!-- 유튜브 아이프레임 --> */}
               <iframe
-                id="as-ifr"
+                id="ifr"
                 src="https://www.youtube.com/embed/J7-zia4oHuk"
               ></iframe>
             </div>

@@ -1,9 +1,13 @@
 import React from "react";
 
+// 나의 함수
+import mFn from "../../js/my_function";
+
 // CSS
 import "../../css/as_character.scss";
 
 function AsCharacter(props) {
+
   return (
     <>
       <section className="page">
@@ -23,7 +27,10 @@ function AsCharacter(props) {
       <aside id="character-page" className="show">
         <div className="content-box fx-box">
           <div className="img-box col-6">
-            <img src="/images/sub_ahsoka_images/characters/c01.jpeg" alt="character" />
+            <img
+              src="/images/sub_ahsoka_images/characters/c01.jpeg"
+              alt="character"
+            />
           </div>
           <div className="desc-box col-6">
             <h2 className="title">Name</h2>
