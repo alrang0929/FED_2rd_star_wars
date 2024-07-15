@@ -3,6 +3,7 @@ import React from "react";
 // CSS
 import "../../css/as_info.scss";
 
+
 function AsInfo(props) {
   return (
     <>
@@ -18,11 +19,11 @@ function AsInfo(props) {
                 Star Wars :<br />
                 Ahsoka
               </h2>
-              <div className="as-title">
+              <div className="as-desc">
                 Rating: TV-14 Release Date: August 22, 2023 Genre: Action,
                 Adventure, Science Fiction
               </div>
-              <div className="as-title">
+              <div className="as-desc">
                 Set after the fall of the Empire, "Ahsoka" follows the former
                 Jedi knight Ahsoka Tano as she investigates an emerging threat
                 to a vulnerable galaxy.

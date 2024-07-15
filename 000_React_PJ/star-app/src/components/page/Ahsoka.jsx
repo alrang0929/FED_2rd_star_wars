@@ -14,6 +14,7 @@ import AsTictok from "../module/AsTictok";
 // 공통 CSS
 import "../../css/ahsoka.scss";
 
+
 // 스크롤 페이드인/아웃 ///////////////////////////
 const stage = mFn.qsa(".page");
 const scAct = mFn.qsa(".scAct");
@@ -46,7 +47,6 @@ function scrollFn() {
 } ///////////// scrollFn /////////////
 
 function Ahsoka() {
-  scrollFn();
 
   return (
     <>
