@@ -1,14 +1,14 @@
-body {
+
+
+.themandalorian {
   background: url(../../public/images/sub_themandalorian_images/background-img.jpeg)
     repeat-y center;
-
+  
   color: #fff;
-}
-.fx-boxm {
-  display: flex;
-  /* flex-wrap: wrap; */
-}
-.themandalorian {
+  .fx-boxm {
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
   @media screen and (max-width: 1100px) {
     .sub-ban-wrap {
       width: 93%;
