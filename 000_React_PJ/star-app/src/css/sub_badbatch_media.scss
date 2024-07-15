@@ -1,46 +1,5 @@
 @charset "utf-8";
 
-@media screen and (max-width: 1700px) {
-  /* 상단 타이틀 */
-  .top-banner img {
-    margin-top: 3%;
-    width: 42%;
-  }
-
-  /* 인포 */
-  .badbatch #info-area {
-    height: 171vh;
-    .cont-box.fx-box {
-      .desc-box {
-        width: 100%;
-      }
-      .imgbox {
-        width: 80%;
-        translate: -63%;
-        left: 50%;
-        position: relative;
-      }
-      display: flex;
-      margin: 0 auto;
-      flex-direction: column;
-    }
-  }
-
-  #info-area .btn-link {
-    margin-left: -1rem;
-  }
-
-  /* 에피 */
-  #episode-area {
-    width: 90%;
-    .epSlide li {
-      overflow: hidden;
-      border-radius: 2rem;
-      width: 41%;
-      margin: 2rem;
-    }
-  }
-}
 
 @media screen and (max-width: 1370px) {
   .top-banner img {
@@ -174,6 +133,48 @@
   }
   .btn-link svg {
     translate: 35% -61%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* 상단 타이틀 */
+  .top-banner img {
+    margin-top: 3%;
+    width: 42%;
+  }
+
+  /* 인포 */
+  .badbatch #info-area {
+    height: 171vh;
+    .cont-box.fx-box {
+      .desc-box {
+        width: 100%;
+      }
+      .imgbox {
+        width: 80%;
+        translate: -63%;
+        left: 50%;
+        position: relative;
+      }
+      display: flex;
+      margin: 0 auto;
+      flex-direction: column;
+    }
+  }
+
+  #info-area .btn-link {
+    margin-left: -1rem;
+  }
+
+  /* 에피 */
+  #episode-area {
+    width: 90%;
+    .epSlide li {
+      overflow: hidden;
+      border-radius: 2rem;
+      width: 41%;
+      margin: 2rem;
+    }
   }
 }
 
