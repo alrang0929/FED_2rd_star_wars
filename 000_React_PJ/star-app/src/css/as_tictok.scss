@@ -10,6 +10,10 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: min(2rem, 1.2vw);
+
+  figure {
+    border-radius: 0;
+  }
 }
 .tiktoc-box li {
   cursor: pointer;

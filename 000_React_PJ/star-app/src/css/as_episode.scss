@@ -11,6 +11,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: min(2rem, 1.2vw);
+
+  figure {
+    border-radius: 0;
+  }
 }
 .episode-box li {
   cursor: pointer;

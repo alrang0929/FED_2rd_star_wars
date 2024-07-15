@@ -19,7 +19,7 @@ export default function Layout() {
 
   //1. 로그인 상태관리변수
   const [loginSts, setLoginSts] = useState(loginTemp);
-  // console.log("로그인?", loginSts);
+  console.log("로그인?", loginSts);
 
   /////[공통관리함수 구역]///////////////////////////////////
   //1. 로그아웃 함수
