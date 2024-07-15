@@ -6,12 +6,9 @@ import "../../css/as_banner.scss";
 function AsBanner(props) {
   return (
     <>
-      <section id="top-title" className="as-section-top">
-        <div className="as-top-banner">
-          <img
-            src="/images/sub_ahsoka_images/top-banner.jpeg"
-            alt="top banner"
-          />
+      <section id="top-title" className="section-top">
+        <div className="top-banner">
+          <img src="/images/ahsoka/top-banner.jpeg" alt="top banner" />
           <div className="ban-desc-box">
             <div className="ban-logo">
               <img
