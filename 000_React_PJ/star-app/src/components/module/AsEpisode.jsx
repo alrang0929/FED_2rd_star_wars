@@ -21,23 +21,24 @@ function AsEpisode() {
               {/* <!-- 에피소드 데이터 들어갈 곳 --> */}
               <div class="slider-wrap">
                 <ul>
-                  {epiData.map((v, i) => {
+                  {epiData.map((v, i) => (
                     <li key={i}>
                       <figure>
                         <a href="#">
                           <img
-                            src={`/images/sub_ahsoka_images/${v.idx}.jpeg" alt="${v.idx}`}
+                            src={`/images/sub_ahsoka_images/${v.idx}.jpeg`}
+                            alt={v.idx}
                           />
                         </a>
                       </figure>
-                      <div className="desc-box">
-                        <div className="title-box">
+                      <div class="desc-box">
+                        <div class="title-box">
                           <h3>{v.title}</h3>
                           <p>{v.desc}</p>
                         </div>
                       </div>
                     </li>
-                  })}
+                  ))}
                 </ul>
               </div>
             </div>

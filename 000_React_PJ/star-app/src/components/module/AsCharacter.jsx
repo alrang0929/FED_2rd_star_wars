@@ -16,36 +16,36 @@ console.log("캐릭터 데이터", cData);
 
 function AsCharacter() {
   const cPage = mFn.qs("#character-page");
-  const cPageTitle = mFn.qs("#character-page .title");
-  const cPageDesc = mFn.qs("#character-page .desc");
+  const cPageTitle = mFn.qs("#character-page .as-title");
+  const cPageDesc = mFn.qs("#character-page .as-desc");
   const cPageImg = mFn.qs("#character-page img");
 
   console.log("캐릭터 페이지:", cPage);
 
   const showBox = mFn.qsa(".cbox li");
 
-  showBox.forEach((x) => {
-    x.onclick = () => {
-      let key = x.getAttribute("data-key");
+  // showBox.forEach((x) => {
+  //   x.onclick = () => {
+  //     let key = x.getAttribute("data-key");
 
-      let selRec = cData.some((z) => {
-        if (z.idx === key) {
-          // 클릭된 idx와 일치하는 배열값을 찾음!
-          cPageTitle.innerText = z.name;
-          cPageDesc.innerText = z.desc;
-          cPageImg.src = `/images/sub_ahsoka_images/characters/${z.idx}.jpeg`;
-          return;
-        }
-      });
-      console.log(key, ":", selRec);
+  //     let selRec = cData.some((z) => {
+  //       if (z.idx === key) {
+  //         // 클릭된 idx와 일치하는 배열값을 찾음!
+  //         cPageTitle.innerText = z.name;
+  //         cPageDesc.innerText = z.desc;
+  //         cPageImg.src = `/images/sub_ahsoka_images/characters/${z.idx}.jpeg`;
+  //         return;
+  //       }
+  //     });
+  //     console.log(key, ":", selRec);
 
-      cPage.style.display = "block";
-    }; /// onclick ///
-  }); ////// forEach //////
+  //     cPage.style.display = "block";
+  //   }; /// onclick ///
+  // }); ////// forEach //////
 
-  mFn.qs(".close-btn").onclick = () => {
-    cPage.style.display = "none";
-  };
+  // mFn.qs(".close-btn").onclick = () => {
+  //   cPage.style.display = "none";
+  // };
 
   // 코드 리턴 /////////////////////
   return (
@@ -84,8 +84,8 @@ function AsCharacter() {
         <div className="content-box fx-box">
           <div className="img-box col-6"></div>
           <div className="desc-box col-6">
-            <h2 className="title">Name</h2>
-            <div className="desc">
+            <h2 className="as-title">Name</h2>
+            <div className="as-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </div>
           </div>
