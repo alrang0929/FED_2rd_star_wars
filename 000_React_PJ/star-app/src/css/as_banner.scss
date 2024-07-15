@@ -1,18 +1,19 @@
 /* Ahsoka AsBanner CSS */
 
 /*********************** 탑배너 영역 ***********************/
-.top-banner {
-    position: relative;
-    margin: 0 auto;
-    padding: 0;
+.as-top-banner {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+
+  .main-ban {
     height: 100vh;
   }
-  .top-banner .main-ban {
-    height: 100vh;
-  }
-  .top-banner img{
+  img {
     width: 100%;
   }
+
   .ban-desc-box {
     position: absolute;
     top: 10%;
@@ -31,7 +32,7 @@
     text-align: center;
     margin-bottom: 3rem;
   }
-  .top-banner .btn-box {
+  .btn-box {
     cursor: pointer;
     margin-top: 10rem;
     text-align: center;
@@ -58,3 +59,4 @@
   .ban-desc-box .btn2 a {
     color: #fff;
   }
+}

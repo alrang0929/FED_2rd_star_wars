@@ -2,6 +2,7 @@
 import React, { Fragment } from 'react';
 //css
 import "../../css/sub_badbatch.scss";
+import "../../css/sub_badbatch_media.scss";
 
 //module
 import BbTopBanner from '../module/BbTopBanner';
