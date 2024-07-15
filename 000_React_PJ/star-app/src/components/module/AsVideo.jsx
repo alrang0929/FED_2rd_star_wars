@@ -1,7 +1,12 @@
 import React from "react";
 
-// CSS
+// 나의 함수
+import mFn from "../../js/my_function";
+
+// 비디오 영역 CSS
 import "../../css/as_video.scss";
+
+
 
 function AsVideo() {
   return (
