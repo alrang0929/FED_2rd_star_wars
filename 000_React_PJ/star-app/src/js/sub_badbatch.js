@@ -74,6 +74,11 @@ export default function aaa() {
                 <img src="./images/sub_badbatch_img/poster_${posdata[idx].idx}.jpg" alt="${posdata[idx].title}" />
               </div>
               <div class="pos-data-text">
+              <button class="close-btn-bb">
+              <div class="">
+              <img src="/images/sub_badbatch_img/close.png" alt="">
+              </div>
+            </button>
                 <div class="bullet"></div>
                 <h3 class="title">${posdata[idx].title}</h3>
                 <div class="desc">
@@ -92,11 +97,7 @@ export default function aaa() {
                     </a>
                   </div>
               </button>
-              <button class="close-btn-bb">
-                <div class="">
-                <img src="/images/sub_badbatch_img/close.png" alt="">
-                </div>
-              </button>
+            
             </div>
                 `;
       layer.innerHTML = posCode;
