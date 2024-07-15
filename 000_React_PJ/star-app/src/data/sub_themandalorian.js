@@ -2,7 +2,7 @@ import domFn from "../js/my_function";
 
 import { videoData } from "./sub_themandalorian_data";
 
-function mdddvideo() {
+function mandalvideo() {
   
     
     const vdbtn = domFn.qsa(".vdbtn");
@@ -114,5 +114,184 @@ function mdddvideo() {
     }
 
 }
+function mandalgallery(params) {
+  let prot = false;
+  const crtImgBox = domFn.qs(".character-img-box");
+  
+let target = domFn.qsEl(crtImgBox, ".list01");
+let target2 = domFn.qsEl(crtImgBox, ".list02");
+// 기준값 업데이트 함수
+const updateCriteria = () => domFn.qsaEl(target, "li")[0].offsetWidth;
+const updateCriteria2 = () => domFn.qsaEl(target2, "li")[0].offsetWidth;
+// 기준값(대상 li의 가로크기값)
+let criteria = updateCriteria();
+let criteria2 = updateCriteria2();
 
-export { mdddvideo };
+domFn.addEvt(window, "resize", () => {
+  criteria = updateCriteria();
+  criteria2 = updateCriteria2();
+});
+
+let currVal = 0;
+let currVal2 = 0;
+
+function moveGallery() {
+  target.style.translate = --currVal + "px";
+
+  if (currVal <= Math.floor(-criteria)) {
+    target.appendChild(domFn.qsaEl(target, "li")[0]);
+    target.style.translate = "0px";
+    currVal = 0;
+  } /// if///
+
+  if (!stopSts) setTimeout(moveGallery, 6);
+} ////// moveGallery 함수 //////
+
+function moveGallery2() {
+  target2.style.translate = --currVal2 + "px";
+
+  if (currVal2 <= Math.floor(-criteria2)) {
+    target2.appendChild(domFn.qsaEl(target2, "li")[0]);
+    target2.style.translate = "0px";
+    currVal2 = 0;
+  } /// if///
+
+  if (!stopSts) setTimeout(moveGallery2, 10);
+} /// moveGallery2 함수
+
+let stopSts = false;
+
+domFn.addEvt(crtImgBox, "mouseenter", () => {
+  stopSts = true;
+});
+
+domFn.addEvt(crtImgBox, "mouseleave", () => {
+  stopSts = false;
+  moveGallery();
+  moveGallery2();
+});
+
+setTimeout(moveGallery);
+setTimeout(moveGallery2);
+
+//////////////////////갤러리////////////////////////
+const gallery = domFn.qsa(".gallery-box");
+const galleryBox = domFn.qs(".gallery-cont-box");
+const galleryTab = domFn.qs(".gallery-tab");
+const gtabBtn = domFn.qs(".gallery-tab-btn");
+const gSlBtn = domFn.qsa(".gbtn");
+const galleryTxt = domFn.qs(".gallery-img-txt");
+
+let galcode = `<ul>`;
+let galTxtcode = ``;
+let galPgNum = 1;
+let galPgTotal;
+let isOnebox;
+
+gallery.forEach((ele) => {
+  let isFirstGbox = ele.classList.contains("gbox1");
+  ele.onclick = () => {
+    isFirstGbox ? (isOnebox = true) : (isOnebox = false);
+
+    isFirstGbox ? (galPgTotal = 26) : (galPgTotal = 19);
+    galleryBox.classList.add("on");
+    for (let i = 1; i <= galPgTotal; i++) {
+      galcode += `
+      <li>
+        <div class="gimg-wrap">
+          <img src="./images/sub_themandalorian_images/gallery_${
+            isFirstGbox ? "a" : "b"
+          }${i}.jpg" alt="갤러리이미지" class="image${
+        isFirstGbox ? "a" : "b"
+      }" />
+        </div>
+      </li>
+      `;
+    }
+
+    galTxtcode += `
+    <p>${
+      isFirstGbox ? "Poster Gallery" : "Stills Gallery"
+    } | The Mandalorian <br/> Season 3</p>
+    <p>${galPgNum} of ${galPgTotal}</p>
+    `;
+
+    galcode += `</ul> `;
+
+    galleryTab.innerHTML = galcode;
+    galleryTxt.innerHTML = galTxtcode;
+    // body.style.overflow = "hidden";
+  };
+});
+
+gtabBtn.onclick = () => {
+  galleryBox.classList.remove("on");
+  galcode = `<ul>`;
+  galTxtcode = ``;
+  galPgNum = 1;
+  // body.style.overflow = "auto";
+};
+
+/////////////// 갤러리 슬라이드 ////////////////
+for (let x of gSlBtn) {
+  x.onclick = galleryGoSlide;
+}
+
+function galleryGoSlide() {
+  // 광클 금지
+  if (prot) return;
+  prot = true;
+  setTimeout(() => {
+    prot = false;
+  }, 500);
+
+  let isgalleryRbtn = this.classList.contains("gbtn2");
+  const galSlide = domFn.qsEl(galleryTab, "ul");
+
+  if (isgalleryRbtn) {
+    galSlide.style.left = "-100%";
+    galSlide.style.transition = ".4s ease-in-out";
+    galSlide.style.opacity = "1";
+
+    galPgNum == galPgTotal ? (galPgNum = 1) : galPgNum++;
+
+    setTimeout(() => {
+      galSlide.appendChild(galSlide.querySelectorAll("li")[0]);
+      galSlide.style.left = "0%";
+      galSlide.style.transition = "none";
+    }, 500);
+
+    galTxtcode = `
+      <p>${
+        isOnebox ? "Poster Gallery" : "Stills Gallery"
+      } | The Mandalorian <br/> Season 3</p>
+      <p>${galPgNum} of ${galPgTotal}</p>
+      `;
+
+    galleryTxt.innerHTML = galTxtcode;
+  } else {
+    let list = galSlide.querySelectorAll("li");
+    galSlide.insertBefore(list[list.length - 1], list[0]);
+    galSlide.style.left = "-100%";
+    galSlide.style.transition = "none";
+
+    galPgNum == 1 ? (galPgNum = galPgTotal) : galPgNum--;
+
+    setTimeout(() => {
+      galSlide.style.left = "0%";
+      galSlide.style.transition = ".4s ease-in-out";
+    }, 0);
+
+    galTxtcode = `
+      <p>${
+        isOnebox ? "Poster Gallery" : "Stills Gallery"
+      } | The Mandalorian <br/> Season 3</p>
+      <p>${galPgNum} of ${galPgTotal}</p>
+      `;
+
+    galleryTxt.innerHTML = galTxtcode;
+  }
+}
+}
+
+export { mandalvideo, mandalgallery };

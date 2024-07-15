@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 
 import "../../css/md_gallery.scss";
 
 import domFn from "../../js/my_function";
+import { mandalgallery } from '../../data/sub_themandalorian';
 
 function MdGallery(props) {
+  useLayoutEffect(()=>{
+    mandalgallery();
+  })
     return (
       <div id="gallery-area">
         <section className="gallery-area cont-box section-top">
@@ -50,8 +54,8 @@ function MdGallery(props) {
               <div className="gallery-tab-btn fa-solid fa-xmark fa-4x"></div>
               <div className="gallery-img-txt"></div>
               <div className="gallery-tab"></div>
-              <button className="abtn ab1 fa-solid fa-angle-left gbtn gbtn1"></button>
-              <button className="abtn ab2 fa-solid fa-angle-right gbtn gbtn2"></button>
+              <button className="mdabtn ab1 fa-solid fa-angle-left gbtn gbtn1"></button>
+              <button className="mdabtn ab2 fa-solid fa-angle-right gbtn gbtn2"></button>
             </div>
           </div>
         </section>

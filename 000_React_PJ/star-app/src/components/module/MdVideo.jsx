@@ -3,10 +3,10 @@ import { videoData } from "../../data/sub_themandalorian_data";
 import domFn from "../../js/my_function";
 
 import "../../css/md_video.scss";
-import { mdddvideo } from "../../data/sub_themandalorian";
+import { mandalvideo } from "../../data/sub_themandalorian";
 function MdVideo(props) {
   useLayoutEffect(() => {
-    mdddvideo();
+    mandalvideo();
   });
   return (
     <div id="video-area">
