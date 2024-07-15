@@ -21,6 +21,7 @@
 }
 .cbox h3 {
   font-size: 1.8rem;
+  margin-top: 5px;
 }
 #character-page {
   position: fixed;
@@ -33,7 +34,7 @@
   background-color: #000000d2;
   z-index: 999;
 }
-#character-page .cont-box {
+#character-page .content-box {
   position: absolute;
   top: 50%;
   left: 50%;
