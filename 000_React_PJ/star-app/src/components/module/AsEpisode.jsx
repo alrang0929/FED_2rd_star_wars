@@ -1,5 +1,8 @@
 import React from "react";
 
+// 데이터
+import { epiData } from "../../data/sub_ahsoka_data";
+
 // CSS
 import "../../css/as_episode.scss";
 
@@ -16,6 +19,27 @@ function AsEpisode() {
             {/* <!-- 에피소드 박스 --> */}
             <div className="episode-box scAct">
               {/* <!-- 에피소드 데이터 들어갈 곳 --> */}
+              <div class="slider-wrap">
+                <ul>
+                  {epiData.map((v, i) => {
+                    <li key={i}>
+                      <figure>
+                        <a href="#">
+                          <img
+                            src={`/images/sub_ahsoka_images/${v.idx}.jpeg" alt="${v.idx}`}
+                          />
+                        </a>
+                      </figure>
+                      <div className="desc-box">
+                        <div className="title-box">
+                          <h3>{v.title}</h3>
+                          <p>{v.desc}</p>
+                        </div>
+                      </div>
+                    </li>
+                  })}
+                </ul>
+              </div>
             </div>
           </div>
         </section>
