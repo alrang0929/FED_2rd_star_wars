@@ -11,8 +11,9 @@ import AsCharacter from "../module/AsCharacter";
 import AsEpisode from "../module/AsEpisode";
 import AsTictok from "../module/AsTictok";
 
-// CSS
+// 공통 CSS
 import "../../css/ahsoka.scss";
+
 
 // 스크롤 페이드인/아웃 ///////////////////////////
 const stage = mFn.qsa(".page");
@@ -46,6 +47,7 @@ function scrollFn() {
 } ///////////// scrollFn /////////////
 
 function Ahsoka() {
+
   return (
     <>
       {/* 상단 타이틀 배너 */}
