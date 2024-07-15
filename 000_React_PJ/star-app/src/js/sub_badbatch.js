@@ -92,7 +92,7 @@ export default function aaa() {
                     </a>
                   </div>
               </button>
-              <button class="close-btn">
+              <button class="close-btn-bb">
                 <div class="">
                 <img src="/images/sub_badbatch_img/close.png" alt="">
                 </div>
@@ -101,7 +101,7 @@ export default function aaa() {
                 `;
       layer.innerHTML = posCode;
 
-      mFn.qs(".close-btn").onclick = () => {
+      mFn.qs(".close-btn-bb").onclick = () => {
         layer.classList.remove("on");
       }; ////close-btn
       console.log("ㅠㅠ", layer);
