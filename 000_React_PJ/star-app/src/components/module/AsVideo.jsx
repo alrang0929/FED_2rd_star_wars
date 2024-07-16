@@ -76,7 +76,7 @@ function AsVideo() {
                       <img
                         src={
                           process.env.PUBLIC_URL +
-                          `images/sub_ahsoka_images/mv02.jpeg`
+                          `/images/sub_ahsoka_images/mv02.jpeg`
                         }
                         alt="Masters and Apprentices"
                       />
