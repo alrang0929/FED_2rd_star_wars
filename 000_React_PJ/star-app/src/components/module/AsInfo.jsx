@@ -8,7 +8,7 @@ function AsInfo(props) {
   return (
     <>
       <div className="page">
-        <section id="info-area">
+        <section id="info-area" className="as-section-top">
           <div className="content-box fx-box scAct">
             <div className="img-box col-6">
               <img src={process.env.PUBLIC_URL+`/images/sub_ahsoka_images/poster1.jpeg`} alt="ahsoka poster" />
