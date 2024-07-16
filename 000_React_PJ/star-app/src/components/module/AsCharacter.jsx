@@ -35,7 +35,7 @@ function AsCharacter() {
               // 클릭된 idx와 일치하는 배열값을 찾음!
               cPageTitle.innerText = z.name;
               cPageDesc.innerText = z.desc;
-              cPageImg.innerHTML = `<img src="/images/sub_ahsoka_images/characters/${z.idx}.jpeg" alt="images"/>`;
+              cPageImg.innerHTML = `<img src={process.env.PUBLIC_URL +"/images/sub_ahsoka_images/characters/${z.idx}.jpeg"} alt="images"/>`;
               return;
             }
           });
@@ -66,7 +66,6 @@ function AsCharacter() {
                 {cData.map((v, i) => (
                   <li key={i}
                   data-key={v.idx}
-                  // onClick={showBox}
                   >
                     <img
                       src={
