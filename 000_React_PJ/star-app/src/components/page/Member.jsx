@@ -400,7 +400,7 @@ function Member() {
                   <div className="msg">
                     <small
                       style={{
-                        color: "red",
+                        color: "yellow",
                         fontSize: "10px",
                       }}
                     >
@@ -445,7 +445,7 @@ function Member() {
                   <div className="msg">
                     <small
                       style={{
-                        color: "red",
+                        color: "yellow",
                         fontSize: "10px",
                       }}
                     >
@@ -472,7 +472,7 @@ function Member() {
                   <div className="msg">
                     <small
                       style={{
-                        color: "red",
+                        color: "yellow",
                         fontSize: "10px",
                       }}
                     >
@@ -499,7 +499,7 @@ function Member() {
                   <div className="msg">
                     <small
                       style={{
-                        color: "red",
+                        color: "yellow",
                         fontSize: "10px",
                       }}
                     >
@@ -522,7 +522,7 @@ function Member() {
                   <div className="msg">
                     <small
                       style={{
-                        color: "red",
+                        color: "yellow",
                         fontSize: "10px",
                       }}
                     >
@@ -549,7 +549,7 @@ function Member() {
                   <div className="msg">
                     <small
                       style={{
-                        color: "red",
+                        color: "yellow",
                         fontSize: "10px",
                       }}
                     >
