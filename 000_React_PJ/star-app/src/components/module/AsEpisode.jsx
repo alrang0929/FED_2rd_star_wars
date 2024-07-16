@@ -26,7 +26,7 @@ function AsEpisode() {
                       <figure>
                         <a href="#">
                           <img
-                            src={`/images/sub_ahsoka_images/${v.idx}.jpeg`}
+                            src={process.env.PUBLIC_URL+`/images/sub_ahsoka_images/${v.idx}.jpeg`}
                             alt={v.idx}
                           />
                         </a>

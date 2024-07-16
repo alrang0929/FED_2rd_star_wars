@@ -19,7 +19,7 @@ function AsTictok(props) {
                   <li>
                     <figure>
                       <a href="#">
-                        <img src="/images/sub_ahsoka_images/tt01.jpeg" alt="tiktoc" />
+                        <img src={process.env.PUBLIC_URL+`/images/sub_ahsoka_images/tt01.jpeg`} alt="tiktoc" />
                       </a>
                     </figure>
                     <div className="desc-box">
@@ -31,7 +31,7 @@ function AsTictok(props) {
                   <li>
                     <figure>
                       <a href="#">
-                        <img src="/images/sub_ahsoka_images/tt02.jpeg" alt="tiktoc" />
+                        <img src={process.env.PUBLIC_URL+`/images/sub_ahsoka_images/tt02.jpeg`} alt="tiktoc" />
                       </a>
                     </figure>
                     <div className="desc-box">
@@ -43,7 +43,7 @@ function AsTictok(props) {
                   <li>
                     <figure>
                       <a href="#">
-                        <img src="/images/sub_ahsoka_images/tt03.jpeg" alt="tiktoc" />
+                        <img src={process.env.PUBLIC_URL+`/images/sub_ahsoka_images/tt03.jpeg`} alt="tiktoc" />
                       </a>
                     </figure>
                     <div className="desc-box">
@@ -55,7 +55,7 @@ function AsTictok(props) {
                   <li>
                     <figure>
                       <a href="#">
-                        <img src="/images/sub_ahsoka_images/tt04.jpeg" alt="tiktoc" />
+                        <img src={process.env.PUBLIC_URL+`/images/sub_ahsoka_images/tt04.jpeg`} alt="tiktoc" />
                       </a>
                     </figure>
                     <div className="desc-box">
@@ -67,7 +67,7 @@ function AsTictok(props) {
                   <li>
                     <figure>
                       <a href="#">
-                        <img src="/images/sub_ahsoka_images/tt05.jpeg" alt="tiktoc" />
+                        <img src={process.env.PUBLIC_URL+`/images/sub_ahsoka_images/tt05.jpeg`} alt="tiktoc" />
                       </a>
                     </figure>
                     <div className="desc-box">
