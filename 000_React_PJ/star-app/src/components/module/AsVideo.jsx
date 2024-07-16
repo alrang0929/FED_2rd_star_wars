@@ -51,9 +51,7 @@ function AsVideo() {
           <div className="scAct">
             <div className="video-box col-12">
               {/* <!-- 유튜브 아이프레임 --> */}
-              <iframe
-                src="https://www.youtube.com/embed/J7-zia4oHuk"
-              ></iframe>
+              <iframe src="https://www.youtube.com/embed/J7-zia4oHuk"></iframe>
             </div>
             {/* <!-- 슬라이드 픽 --> */}
             <div className="slide-peek-box">
@@ -62,7 +60,10 @@ function AsVideo() {
                   <li>
                     <div className="img-box">
                       <img
-                        src={process.env.PUBLIC_URL+"/images/sub_ahsoka_images/mv01.jpeg"}
+                        src={
+                          process.env.PUBLIC_URL +
+                          `/images/sub_ahsoka_images/mv01.jpeg`
+                        }
                         alt="Trailer"
                       />
                     </div>
@@ -73,7 +74,10 @@ function AsVideo() {
                   <li>
                     <div className="img-box">
                       <img
-                        src={process.env.PUBLIC_URL+"images/sub_ahsoka_images/mv02.jpeg"}
+                        src={
+                          process.env.PUBLIC_URL +
+                          `images/sub_ahsoka_images/mv02.jpeg`
+                        }
                         alt="Masters and Apprentices"
                       />
                     </div>
@@ -84,7 +88,10 @@ function AsVideo() {
                   <li>
                     <div className="img-box">
                       <img
-                        src={process.env.PUBLIC_URL+"/images/sub_ahsoka_images/mv03.avif"}
+                        src={
+                          process.env.PUBLIC_URL +
+                          `/images/sub_ahsoka_images/mv03.avif`
+                        }
                         alt="Phenomenon"
                       />
                     </div>
@@ -95,7 +102,10 @@ function AsVideo() {
                   <li>
                     <div className="img-box">
                       <img
-                        src={process.env.PUBLIC_URL+"/images/sub_ahsoka_images/mv04.jpeg"}
+                        src={
+                          process.env.PUBLIC_URL +
+                          `/images/sub_ahsoka_images/mv04.jpeg`
+                        }
                         alt="Sabine’s Loth-Cat"
                       />
                     </div>

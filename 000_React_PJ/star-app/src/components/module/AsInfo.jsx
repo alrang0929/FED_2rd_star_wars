@@ -11,7 +11,7 @@ function AsInfo(props) {
         <section id="info-area">
           <div className="content-box fx-box scAct">
             <div className="img-box col-6">
-              <img src={process.env.PUBLIC_URL+"/images/sub_ahsoka_images/poster1.jpeg"} alt="ahsoka poster" />
+              <img src={process.env.PUBLIC_URL+`/images/sub_ahsoka_images/poster1.jpeg`} alt="ahsoka poster" />
             </div>
             <div className="desc-box col-6">
               <div className="bullet"></div>
@@ -31,7 +31,7 @@ function AsInfo(props) {
               <button className="btn-link">
                 <a href="#">
                   <img
-                    src={process.env.PUBLIC_URL+"/images/sub_ahsoka_images/icon_link_asoka.png"}
+                    src={process.env.PUBLIC_URL+`/images/sub_ahsoka_images/icon_link_asoka.png`}
                     alt="era7 icon"
                   />
                   <span className="link-txt">Era: The New Republic</span>
