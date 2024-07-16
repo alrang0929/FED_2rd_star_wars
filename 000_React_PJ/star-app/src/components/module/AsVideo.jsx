@@ -62,7 +62,7 @@ function AsVideo() {
                   <li>
                     <div className="img-box">
                       <img
-                        src="/images/sub_ahsoka_images/mv01.jpeg"
+                        src={process.env.PUBLIC_URL+"/images/sub_ahsoka_images/mv01.jpeg"}
                         alt="Trailer"
                       />
                     </div>
@@ -73,7 +73,7 @@ function AsVideo() {
                   <li>
                     <div className="img-box">
                       <img
-                        src="images/sub_ahsoka_images/mv02.jpeg"
+                        src={process.env.PUBLIC_URL+"images/sub_ahsoka_images/mv02.jpeg"}
                         alt="Masters and Apprentices"
                       />
                     </div>
@@ -84,7 +84,7 @@ function AsVideo() {
                   <li>
                     <div className="img-box">
                       <img
-                        src="/images/sub_ahsoka_images/mv03.avif"
+                        src={process.env.PUBLIC_URL+"/images/sub_ahsoka_images/mv03.avif"}
                         alt="Phenomenon"
                       />
                     </div>
@@ -95,7 +95,7 @@ function AsVideo() {
                   <li>
                     <div className="img-box">
                       <img
-                        src="/images/sub_ahsoka_images/mv04.jpeg"
+                        src={process.env.PUBLIC_URL+"/images/sub_ahsoka_images/mv04.jpeg"}
                         alt="Sabine’s Loth-Cat"
                       />
                     </div>

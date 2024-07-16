@@ -42,7 +42,7 @@ function AsBanner() {
                 show={showModal}
                 onClose={toggleModal}
                 >
-                  <img src="/images/sub_ahsoka_images/mv01.jpeg" alt="ahsoka" />
+                  <img src={process.env.PUBLIC_URL+"/images/sub_ahsoka_images/mv01.jpeg"} alt="ahsoka" />
                 </Modal>
               </span>
               <span className="btn2">
