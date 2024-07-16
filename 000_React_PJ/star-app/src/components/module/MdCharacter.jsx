@@ -81,7 +81,7 @@ function MdCharacter(props) {
                       <li key={i}>
                         <div className="list-box">
                           <img
-                            src={"/images/sub_themandalorian_images/" + v.image}
+                            src={process.env.PUBLIC_URL+"/images/sub_themandalorian_images/" + v.image}
                             alt=""
                           />
                           <h3>
@@ -103,7 +103,7 @@ function MdCharacter(props) {
                       <li key={i}>
                         <div className="list-box">
                           <img
-                            src={"/images/sub_themandalorian_images/" + v.image}
+                            src={process.env.PUBLIC_URL+"/images/sub_themandalorian_images/" + v.image}
                             alt=""
                           />
                           <h3>
