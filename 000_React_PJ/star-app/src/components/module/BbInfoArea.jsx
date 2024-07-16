@@ -10,7 +10,7 @@ function BbInfoArea() {
         <div className="cont-box fx-box ">
           <div className="imgbox ">
             <img
-              src="./images/sub_badbatch_img/poster_1.jpg"
+              src={process.env.PUBLIC_URL+`/images/sub_badbatch_img/poster_1.jpg`}
               alt="포스터 이미지"
             />
           </div>
@@ -38,7 +38,7 @@ function BbInfoArea() {
             </div>
             <button className="btn-link">
               <img
-                src="./images/sub_badbatch_img/icon_link.png"
+                src={process.env.PUBLIC_URL+`/images/sub_badbatch_img/icon_link.png`}
                 alt="링크 아이콘"
               />
               <span className="link-txt">Era: Reign of the Empire</span>

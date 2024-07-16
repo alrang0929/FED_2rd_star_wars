@@ -40,7 +40,7 @@ function BbEpArea() {
                   <a href={v.link}>
                 <figure className="imgbox">
                     <img
-                      src={`/images/sub_badbatch_img/thumb_${v.idx}.jpg`}
+                      src={process.env.PUBLIC_URL+`/images/sub_badbatch_img/thumb_${v.idx}.jpg`}
                       alt={`E${v.title}`}
                     />
                 </figure>
