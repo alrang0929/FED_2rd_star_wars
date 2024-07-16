@@ -21,7 +21,7 @@ function mandalvideo() {
     <li>
       <div class="mdvideo-box">
         <div class="video-img">
-          <img src=${process.env.PUBLIC_URL}+"/images/sub_themandalorian_images/${vdData[i].image}" alt="" />
+          <img src="${process.env.PUBLIC_URL}/images/sub_themandalorian_images/${vdData[i].image}" alt="" />
         </div>
         <div class="video-txt-box">
           <h3>
@@ -207,7 +207,7 @@ gallery.forEach((ele) => {
       galcode += `
       <li>
         <div class="gimg-wrap">
-          <img src=${process.env.PUBLIC_URL}+"/images/sub_themandalorian_images/gallery_${
+          <img src="${process.env.PUBLIC_URL}/images/sub_themandalorian_images/gallery_${
             isFirstGbox ? "a" : "b"
           }${i}.jpg" alt="갤러리이미지" class="image${
         isFirstGbox ? "a" : "b"
