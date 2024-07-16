@@ -26,7 +26,7 @@ function BbPosterArea() {
               {posData.map((v, i) => (
                 <li className="imgbox" key={i}>
                   <img
-                    src={`/images/sub_badbatch_img/poster_${i + 1}.jpg`}
+                    src={process.env.PUBLIC_URL+`/images/sub_badbatch_img/poster_${i + 1}.jpg`}
                     alt={`스타워즈 포스터${i}`}
                   />
                 </li>

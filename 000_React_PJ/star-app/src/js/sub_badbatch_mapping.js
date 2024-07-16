@@ -15,7 +15,7 @@ function epItems(){
   ${listData.epData.map(v =>`
   <li>
   <figure class="imgbox">
-  <img src="./images/sub_badbatch_img/thumb_${v.idx}.jpg" alt="E${v.title}" /></figure>
+  <img src=${process.env.PUBLIC_URL+`/images/sub_badbatch_img/thumb_${v.idx}.jpg`} alt="E${v.title}" /></figure>
   <figcaption>
   <div class="title-topic">Season3, Episode${v.idx}</div>
   <h4 class="title-sub2">
@@ -36,7 +36,7 @@ function snsItems(){
     <li >
     
       <figure class="imgbox"><a href="${v.link}" target="_blank">
-        <img src="./images/sub_badbatch_img/sns_thumb_${v.idx}.jpg" alt="${v.title}" />
+        <img src=${process.env.PUBLIC_URL+`/images/sub_badbatch_img/sns_thumb_${v.idx}.jpg`} alt="${v.title}" />
       </a></figure>
       <figcaption>
         <div class="title-topic">Season3, Episode${v.idx}</div>
@@ -62,7 +62,7 @@ function posItems(){
    
    <li class="imgbox">
    
-   <img src="./images/sub_badbatch_img/poster_${i}.jpg" 
+   <img src=${process.env.PUBLIC_URL+`/images/sub_badbatch_img/poster_${i}.jpg`} 
    alt="스타워즈 포스터${i}">
    </li>
   
@@ -83,7 +83,7 @@ posBx.innerHTML = `
 ${posData.map(v=>`
 
 <div class="pos-data-imgbox">
-<img src="./images/sub_badbatch_img/poster_${v.idx}.jpg" alt="${v.title}" />
+<img src=${process.env.PUBLIC_URL+`/images/sub_badbatch_img/poster_${v.idx}.jpg`}alt="${v.title} />
 </div>
 <div class="pos-data-text">
 <div class="bullet"></div>

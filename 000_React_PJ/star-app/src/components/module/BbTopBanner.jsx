@@ -10,7 +10,7 @@ function BbTopBanner() {
         <div className="top-cont-bx col-3 col-2nd-12">
           <h2>
             <img
-              src="/images/sub_badbatch_img/title_logo.png"
+              src={process.env.PUBLIC_URL+`/images/sub_badbatch_img/title_logo.png`}
               alt="BAD BATCH logo"
             />
           </h2>
@@ -37,7 +37,7 @@ function BbTopBanner() {
 
         <video
           id="ifr"
-          src="/images/sub_badbatch_img/title_BG.mp4"
+          src={process.env.PUBLIC_URL+`/images/sub_badbatch_img/title_BG.mp4`}
           autoPlay
           muted
           playsInline
