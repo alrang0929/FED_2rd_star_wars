@@ -13,7 +13,7 @@ function AsBanner() {
 
   return (
     <>
-      <section id="top-title">
+      <section id="top-title" className="as-section-top">
         <div className="as-top-banner">
           <img src="/images/sub_ahsoka_images/top-banner.jpeg" alt="top banner" />
           <div className="ban-desc-box">

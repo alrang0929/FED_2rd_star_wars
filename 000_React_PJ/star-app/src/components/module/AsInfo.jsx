@@ -8,7 +8,7 @@ function AsInfo(props) {
   return (
     <>
       <div className="page">
-        <section id="info-area" className="as-section-top">
+        <section id="info-area">
           <div className="content-box fx-box scAct">
             <div className="img-box col-6">
               <img src="/images/sub_ahsoka_images/poster1.jpeg" alt="ahsoka poster" />
@@ -31,7 +31,7 @@ function AsInfo(props) {
               <button className="btn-link">
                 <a href="#">
                   <img
-                    src="/images/ahsoka/icon_link_asoka.png"
+                    src="/images/sub_ahsoka_images/icon_link_asoka.png"
                     alt="era7 icon"
                   />
                   <span className="link-txt">Era: The New Republic</span>
