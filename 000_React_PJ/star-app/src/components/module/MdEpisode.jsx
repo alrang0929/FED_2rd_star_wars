@@ -85,7 +85,7 @@ function MdEpisode(props) {
                   <li key={i}>
                     <div className="ep-img-box">
                       <img
-                        src={"/images/sub_themandalorian_images/" + v.image}
+                        src={process.env.PUBLIC_URL+"/images/sub_themandalorian_images/" + v.image}
                         alt=""
                       />
                       <div className="ep-bg-box"></div>
