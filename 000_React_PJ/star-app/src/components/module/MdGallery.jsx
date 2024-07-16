@@ -19,7 +19,7 @@ function MdGallery(props) {
             <div className="gallery-box fx-box gbox1">
               <div className="col-7 col-2nd-12 gimg-box">
                 <img
-                  src="/images/sub_themandalorian_images/gallery_main1.jpeg"
+                  src={process.env.PUBLIC_URL+"/images/sub_themandalorian_images/gallery_main1.jpeg"}
                   alt="갤러리메인이미지"
                 />
               </div>
@@ -38,7 +38,7 @@ function MdGallery(props) {
             <div className="gallery-box fx-box gbox2">
               <div className="col-7 col-2nd-12 gimg-box">
                 <img
-                  src="/images/sub_themandalorian_images/gallery_main2.jpeg"
+                  src={process.env.PUBLIC_URL+"/images/sub_themandalorian_images/gallery_main2.jpeg"}
                   alt="갤러리메인이미지"
                 />
               </div>

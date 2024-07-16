@@ -8,12 +8,18 @@ function MdInfo(props) {
         <section className="mdinfo-area">
           <div className="main-img-box">
             <img
-              src="/images/sub_themandalorian_images/main_poster.jpeg"
+              src={
+                process.env.PUBLIC_URL +
+                "/images/sub_themandalorian_images/main_poster.jpeg"
+              }
               alt=""
             />
             <div className="main-img-title">
               <img
-                src="/images/sub_themandalorian_images/logo_title.png"
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/sub_themandalorian_images/logo_title.png"
+                }
                 alt=""
               />
               <p>
@@ -22,7 +28,10 @@ function MdInfo(props) {
               </p>
               <div className="btn-box fx-boxm">
                 <button className="btn-main col-6">
-                  <a href="https://www.disneyplus.com/ko-kr/series/the-mandalorian/3jLIGMDYINqD?cid=DTCI-Synergy-StarWars-Site-Acquisition-Originals-US-StarWars-Mandalorian-EN-SingleHero-StarWars_Mandalorian_SingleHero-NA" target='_blank'>
+                  <a
+                    href="https://www.disneyplus.com/ko-kr/series/the-mandalorian/3jLIGMDYINqD?cid=DTCI-Synergy-StarWars-Site-Acquisition-Originals-US-StarWars-Mandalorian-EN-SingleHero-StarWars_Mandalorian_SingleHero-NA"
+                    target="_blank"
+                  >
                     stream on disney&#43;
                   </a>
                 </button>
@@ -37,7 +46,10 @@ function MdInfo(props) {
           <div className="sub-img-box fx-boxm">
             <div className="col-5">
               <img
-                src="/images/sub_themandalorian_images/main_poster2.jpeg"
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/sub_themandalorian_images/main_poster2.jpeg"
+                }
                 alt=""
               />
             </div>
@@ -60,7 +72,10 @@ function MdInfo(props) {
               <div className="rich-box fx-boxm">
                 <a href="#">
                   <img
-                    src="/images/sub_themandalorian_images/info_logo.png"
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/images/sub_themandalorian_images/info_logo.png"
+                    }
                     alt=""
                   />
                   &nbsp;&nbsp;&nbsp;&nbsp;Era: The New Republic
