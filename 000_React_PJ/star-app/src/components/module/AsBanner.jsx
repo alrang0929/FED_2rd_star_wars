@@ -13,9 +13,9 @@ function AsBanner() {
 
   return (
     <>
-      <section id="top-title" className="section-top">
-        <div className="top-banner">
-          <img src="/images/ahsoka/top-banner.jpeg" alt="top banner" />
+      <section id="top-title">
+        <div className="as-top-banner">
+          <img src="/images/sub_ahsoka_images/top-banner.jpeg" alt="top banner" />
           <div className="ban-desc-box">
             <div className="ban-logo">
               <img
@@ -42,7 +42,7 @@ function AsBanner() {
                 show={showModal}
                 onClose={toggleModal}
                 >
-                  <h1>안녕, 나는 모달창!</h1>
+                  <img src="/images/sub_ahsoka_images/mv01.jpeg" alt="ahsoka" />
                 </Modal>
               </span>
               <span className="btn2">
