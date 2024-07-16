@@ -15,11 +15,11 @@ function AsBanner() {
     <>
       <section id="top-title" className="as-section-top">
         <div className="as-top-banner">
-          <img src="/images/sub_ahsoka_images/top-banner.jpeg" alt="top banner" />
+          <img src={process.env.PUBLIC_URL+"/images/sub_ahsoka_images/top-banner.jpeg"} alt="top banner" />
           <div className="ban-desc-box">
             <div className="ban-logo">
               <img
-                src="/images/sub_ahsoka_images/ahsoka_logo.png"
+                src={process.env.PUBLIC_URL+"/images/sub_ahsoka_images/ahsoka_logo.png"}
                 alt="ahsoka logo"
               />
             </div>
