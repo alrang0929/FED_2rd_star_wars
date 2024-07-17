@@ -10,14 +10,12 @@ import AsVideo from "../module/AsVideo";
 import AsCharacter from "../module/AsCharacter";
 import AsEpisode from "../module/AsEpisode";
 import AsTictok from "../module/AsTictok";
+import SubBtBanner from "../module/SubBtBanner";
 
 // 공통 CSS
 import "../../css/ahsoka.scss";
 
 function Ahsoka() {
-
-  
-
   const CRITERIA = (window.innerHeight / 3) * 2;
   function scrollFn(stage,scAct) {
 
@@ -33,8 +31,6 @@ function Ahsoka() {
       }
     });
   } ///////////// scrollFn /////////////
-
-
 
   useEffect(() => {
     // 스크롤 페이드인/아웃 ///////////////////////////
@@ -66,6 +62,8 @@ function Ahsoka() {
       <AsEpisode />
       {/* 틱톡 영역 */}
       <AsTictok />
+      {/* 6. 서브 공통모듈: 하단배너 / bt-banner-area */}
+      <SubBtBanner/>
     </>
   );
 }
