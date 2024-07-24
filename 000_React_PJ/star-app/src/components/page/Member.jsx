@@ -346,8 +346,8 @@ function Member() {
 
       // 7. 회원가입 환영메시지 + 로그인 페이지 이동
       // 버튼 텍스트에 환영메시지
-      document.querySelector(".sbtn").innerText = 
-      "Thank you for joining us!";
+      document.querySelector(".btn-main").innerText =
+        "Thank you for joining us!";
       // 1초후 페이지 이동 : 라우터 Navigate로 이동함
       setTimeout(()=>{
         goNav("/login");
