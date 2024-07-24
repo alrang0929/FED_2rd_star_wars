@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FED_2rd_star_wars/000_React_PJ/star-app/build/static/css/main.05873539.css",
-    "main.js": "/FED_2rd_star_wars/000_React_PJ/star-app/build/static/js/main.2e5f9dc5.js",
+    "main.js": "/FED_2rd_star_wars/000_React_PJ/star-app/build/static/js/main.36f9cb0c.js",
     "static/media/sub1.png": "/FED_2rd_star_wars/000_React_PJ/star-app/build/static/media/sub1.2ea60a775a7961ed36b8.png",
     "static/media/sub2.png": "/FED_2rd_star_wars/000_React_PJ/star-app/build/static/media/sub2.86375d81cf75dddf1f4a.png",
     "static/media/sub3.png": "/FED_2rd_star_wars/000_React_PJ/star-app/build/static/media/sub3.aa711b59c88ecd3ffeae.png",
@@ -28,10 +28,10 @@
     "static/media/icon_close.svg": "/FED_2rd_star_wars/000_React_PJ/star-app/build/static/media/icon_close.6e3d02847690599c8845.svg",
     "index.html": "/FED_2rd_star_wars/000_React_PJ/star-app/build/index.html",
     "main.05873539.css.map": "/FED_2rd_star_wars/000_React_PJ/star-app/build/static/css/main.05873539.css.map",
-    "main.2e5f9dc5.js.map": "/FED_2rd_star_wars/000_React_PJ/star-app/build/static/js/main.2e5f9dc5.js.map"
+    "main.36f9cb0c.js.map": "/FED_2rd_star_wars/000_React_PJ/star-app/build/static/js/main.36f9cb0c.js.map"
   },
   "entrypoints": [
     "static/css/main.05873539.css",
-    "static/js/main.2e5f9dc5.js"
+    "static/js/main.36f9cb0c.js"
   ]
 }
