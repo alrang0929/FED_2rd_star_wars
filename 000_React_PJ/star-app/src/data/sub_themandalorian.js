@@ -56,7 +56,8 @@ function mandalvideo() {
         console.log("ddd");
         videoBox.classList.remove("on");
         vdcode = ``;
-        // body.style.overflow = "auto";
+        let ifr = domFn.qs(".video-tab iframe");
+        ifr.setAttribute("src","");
       };
     };
   });
